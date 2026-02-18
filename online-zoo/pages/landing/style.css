@@ -64,7 +64,6 @@ button {
   padding: 2.8rem 0;
   font-family: "Montserrat-SemiBold", Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
-  font-weight: 600;
 }
 .header__container {
   display: flex;
@@ -78,7 +77,7 @@ button {
 .header__nav-list {
   text-transform: uppercase;
   display: flex;
-  gap: 5.3rem;
+  gap: 4.9rem;
   align-items: center;
 }
 .header__social-media {
@@ -109,7 +108,7 @@ button {
 }
 
 .facebook {
-  background: url("../../assets/icons/Facebook.png") no-repeat center;
+  background: url("../../assets/icons/Facebook.svg") no-repeat center;
   background-size: contain;
 }
 
