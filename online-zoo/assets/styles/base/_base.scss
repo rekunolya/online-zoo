@@ -1,3 +1,5 @@
+@use '../abstract/constants';
+
 *{
   padding: 0;
   margin: 0;
@@ -12,9 +14,45 @@ html{
 
 body {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  color: constants.$color-text;
 }
 
 a{
   text-decoration: none;
   margin: 0;
+  color: inherit;
+  font-family: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  padding: 2.6rem 0;
+  color: constants.$color-background-light;
+}
+
+.button-primary {
+  background-color: constants.$color-primary;
+
+  &:hover {
+    background-color: constants.$color-primary-hover;
+  }
+}
+
+.button-caption {
+  background-color: constants.$color-caption;
+
+  &:hover {
+    background-color: constants.$color-caption-hover;
+  }
+}
+
+.button-tranparent-dark {
+  border-color: constants.$color-background-light;
+  background-color: transparent;
+  color: constants.$color-background-dark;
 }
