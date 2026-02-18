@@ -1,0 +1,15 @@
+@use '../abstract/constants';
+
+.header {
+  background-color: constants.$color-primary;
+
+  &__container {
+    display: flex;
+  }
+
+}
+
+.header__logo {
+  width: 100px;
+  height: 100px;
+}

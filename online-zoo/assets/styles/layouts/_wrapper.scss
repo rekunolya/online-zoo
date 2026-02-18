@@ -1,0 +1,6 @@
+@use '../abstract/constants';
+
+.wrapper{
+  max-width: constants.$content-big-width;
+  margin: 0 auto;
+}
