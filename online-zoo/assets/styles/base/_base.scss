@@ -27,6 +27,17 @@ h1 {
   letter-spacing: 1%;
 }
 
+h2{
+  font-family: constants.$font-family-semi-bold;
+  color: constants.$color-caption; 
+  font-size: 5.4rem;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 150%;
+}
+
 a{
   text-decoration: none;
   margin: 0;
@@ -84,4 +95,13 @@ button {
   &__right {
     background: url('../../assets/icons/arrow-right.svg') no-repeat center;
   }
+}
+
+.two-columns {
+  display: flex;
+  gap: 40px;
+}
+
+.columns-reverse {
+  flex-direction: row-reverse;
 }

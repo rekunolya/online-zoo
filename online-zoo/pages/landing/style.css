@@ -28,6 +28,17 @@ h1 {
   letter-spacing: 1%;
 }
 
+h2 {
+  font-family: "Montserrat-SemiBold", Arial, Helvetica, sans-serif;
+  color: #00A092;
+  font-size: 5.4rem;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 150%;
+}
+
 a {
   text-decoration: none;
   margin: 0;
@@ -81,6 +92,15 @@ button {
 }
 .button-arrow__right {
   background: url("../../assets/icons/arrow-right.svg") no-repeat center;
+}
+
+.two-columns {
+  display: flex;
+  gap: 40px;
+}
+
+.columns-reverse {
+  flex-direction: row-reverse;
 }
 
 .wrapper {
@@ -158,8 +178,41 @@ button {
 .main__text {
   max-width: 43rem;
   text-align: left;
-  line-height: 150%;
   margin-bottom: 13px;
+}
+
+.how-it-works {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  padding: 16rem 0;
+}
+
+.description {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  text-align: left;
+}
+.description__welcome {
+  padding-top: 7rem;
+}
+.description__eagles {
+  padding-top: 11.5rem;
+}
+
+.image {
+  width: 80rem;
+  height: 53rem;
+}
+
+.welcome {
+  background-image: url("../../assets/images/welcome.svg");
+}
+
+.eagles {
+  background-image: url("../../assets/images/eagles.svg");
 }
 
 /*# sourceMappingURL=style.css.map */
