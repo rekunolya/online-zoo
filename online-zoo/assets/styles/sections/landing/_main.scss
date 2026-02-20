@@ -1,0 +1,21 @@
+.main {
+  width: 100%;
+  padding: 13rem 0;
+  background-image: url('../../assets/images/main-background.png');
+  background-position: left bottom;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 90rem;
+    text-align: left;
+  }
+
+  &__text{
+    max-width: 43rem;
+    text-align: left;
+    line-height: 150%;
+    margin-bottom: 13px;
+  }
+}

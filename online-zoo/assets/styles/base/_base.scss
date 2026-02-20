@@ -1,4 +1,5 @@
 @use '../abstract/constants';
+@use '../abstract/placeholders';
 
 *{
   padding: 0;
@@ -13,8 +14,17 @@ html{
 }
 
 body {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: constants.$font-family-regular, 'Montserrat', Arial, Helvetica, sans-serif;
   color: constants.$color-text;
+  font-size: 1.8rem;
+}
+
+h1 {
+  font-family: constants.$font-family-extra-bold;
+  color: constants.$color-caption; 
+  font-size: 8.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1%;
 }
 
 a{
@@ -31,12 +41,21 @@ li {
 button {
   border: none;
   cursor: pointer;
-  padding: 2.6rem 0;
+  padding: 26px 0;
   color: constants.$color-background-light;
+  font-family: constants.$font-family-semi-bold;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: fit-content;
+  @extend %transition;
 }
 
 .button-primary {
   background-color: constants.$color-primary;
+  padding: 26px 30px;
 
   &:hover {
     background-color: constants.$color-primary-hover;
@@ -55,4 +74,14 @@ button {
   border-color: constants.$color-background-light;
   background-color: transparent;
   color: constants.$color-background-dark;
+}
+
+.button-arrow {
+  display: block;
+  width: 30px;
+  height: 20px;
+
+  &__right {
+    background: url('../../assets/icons/arrow-right.svg') no-repeat center;
+  }
 }
