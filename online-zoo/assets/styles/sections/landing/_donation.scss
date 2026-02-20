@@ -2,4 +2,26 @@
 
 .donation {
   background-color: constants.$color-background-dark;
+  color: constants.$color-background-light;
+  padding: 5rem 0 4.7rem 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1.2rem
+  }
+
 }
