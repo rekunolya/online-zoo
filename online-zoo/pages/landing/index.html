@@ -1,96 +1,329 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Zoo</title>
-  <link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="../../assets/fonts/fonts.css">
-</head>
-<body>
-  <header class="header">
-    <div class="wrapper">
-      <div class="header__container">
-        <div class="header__logo">
-          <a href="../landing/index.html">
-            <img src="../../assets/images/logo.png" alt="Online Zoo Logo">
-          </a>
-        </div>
-        <div class="header__navigation">
-          <nav>
-            <ul class="header__nav-list">
-              <li class="active"><a href="../landing/index.html">about</a></li>
-              <li><a href="../map/map.html">map</a></li>
-              <li><a href="../animal/animal.html">zoos</a></li>
-              <li><a href="../contact/contact.html">contact us</a></li>
-              <li><a href="https://www.figma.com/design/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project?node-id=0-1&p=f&t=tplF2ruX7SwdGEs5-0" target="_blank">design</a></li>
-            </ul>
-            <ul class="header__social-media">
-              <li><a href="https://www.youtube.com/channel/UC578nebW2Mn-mNgjEArGZug" target="_blank"><div class="social-media youtube"></div></a></li>
-              <li><a href="https://www.instagram.com/rsschool_en?igsh=em1janI5bzZ0dXlx" target="_blank"><div class="social-media instagram"></div></a></li>
-              <li><a href="https://www.facebook.com/share/18JdV47Fxn/?mibextid=wwXIfr" target="_blank"><div class="social-media facebook"></div></a></li>
-            </ul>
-          </nav>
-
-        </div>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="main">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Zoo</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../../assets/fonts/fonts.css" />
+  </head>
+  <body>
+    <header class="header">
       <div class="wrapper">
-        <div class="main__content">
-          <h1>Watch your favorite animal online</h1>
-          <p class="main__text">Explore the exciting and mysterious world of wild animals in a natural setting without leaving your home.</p>
-          <button class="button-primary">
-            <div>VIEW LIVE CAM</div>
-            <div class="button-arrow button-arrow__right"></div>
-          </button>
-      </div>
-      </div>
-    </section>
-    <section>
-      <div class="wrapper">
-        <div class="how-it-works">
-          <div class="two-columns">
-          <div class="description description__welcome">
-            <h2>Welcome to the Online Zoo!</h2>
-            <p>On our website, using live webcams, fans of all ages can observe various animals. Among them, are Giant pandas, eagles, alligators, forest gorillas, African lions, and others. It is the whole natural world in real-time in front of our cameras. We hope you will enjoy watching closely and explore animals’ behavior and habitats! Note: animals are not always on view on cameras, so please check back if you don't see anything.</p>
+        <div class="header__container">
+          <div class="header__logo">
+            <a href="../landing/index.html">
+              <img src="../../assets/images/logo.png" alt="Online Zoo Logo" />
+            </a>
           </div>
-          <div class="image welcome"></div>
-        </div>
-        <div class="two-columns columns-reverse">
-          <div class="description description__eagles">
-            <h2>How we work</h2>
-            <p>Online Zoo is a nonprofit committed to inspiring awareness and preservation of nature and wild animals in our zoo and worldwide. Every day, our experts work to safeguard the health and wellness of the animals. To continue these efforts, we need your help. We're so grateful to our numerous supporters. All donations, large and small, go a long way to the conservation efforts of our pets.</p>
+          <div class="header__navigation">
+            <nav>
+              <ul class="header__nav-list">
+                <li class="active">
+                  <a href="../landing/index.html">about</a>
+                </li>
+                <li><a href="../map/map.html">map</a></li>
+                <li><a href="../animal/animal.html">zoos</a></li>
+                <li><a href="../contact/contact.html">contact us</a></li>
+                <li>
+                  <a
+                    href="https://www.figma.com/design/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project?node-id=0-1&p=f&t=tplF2ruX7SwdGEs5-0"
+                    target="_blank"
+                    >design</a
+                  >
+                </li>
+              </ul>
+              <ul class="header__social-media">
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UC578nebW2Mn-mNgjEArGZug"
+                    target="_blank"
+                    ><div class="social-media youtube"></div
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/rsschool_en?igsh=em1janI5bzZ0dXlx"
+                    target="_blank"
+                    ><div class="social-media instagram"></div
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/share/18JdV47Fxn/?mibextid=wwXIfr"
+                    target="_blank"
+                    ><div class="social-media facebook"></div
+                  ></a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <div class="image eagles"></div>
-        </div>
         </div>
       </div>
-    </section>
-    <section class="donation">
-      <div class="wrapper">
-        <div class="two-columns donation__container">
-          <div class="donation__description">
-            <h3>Your donation makes a difference!</h3>
-            <p>The Online Zoo's animal webcams are some of the most famous on <br> the internet. Tune in to watch your favourite animals — live, 24/7!</p>
+    </header>
+    <main>
+      <section class="main">
+        <div class="wrapper">
+          <div class="main__content">
+            <h1>Watch your favorite animal online</h1>
+            <p class="main__text">
+              Explore the exciting and mysterious world of wild animals in a
+              natural setting without leaving your home.
+            </p>
+            <button class="button-primary">
+              <div>VIEW LIVE CAM</div>
+              <div class="button-arrow button-arrow__right"></div>
+            </button>
           </div>
-          <div class="donation__button">
-            <h5>Quick Donate</h5>
-            <button class="button-transparent button-transparent__light">
-              <div class="button-transparent__text">$ Donation Amount</div>
-              <div class="button-arrow-background__primary">
-                <div class="button-arrow button-arrow__right"></div>
+        </div>
+      </section>
+      <section>
+        <div class="wrapper">
+          <div class="how-it-works">
+            <div class="two-columns">
+              <div class="description description__welcome">
+                <h2>Welcome to the Online Zoo!</h2>
+                <p>
+                  On our website, using live webcams, fans of all ages can
+                  observe various animals. Among them, are Giant pandas, eagles,
+                  alligators, forest gorillas, African lions, and others. It is
+                  the whole natural world in real-time in front of our cameras.
+                  We hope you will enjoy watching closely and explore animals’
+                  behavior and habitats! Note: animals are not always on view on
+                  cameras, so please check back if you don't see anything.
+                </p>
               </div>
-              
+              <div class="image welcome"></div>
+            </div>
+            <div class="two-columns columns-reverse">
+              <div class="description description__eagles">
+                <h2>How we work</h2>
+                <p>
+                  Online Zoo is a nonprofit committed to inspiring awareness and
+                  preservation of nature and wild animals in our zoo and
+                  worldwide. Every day, our experts work to safeguard the health
+                  and wellness of the animals. To continue these efforts, we
+                  need your help. We're so grateful to our numerous supporters.
+                  All donations, large and small, go a long way to the
+                  conservation efforts of our pets.
+                </p>
+              </div>
+              <div class="image eagles"></div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <footer></footer>
-  
-</body>
+      </section>
+      <section class="donation">
+        <div class="wrapper">
+          <div class="two-columns donation__container">
+            <div class="donation__description">
+              <h3>Your donation makes a difference!</h3>
+              <p>
+                The Online Zoo's animal webcams are some of the most famous on
+                <br />
+                the internet. Tune in to watch your favourite animals — live,
+                24/7!
+              </p>
+            </div>
+            <div class="donation__button">
+              <h5>Quick Donate</h5>
+              <button class="button-transparent button-transparent__light">
+                <div class="button-transparent__text">$ Donation Amount</div>
+                <div class="button-arrow-background__primary">
+                  <div class="button-arrow button-arrow__right"></div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="pets">
+          <div class="pets__information">
+            <h2>meet some our Pets</h2>
+            <h5>
+              Do you have a special place in your heart for animals? Who are
+              your favorites? Perhaps you'd like to donate to special ones or
+              all our pets? We think it's important for you to choose how your
+              donation is used.
+            </h5>
+          </div>
+          <div class="pets__slider">
+            <div class="pets__arrow-buttons">
+              <button class="arrow-navigation arrow-navigation__dark">
+                <div class="arrow arrow__left"></div>
+              </button>
+              <button class="arrow-navigation arrow-navigation__dark">
+                <div class="arrow arrow__right"></div>
+              </button>
+            </div>
+            <div class="pets__container" id="pets__container">
+              <div class="slider-slider" id="slider-carousel">
+                <div class="slider__part-up">
+                  <div class="card">
+                    <h5 class="pet__name">Lucas</h5>
+                    <div class="pet__image">
+                      <img
+                        src="../../assets/images/pets/panda-lucas.png"
+                        alt="panda"
+                      />
+                    </div>
+                    <h5 class="pet__animal">Giant Panda</h5>
+                    <p class="pet__description">
+                      Native to central China, giant pandas have come to
+                      symbolize vulnerable species.
+                    </p>
+                    <button class="button-transparent pet__button">
+                      <div>VIEW LIVE CAM</div>
+                      <div class="button-arrow button-arrow__color"></div>
+                    </button>
+                  </div>
+                  <div class="card">
+                    <h5 class="pet__name">Andy</h5>
+                    <div class="pet__image">
+                      <img
+                        src="../../assets/images/pets/lemur-andy.png"
+                        alt="lemur"
+                      />
+                    </div>
+                    <h5 class="pet__animal">Madagascarian Lemur</h5>
+                    <p class="pet__description">
+                      Lemurs are considered the world’s most endangered group of
+                      mammals.
+                    </p>
+                    <button class="button-transparent pet__button">
+                      <div>VIEW LIVE CAM</div>
+                      <div class="button-arrow button-arrow__color"></div>
+                    </button>
+                  </div>
+                  <div class="card">
+                    <h5 class="pet__name">Glen</h5>
+                    <div class="pet__image">
+                      <img
+                        src="../../assets/images/pets/gorilla-glen.png"
+                        alt="lemur"
+                      />
+                    </div>
+                    <h5 class="pet__animal">Gorilla in Congo</h5>
+                    <p class="pet__description">
+                      Variety of snacks very important for the healthy life of
+                      gorillas and his plenty of babies.
+                    </p>
+                    <button class="button-transparent pet__button">
+                      <div>VIEW LIVE CAM</div>
+                      <div class="button-arrow button-arrow__color"></div>
+                    </button>
+                  </div>
+                  <div class="card">
+                    <h5 class="pet__name">Mike</h5>
+                    <div class="pet__image">
+                      <img
+                        src="../../assets/images/pets/alligator-mike.png"
+                        alt="alligator"
+                      />
+                    </div>
+                    <h5 class="pet__animal">Chinese Alligator</h5>
+                    <p class="pet__description">
+                      From nose to tail, belly to back, hard scales protect this
+                      petite alligator.
+                    </p>
+                    <button class="button-transparent pet__button">
+                      <div>VIEW LIVE CAM</div>
+                      <div class="button-arrow button-arrow__color"></div>
+                    </button>
+                  </div>
+                </div>
+                <div class="slider__part-down">
+                  <div class="card">
+                    <h5 class="pet__name">Sam & Lora</h5>
+                    <div class="pet__image">
+                      <img
+                        src="../../assets/images/pets/eagles-sam-lora.png"
+                        alt="eagles"
+                      />
+                    </div>
+                    <h5 class="pet__animal">West End Bald Eagles</h5>
+                    <p class="pet__description">
+                      Pair of eagle parents lay and protect eggs, feed their
+                      chicks and teach them to hunt and fly.
+                    </p>
+                    <button class="button-transparent pet__button">
+                      <div>VIEW LIVE CAM</div>
+                      <div class="button-arrow button-arrow__color"></div>
+                    </button>
+                  </div>
+                  <div class="card">
+                    <h5 class="pet__name">Liz</h5>
+                    <div class="pet__image">
+                      <img
+                        src="../../assets/images/pets/koala-liz.png"
+                        alt="koala"
+                      />
+                    </div>
+                    <h5 class="pet__animal">Australian Koala</h5>
+                    <p class="pet__description">
+                      The elevated walkways bring you to eye level with the
+                      koalas as they perch in their forest.
+                    </p>
+                    <button class="button-transparent pet__button">
+                      <div>VIEW LIVE CAM</div>
+                      <div class="button-arrow button-arrow__color"></div>
+                    </button>
+                  </div>
+                  <div class="card">
+                    <h5 class="pet__name">Shake</h5>
+                    <div class="pet__image">
+                      <img
+                        src="../../assets/images/pets/lion-shake.png"
+                        alt="lion"
+                      />
+                    </div>
+                    <h5 class="pet__animal">African Lion</h5>
+                    <p class="pet__description">
+                      Lions roam the savannas and grasslands of Africa, hunting
+                      and raising cubs in the pride.
+                    </p>
+                    <button class="button-transparent pet__button">
+                      <div>VIEW LIVE CAM</div>
+                      <div class="button-arrow button-arrow__color"></div>
+                    </button>
+                  </div>
+                  <div class="card">
+                    <h5 class="pet__name">Senja</h5>
+                    <div class="pet__image">
+                      <img
+                        src="../../assets/images/pets/tiger.png"
+                        alt="tiger"
+                      />
+                    </div>
+                    <h5 class="pet__animal">Sumatran Tiger</h5>
+                    <p class="pet__description">
+                      Sumatran Tigers are the smallest of the five sub-species,
+                      and are found in Indonesia.
+                    </p>
+                    <button class="button-transparent pet__button">
+                      <div>VIEW LIVE CAM</div>
+                      <div class="button-arrow button-arrow__color"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pets__button">
+            <button class="button-transparent button-transparent__dark">
+              <div>Choose your faforite</div>
+              <div class="button-arrow button-arrow__dark"></div>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>

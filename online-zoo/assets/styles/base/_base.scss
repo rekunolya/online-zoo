@@ -1,5 +1,6 @@
 @use '../abstract/constants';
 @use '../abstract/placeholders';
+@use './button';
 
 *{
   padding: 0;
@@ -59,77 +60,6 @@ a{
 
 li {
   list-style: none;
-}
-
-button {
-  border: none;
-  cursor: pointer;
-  color: constants.$color-background-light;
-  font-family: constants.$font-family-semi-bold;
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  width: fit-content;
-  @extend %transition;
-  text-transform: uppercase;
-}
-
-.button-primary {
-  background-color: constants.$color-primary;
-  padding: 26px 30px;
-
-  &:hover {
-    background-color: constants.$color-primary-hover;
-  }
-}
-
-.button-caption {
-  background-color: constants.$color-caption;
-
-  &:hover {
-    background-color: constants.$color-caption-hover;
-  }
-}
-
-.button-transparent {
-  background-color: transparent;
-  display: flex;
-  gap: 5px;
-
-  &__light {
-    border: 2px solid constants.$color-background-light;
-  }
-
-  &__dark {
-    border-color: constants.$color-background-dark;
-    color: constants.$color-background-dark;
-  }
-
-  &__text {
-    padding: 0 10px;
-  }
-
-}
-
-.button-arrow {
-  display: block;
-  width: 30px;
-  height: 20px;
-
-  &__right {
-    background: url('../../assets/icons/arrow-right.svg') no-repeat center;
-  }
-}
-
-.button-arrow-background {
-
-  &__primary {
-    background-color: constants.$color-primary;
-    padding: 2.6rem;
-  }
-  
 }
 
 .two-columns {

@@ -1,0 +1,108 @@
+@use '../../abstract/constants.scss';
+@use '../../abstract/placeholders.scss';
+
+.pets{
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  padding: 12.5rem 0 12.5rem 26rem;
+  text-align: center;
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 0 48rem 0 22rem;
+
+    > h2 {
+      padding-left: 17px;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  &__arrow-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5.2rem;
+    padding-right: 26rem;
+  }
+
+  &__container {
+    display: flex;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  &__button {
+    align-self: center;
+    padding-right: 26rem;
+  }
+}
+
+.slider {
+  &__part-up, &__part-down {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4rem;
+    position: relative;
+    @extend %transition;
+  }
+}
+
+.slider-slider{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: constants.$color-background-dark;
+  color: constants.$color-background-light;
+  width: 440px;
+  border-radius: 5px;
+  position: relative;
+  align-items: center;
+  padding-bottom: 5.5rem;
+}
+
+.pet {
+
+  &__name {
+    background-color: constants.$color-background-dark;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    z-index: 2;
+    padding: 1.3rem 2.5rem 1.3rem 3.5rem;
+  }
+
+  &__image {
+   /* margin-bottom: 3px;*/
+  }
+
+  &__description {
+    padding: 0 4rem;
+    height: stretch;
+    margin-bottom: 1.3rem;
+  }
+
+  &__button {
+    color: constants.$color-primary;
+    font-family: constants.$font-family-semi-bold;
+    font-size: 2.0rem;
+    padding: 2rem;
+
+    &:hover {
+      color: constants.$color-background-light;
+      background-color: constants.$color-primary;
+    }
+  }
+}
