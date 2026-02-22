@@ -314,7 +314,7 @@ li {
   display: flex;
   flex-direction: column;
   gap: 10rem;
-  padding: 12.5rem 0 12.5rem 26rem;
+  padding: 12.5rem 0 14.5rem 26rem;
   text-align: center;
 }
 .pets__information {
@@ -381,9 +381,6 @@ li {
   z-index: 2;
   padding: 1.3rem 2.5rem 1.3rem 3.5rem;
 }
-.pet__image {
-  /* margin-bottom: 3px;*/
-}
 .pet__description {
   padding: 0 4rem;
   height: stretch;
@@ -398,6 +395,74 @@ li {
 .pet__button:hover {
   color: #FFFFFF;
   background-color: #F58021;
+}
+
+.pay-and-feed {
+  background-color: #20113D;
+  color: #FFFFFF;
+  padding: 9rem 0;
+}
+.pay-and-feed__title {
+  color: #FFFFFF;
+  text-align: left;
+  margin-bottom: 10rem;
+}
+.pay-and-feed__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10.4rem;
+}
+.pay-and-feed__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 7.7rem;
+}
+.pay-and-feed__card-content:last-child {
+  margin-top: -2.4rem;
+}
+.pay-and-feed__devider {
+  display: flex;
+  gap: 9rem;
+}
+.pay-and-feed__line {
+  border-top: 1px solid #FFFFFF;
+  width: 100%;
+  margin: 20px 0;
+}
+.pay-and-feed__card {
+  display: flex;
+  gap: 15.8rem;
+}
+.pay-and-feed__information {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  text-align: left;
+  width: 40%;
+  padding-top: 13px;
+}
+.pay-and-feed__caption {
+  margin-bottom: 28px;
+}
+.pay-and-feed__icon {
+  display: block;
+  width: 110px;
+  height: 90px;
+}
+.pay-and-feed__button {
+  margin-top: 3rem;
+}
+
+.heart {
+  background: url("../../../../../online-zoo/assets/icons/heart.svg") no-repeat center;
+}
+
+.donation-icon {
+  background: url("../../../../../online-zoo/assets/icons/donation-icon.svg") no-repeat center;
+}
+
+.cart-with-food {
+  background: url("../../../../../online-zoo/assets/icons/cart-with-food.svg") no-repeat center;
 }
 
 /*# sourceMappingURL=style.css.map */

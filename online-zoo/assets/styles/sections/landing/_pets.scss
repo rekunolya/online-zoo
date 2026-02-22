@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   gap: 10rem;
-  padding: 12.5rem 0 12.5rem 26rem;
+  padding: 12.5rem 0 14.5rem 26rem;
   text-align: center;
 
   &__information {
@@ -82,10 +82,6 @@
     left: 0; 
     z-index: 2;
     padding: 1.3rem 2.5rem 1.3rem 3.5rem;
-  }
-
-  &__image {
-   /* margin-bottom: 3px;*/
   }
 
   &__description {
