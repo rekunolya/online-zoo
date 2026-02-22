@@ -55,9 +55,16 @@ button {
 .button-arrow__dark {
   background: url("../../assets/icons/arrow-right-dark.svg") no-repeat center;
 }
+.button-arrow__light {
+  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+}
 
 .button-transparent:hover .button-arrow__color {
   background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+}
+
+.button-transparent:hover .button-arrow__light {
+  background: url("../../assets/icons/arrow-right-dark.svg") no-repeat center;
 }
 
 .button-arrow-background__primary {
@@ -80,6 +87,14 @@ button {
   background-color: #20113D;
   color: #FFFFFF;
 }
+.arrow-navigation__light {
+  background: transparent;
+  border: 2px solid #FFFFFF;
+}
+.arrow-navigation__light:hover {
+  background-color: #FFFFFF;
+  color: #20113D;
+}
 
 .arrow {
   display: block;
@@ -87,17 +102,29 @@ button {
   height: 30px;
   padding: 15px 15px 14px 15px;
 }
-.arrow__left {
+.arrow__left-dark {
   background: url("../../assets/icons/arrow-left-dark.svg") no-repeat center;
 }
-.arrow__left:hover {
+.arrow__left-dark:hover {
   background: url("../../assets/icons/arrow-left-white.svg") no-repeat center;
 }
-.arrow__right {
+.arrow__right-dark {
   background: url("../../assets/icons/arrow-right-dark.svg") no-repeat center;
 }
-.arrow__right:hover {
+.arrow__right-dark:hover {
   background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+}
+.arrow__left-white {
+  background: url("../../assets/icons/arrow-left-white.svg") no-repeat center;
+}
+.arrow__left-white:hover {
+  background: url("../../assets/icons/arrow-left-dark.svg") no-repeat center;
+}
+.arrow__right-white {
+  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+}
+.arrow__right-white:hover {
+  background: url("../../assets/icons/arrow-right-dark.svg") no-repeat center;
 }
 
 /*.button-caption {
@@ -451,6 +478,7 @@ li {
 }
 .pay-and-feed__button {
   margin-top: 3rem;
+  padding-left: 37px;
 }
 
 .heart {
@@ -463,6 +491,78 @@ li {
 
 .cart-with-food {
   background: url("../../../../../online-zoo/assets/icons/cart-with-food.svg") no-repeat center;
+}
+
+.what-our-users-think {
+  width: 100%;
+  background-image: url("../../assets/images/panda-background.png");
+  background-repeat: round;
+  color: #FFFFFF;
+  text-align: left;
+}
+.what-our-users-think__section {
+  padding: 11rem 0 15rem 26rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 37.3rem;
+}
+.what-our-users-think__content {
+  display: flex;
+  gap: 4rem;
+}
+.what-our-users-think__content-information {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 67%;
+}
+.what-our-users-think__header {
+  color: #FFFFFF;
+}
+.what-our-users-think__content-navigation {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6rem;
+}
+.what-our-users-think__cards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 33px;
+}
+.what-our-users-think__card {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+  background-color: #FFFFFF;
+  color: #000000;
+  width: 415px;
+  padding: 5rem 5rem 6.5rem 5rem;
+  border-radius: 5px;
+}
+.what-our-users-think__card__feedback {
+  margin-top: -14px;
+  margin-bottom: -20px;
+  height: 162px;
+}
+.what-our-users-think__card__name {
+  font-family: "Montserrat-SemiBold", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.what-our-users-think__card-icon {
+  display: block;
+  width: 60px;
+  height: 50px;
+  background: url("../../../../../online-zoo/assets/icons/quates.svg") no-repeat center;
+}
+.what-our-users-think__arrows-container {
+  display: flex;
+  column-gap: 5.5rem;
+}
+.what-our-users-think__button {
+  padding: 2.5rem 7.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
