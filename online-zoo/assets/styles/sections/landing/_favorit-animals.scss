@@ -1,0 +1,57 @@
+@use '../../abstract/constants.scss';
+
+.favorit-animals {
+  padding: 13.6rem 0 15.2rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 9.6rem;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5.1rem;
+      
+    &>h2 {
+      padding: 0 36rem;
+    }
+
+    &>h5 {
+      padding: 0 43rem;
+    }
+
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 3.8rem;
+
+    &>:first-child {
+      grid-column: span 2;
+    }
+  }
+
+  &__donate-card {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    background-color: constants.$color-background-dark;
+    color: constants.$color-background-light;
+    padding-bottom: 55px;
+
+    &>p {
+      padding: 0 1.7rem;
+      height: 10.5rem;
+    }
+  }
+
+  &>button {
+    align-self: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 25px 35px;
+  }
+}

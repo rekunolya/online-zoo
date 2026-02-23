@@ -27,7 +27,9 @@ button {
 .button-transparent {
   background-color: transparent;
   display: flex;
-  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
 }
 .button-transparent__light {
   border: 2px solid #FFFFFF;
@@ -418,6 +420,7 @@ li {
   font-family: "Montserrat-SemiBold", Arial, Helvetica, sans-serif;
   font-size: 2rem;
   padding: 2rem;
+  align-items: center;
 }
 .pet__button:hover {
   color: #FFFFFF;
@@ -563,6 +566,53 @@ li {
 }
 .what-our-users-think__button {
   padding: 2.5rem 7.5rem;
+}
+
+.favorit-animals {
+  padding: 13.6rem 0 15.2rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 9.6rem;
+}
+.favorit-animals__header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5.1rem;
+}
+.favorit-animals__header > h2 {
+  padding: 0 36rem;
+}
+.favorit-animals__header > h5 {
+  padding: 0 43rem;
+}
+.favorit-animals__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 3.8rem;
+}
+.favorit-animals__container > :first-child {
+  grid-column: span 2;
+}
+.favorit-animals__donate-card {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  background-color: #20113D;
+  color: #FFFFFF;
+  padding-bottom: 55px;
+}
+.favorit-animals__donate-card > p {
+  padding: 0 1.7rem;
+  height: 10.5rem;
+}
+.favorit-animals > button {
+  align-self: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 25px 35px;
 }
 
 /*# sourceMappingURL=style.css.map */
