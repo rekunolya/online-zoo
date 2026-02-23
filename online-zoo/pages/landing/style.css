@@ -264,6 +264,80 @@ li {
   background-size: contain;
 }
 
+footer {
+  width: 100%;
+  background-color: #20113D;
+  color: #FFFFFF;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding: 7rem 0;
+}
+.footer-container__information {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container__information__partners {
+  display: flex;
+  justify-content: space-between;
+  gap: 6.5rem;
+}
+.footer-container__information__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.footer-container__information__donation > button {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 25px;
+  box-sizing: border-box;
+}
+.footer-container__devider {
+  border-top: 2px solid #FFFFFF;
+  width: 100%;
+  margin-top: 29px;
+}
+.footer-container__contacts {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container__contacts__copyright {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+}
+.footer-container__social-media {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.partners {
+  display: block;
+  height: 74px;
+}
+
+.logo {
+  width: 96px;
+  background: url("../../../../online-zoo/assets/icons/logo-light.svg") no-repeat center;
+}
+
+.yem-digital {
+  width: 50px;
+  background: url("../../../../online-zoo/assets/icons/yem-digital.svg") no-repeat center;
+}
+
+.rsschool {
+  width: 138px;
+  background: url("../../../../online-zoo/assets/icons/rsschool.svg") no-repeat center;
+}
+
 .main {
   width: 100%;
   padding: 13rem 0;
