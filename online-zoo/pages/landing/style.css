@@ -569,7 +569,7 @@ li {
 }
 
 .favorit-animals {
-  padding: 13.6rem 0 15.2rem 0;
+  padding: 13.6rem 0 15rem 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -613,6 +613,9 @@ li {
   justify-content: center;
   gap: 20px;
   padding: 25px 35px;
+}
+.favorit-animals > img {
+  margin-top: 5.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

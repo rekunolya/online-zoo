@@ -1,7 +1,7 @@
 @use '../../abstract/constants.scss';
 
 .favorit-animals {
-  padding: 13.6rem 0 15.2rem 0;
+  padding: 13.6rem 0 15rem 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -53,5 +53,9 @@
     justify-content: center;
     gap: 20px;
     padding: 25px 35px;
+  }
+
+  &>img {
+    margin-top: 5.5rem;
   }
 }
