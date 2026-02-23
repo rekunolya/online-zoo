@@ -41,7 +41,16 @@
   &__button {
     align-self: center;
     padding-right: 26rem;
+
+    & :hover {
+      background-color: constants.$color-background-dark;
+      color: constants.$color-background-light;
+    }
   }
+}
+
+.pets__button:hover .button-arrow__dark {
+  background: url('../../assets/icons/arrow-right-white.svg') no-repeat center;
 }
 
 .slider {

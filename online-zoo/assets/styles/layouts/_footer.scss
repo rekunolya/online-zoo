@@ -35,6 +35,11 @@ footer {
         gap: 20px;
         padding: 24px 25px;
         box-sizing: border-box;
+
+        &:hover {
+          background-color: constants.$color-background-light;
+          color: constants.$color-background-dark;
+        }
       }
     }
 

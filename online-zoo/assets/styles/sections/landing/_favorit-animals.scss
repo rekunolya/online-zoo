@@ -53,9 +53,18 @@
     justify-content: center;
     gap: 20px;
     padding: 25px 35px;
+
+    &:hover {
+      background-color: constants.$color-background-dark;
+      color: constants.$color-background-light;
+    }
   }
 
   &>img {
     margin-top: 5.5rem;
   }
+}
+
+.favorit-animals button:hover .button-arrow__dark {
+  background: url('../../assets/icons/arrow-right-white.svg') no-repeat center;
 }
