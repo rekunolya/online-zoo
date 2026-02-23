@@ -1,3 +1,141 @@
+button, .button-arrow-background, .button-transparent:hover .button-arrow-background__primary {
+  transition: all 0.3s ease-out;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-family: "Montserrat-SemiBold", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: fit-content;
+  text-transform: uppercase;
+}
+
+.button-primary {
+  background-color: #F58021;
+  padding: 26px 30px;
+}
+.button-primary:hover {
+  background-color: #D26004;
+}
+
+.button-transparent {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+.button-transparent__light {
+  border: 2px solid #FFFFFF;
+}
+.button-transparent__dark {
+  border: 2px solid #20113D;
+  color: #20113D;
+  padding: 2.5rem 4rem;
+}
+.button-transparent__text {
+  padding: 0 10px;
+}
+
+.button-arrow {
+  display: block;
+  width: 30px;
+  height: 20px;
+}
+.button-arrow__right {
+  background: url("../../assets/icons/arrow-right.svg") no-repeat center;
+}
+.button-arrow__color {
+  background: url("../../assets/icons/arrow-right-color.svg") no-repeat center;
+}
+.button-arrow__dark {
+  background: url("../../assets/icons/arrow-right-dark.svg") no-repeat center;
+}
+.button-arrow__light {
+  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+}
+
+.button-transparent:hover .button-arrow__color {
+  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+}
+
+.button-transparent:hover .button-arrow__light {
+  background: url("../../assets/icons/arrow-right-dark.svg") no-repeat center;
+}
+
+.button-arrow-background__primary {
+  background-color: #F58021;
+  padding: 2.6rem;
+}
+
+.button-transparent:hover .button-arrow-background__primary {
+  background-color: #D26004;
+}
+
+.arrow-navigation {
+  border-radius: 5px;
+}
+.arrow-navigation__dark {
+  background: transparent;
+  border: 2px solid #20113D;
+}
+.arrow-navigation__dark:hover {
+  background-color: #20113D;
+  color: #FFFFFF;
+}
+.arrow-navigation__light {
+  background: transparent;
+  border: 2px solid #FFFFFF;
+}
+.arrow-navigation__light:hover {
+  background-color: #FFFFFF;
+  color: #20113D;
+}
+
+.arrow {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 15px 15px 14px 15px;
+}
+.arrow__left-dark {
+  background: url("../../assets/icons/arrow-left-dark.svg") no-repeat center;
+}
+.arrow__left-dark:hover {
+  background: url("../../assets/icons/arrow-left-white.svg") no-repeat center;
+}
+.arrow__right-dark {
+  background: url("../../assets/icons/arrow-right-dark.svg") no-repeat center;
+}
+.arrow__right-dark:hover {
+  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+}
+.arrow__left-white {
+  background: url("../../assets/icons/arrow-left-white.svg") no-repeat center;
+}
+.arrow__left-white:hover {
+  background: url("../../assets/icons/arrow-left-dark.svg") no-repeat center;
+}
+.arrow__right-white {
+  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+}
+.arrow__right-white:hover {
+  background: url("../../assets/icons/arrow-right-dark.svg") no-repeat center;
+}
+
+/*.button-caption {
+  background-color: constants.$color-caption;
+
+  &:hover {
+    background-color: constants.$color-caption-hover;
+  }
+} */
 * {
   padding: 0;
   margin: 0;
@@ -11,8 +149,40 @@ html {
 }
 
 body {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: "Montserrat-Regular", Arial, Helvetica, sans-serif, "Montserrat", Arial, Helvetica, sans-serif;
   color: #000000;
+  font-size: 1.8rem;
+}
+
+h1 {
+  font-family: "Montserrat-ExtraBold", Arial, Helvetica, sans-serif;
+  color: #00A092;
+  font-size: 8.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1%;
+}
+
+h2 {
+  font-family: "Montserrat-SemiBold", Arial, Helvetica, sans-serif;
+  color: #00A092;
+  font-size: 5.4rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Montserrat-Medium", Arial, Helvetica, sans-serif;
+  font-size: 4.2rem;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: "Montserrat-Medium", Arial, Helvetica, sans-serif;
+  font-size: 2.6rem;
+  line-height: 130%;
+}
+
+p {
+  line-height: 150%;
 }
 
 a {
@@ -26,31 +196,13 @@ li {
   list-style: none;
 }
 
-button {
-  border: none;
-  cursor: pointer;
-  padding: 2.6rem 0;
-  color: #FFFFFF;
+.two-columns {
+  display: flex;
+  gap: 40px;
 }
 
-.button-primary {
-  background-color: #F58021;
-}
-.button-primary:hover {
-  background-color: #D26004;
-}
-
-.button-caption {
-  background-color: #00A092;
-}
-.button-caption:hover {
-  background-color: #05786E;
-}
-
-.button-tranparent-dark {
-  border-color: #FFFFFF;
-  background-color: transparent;
-  color: #20113D;
+.columns-reverse {
+  flex-direction: row-reverse;
 }
 
 .wrapper {
@@ -110,6 +262,80 @@ button {
 .facebook {
   background: url("../../assets/icons/Facebook.svg") no-repeat center;
   background-size: contain;
+}
+
+footer {
+  width: 100%;
+  background-color: #20113D;
+  color: #FFFFFF;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding: 7rem 0;
+}
+.footer-container__information {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container__information__partners {
+  display: flex;
+  justify-content: space-between;
+  gap: 6.5rem;
+}
+.footer-container__information__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.footer-container__information__donation > button {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 25px;
+  box-sizing: border-box;
+}
+.footer-container__devider {
+  border-top: 2px solid #FFFFFF;
+  width: 100%;
+  margin-top: 29px;
+}
+.footer-container__contacts {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container__contacts__copyright {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+}
+.footer-container__social-media {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.partners {
+  display: block;
+  height: 74px;
+}
+
+.logo {
+  width: 96px;
+  background: url("../../../../online-zoo/assets/icons/logo-light.svg") no-repeat center;
+}
+
+.yem-digital {
+  width: 50px;
+  background: url("../../../../online-zoo/assets/icons/yem-digital.svg") no-repeat center;
+}
+
+.rsschool {
+  width: 138px;
+  background: url("../../../../online-zoo/assets/icons/rsschool.svg") no-repeat center;
 }
 
 /*# sourceMappingURL=animal.css.map */
