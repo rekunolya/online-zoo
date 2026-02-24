@@ -37,8 +37,11 @@ footer {
         box-sizing: border-box;
 
         &:hover {
-          background-color: constants.$color-background-light;
-          color: constants.$color-background-dark;
+          background-color: constants.$color-caption;
+
+          > .button-arrow__light {
+            background: url('../../assets/icons/arrow-right-white.svg') no-repeat center;
+          }
         }
       }
     }

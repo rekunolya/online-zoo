@@ -172,10 +172,17 @@ button {
 }
 
 
-/*.button-caption {
+.button-caption {
   background-color: constants.$color-caption;
+  color: constants.$color-background-light;
+  padding: 2.5rem 8.6rem;
+  border-radius: 3px;
 
   &:hover {
     background-color: constants.$color-caption-hover;
+
+    > .button-arrow__light {
+      background: url('../../assets/icons/arrow-right-white.svg') no-repeat center;
+    }
   }
-} */
+}

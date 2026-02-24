@@ -1,4 +1,4 @@
-button, .button-arrow-background, .button-transparent:hover .button-arrow-background__primary {
+form > input, form > textarea, button, .button-arrow-background, .button-transparent:hover .button-arrow-background__primary {
   transition: all 0.3s ease-out;
 }
 
@@ -141,13 +141,19 @@ button {
   background: url("../../assets/icons/arrow-right-dark.svg") no-repeat center;
 }
 
-/*.button-caption {
-  background-color: constants.$color-caption;
+.button-caption {
+  background-color: #00A092;
+  color: #FFFFFF;
+  padding: 2.5rem 8.6rem;
+  border-radius: 3px;
+}
+.button-caption:hover {
+  background-color: #05786E;
+}
+.button-caption:hover > .button-arrow__light {
+  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+}
 
-  &:hover {
-    background-color: constants.$color-caption-hover;
-  }
-} */
 * {
   padding: 0;
   margin: 0;
@@ -310,8 +316,10 @@ footer {
   box-sizing: border-box;
 }
 .footer-container__information__donation > button:hover {
-  background-color: #FFFFFF;
-  color: #20113D;
+  background-color: #00A092;
+}
+.footer-container__information__donation > button:hover > .button-arrow__light {
+  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
 }
 .footer-container__devider {
   border-top: 2px solid #FFFFFF;
@@ -352,6 +360,64 @@ footer {
 .rsschool {
   width: 138px;
   background: url("../../../../online-zoo/assets/icons/rsschool.svg") no-repeat center;
+}
+
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  padding-bottom: 15rem;
+}
+.contact__information {
+  display: flex;
+  column-gap: 190px;
+}
+.contact__header {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  row-gap: 50px;
+  width: 39%;
+}
+.contact__form {
+  width: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+form > input {
+  padding: 18px;
+  background-color: #FFFFFF;
+  font-family: "Montserrat-Regular", Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  margin-bottom: 19px;
+}
+form > input:focus {
+  outline: none;
+  border: 2px solid #00A092;
+  box-shadow: 0 0 10px rgba(0, 160, 146, 0.3);
+}
+form > textarea {
+  padding: 23px 18px;
+  font-size: 1.8rem;
+  font-family: "Montserrat-Regular", Arial, Helvetica, sans-serif;
+  height: 154px;
+  border-radius: 5px;
+  margin-bottom: 56px;
+}
+form > textarea:focus {
+  outline: none;
+  border-color: #00A092;
+  box-shadow: 0 0 5px rgba(0, 160, 146, 0.3);
+}
+
+.required {
+  color: #00A092;
 }
 
 /*# sourceMappingURL=contact.css.map */
