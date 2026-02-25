@@ -1,4 +1,4 @@
-.slider__part-up, .slider__part-down, button, .button-arrow-background, .button-transparent:hover .button-arrow-background__primary {
+.slider__part-up, .slider__part-down, .header__nav-list, .social-media, button, .button-arrow-background, .button-transparent:hover .button-arrow-background__primary {
   transition: all 0.3s ease-out;
 }
 
@@ -255,6 +255,12 @@ li {
   gap: 4.9rem;
   align-items: center;
 }
+.header__nav-list > li:hover {
+  text-decoration: 2px underline #00A092;
+}
+.header__nav-list > li.active {
+  pointer-events: none;
+}
 .header__social-media {
   display: flex;
   justify-content: space-between;
@@ -270,6 +276,9 @@ li {
   width: 40px;
   height: 40px;
   cursor: pointer;
+}
+.social-media:hover {
+  filter: brightness(0.8);
 }
 
 .youtube {

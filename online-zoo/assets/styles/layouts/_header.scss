@@ -1,4 +1,5 @@
 @use '../abstract/constants';
+@use '../abstract/placeholders';
 
 .header {
   background-color: constants.$color-primary;
@@ -22,6 +23,15 @@
     display: flex;
     gap: 4.9rem;
     align-items: center;
+    @extend %transition;
+
+    & > li:hover {
+      text-decoration: 2px underline constants.$color-caption;
+    }
+
+    & > li.active {
+      pointer-events: none;
+    }
   }
 
   &__social-media {
@@ -40,6 +50,11 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
+  @extend %transition;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
 }
 
 .youtube {
