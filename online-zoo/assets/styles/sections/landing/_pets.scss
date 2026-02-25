@@ -36,6 +36,7 @@
     display: flex;
     overflow-x: hidden;
     width: 100%;
+    position: relative;
   }
 
   &__button {
@@ -53,20 +54,23 @@
   background: url('../../assets/icons/arrow-right-white.svg') no-repeat center;
 }
 
+
+.slider-slider{
+  position: relative;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
 .slider {
   &__part-up, &__part-down {
     display: flex;
     flex-direction: row;
     column-gap: 4rem;
-    position: relative;
+
     @extend %transition;
   }
-}
-
-.slider-slider{
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
 }
 
 .card {

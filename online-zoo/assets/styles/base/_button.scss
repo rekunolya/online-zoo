@@ -186,3 +186,8 @@ button {
     }
   }
 }
+
+.button-arrow_nonactive {
+  cursor: default;
+  pointer-events: none;
+}
