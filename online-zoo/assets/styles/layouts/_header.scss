@@ -1,5 +1,6 @@
 @use '../abstract/constants';
 @use '../abstract/placeholders';
+@use '../abstract/mixins';
 
 .header {
   background-color: constants.$color-primary;
@@ -7,15 +8,22 @@
   font-family: constants.$font-family-semi-bold;
   font-size: 1.8rem;
 
+
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include mixins.media-laptop {
+      padding: 0rem 6rem;
+    }
   }
 
   &__navigation > nav {
     display: flex;
     gap: 6.8rem;
+    @include mixins.media-laptop {
+      gap: 8rem;
+    }
   }
 
   &__nav-list {
@@ -24,6 +32,10 @@
     gap: 4.9rem;
     align-items: center;
     @extend %transition;
+
+    @include mixins.media-laptop {
+      gap: 3.1rem;
+    }
 
     & > li:hover {
       text-decoration: 2px underline constants.$color-caption;

@@ -1,4 +1,5 @@
 @use '../../abstract/constants.scss';
+@use '../../abstract/mixins.scss';
 
 .donation {
   background-color: constants.$color-background-dark;
@@ -8,6 +9,9 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    @include mixins.media-laptop {
+      padding: 0 6rem 0 5.7rem;
+    }
   }
 
   &__description {
@@ -15,13 +19,29 @@
     flex-direction: column;
     gap: 2rem;
     text-align: left;
+    max-width: 64%;
+    @include mixins.media-laptop {
+      max-width: 57%;
+      gap: 3rem;
+    }
+
+    &>p {
+      padding-right: 260px;
+      @include mixins.media-laptop {
+        padding-right: 0;
+      }
+    }
   }
 
   &__button {
     display: flex;
     flex-direction: column;
     text-align: left;
-    gap: 1.2rem
+    gap: 1.2rem;
+
+    > button:hover {
+      background-color: transparent;
+    }
   }
 
 }

@@ -1,4 +1,5 @@
 @use '../../abstract/constants.scss';
+@use '../../abstract/mixins.scss';
 
 .what-our-users-think {
   width: 100%;
@@ -12,11 +13,19 @@
     display: flex;
     flex-direction: column;
     row-gap: 37.3rem;
+    @include mixins.media-laptop {
+      padding: 5rem 0 15rem 4rem;
+      row-gap: 9.3rem;
+    }
   }
 
   &__content {
     display: flex;
     gap: 4rem;
+    @include mixins.media-laptop {
+      flex-direction: column;
+      gap: 55px;
+    }
   }
 
   &__content-information {
@@ -24,6 +33,14 @@
     flex-direction: column;
     gap: 4rem;
     width: 67%;
+    @include mixins.media-laptop {
+      gap: 2rem;
+      width: 50%;
+
+      &>h5 {
+        padding-right: 5px;
+      } 
+    }
   }
 
   &__header {
@@ -34,6 +51,10 @@
     display: flex;
     flex-direction: column;
     row-gap: 6rem;
+    @include mixins.media-laptop {
+      row-gap: 10rem;
+      align-items: end;
+    }
   }
 
   &__cards-container {
@@ -42,6 +63,10 @@
     flex-wrap: wrap;
     column-gap: 15px;
     row-gap: 33px;
+    @include mixins.media-laptop {
+      justify-content: end;
+      column-gap: 30px;
+    }
   }
 
   &__card {
@@ -78,6 +103,15 @@
   &__arrows-container {
     display: flex;
     column-gap: 5.5rem;
+    @include mixins.media-laptop {
+      padding-right: 40px;
+    }
+  }
+
+  &__button-container {
+    @include mixins.media-laptop {
+      padding-left: 95px;
+    }
   }
 
   &__button {

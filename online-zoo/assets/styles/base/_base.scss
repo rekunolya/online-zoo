@@ -1,5 +1,6 @@
 @use '../abstract/constants';
 @use '../abstract/placeholders';
+@use '../abstract/mixins';
 @use './button';
 
 *{
@@ -65,8 +66,19 @@ li {
 .two-columns {
   display: flex;
   gap: 40px;
+
+  @include mixins.media-laptop {
+    flex-direction: column-reverse;
+    padding-left: 6rem;
+    row-gap: 28px;
+  }
 }
 
 .columns-reverse {
   flex-direction: row-reverse;
+  @include mixins.media-laptop {
+    flex-direction: column-reverse;
+    align-items: end;
+    padding-right: 6rem;
+  }
 }

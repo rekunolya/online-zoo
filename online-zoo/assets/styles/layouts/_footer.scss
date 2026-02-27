@@ -1,4 +1,6 @@
 @use '../abstract/constants.scss';
+@use '../abstract/mixins.scss';
+@use '../abstract/placeholders.scss';
 
 footer {
   width: 100%;
@@ -20,12 +22,31 @@ footer {
       display: flex;
       justify-content: space-between;
       gap: 6.5rem;
+      @include mixins.media-laptop {
+        gap: 3rem;
+      }
     }
 
     &__navigation {
       display: flex;
       justify-content: space-between;
       align-self: center;
+    }
+
+    &__nav-list {
+      text-transform: uppercase;
+      display: flex;
+      gap: 4.9rem;
+      align-items: center;
+      @extend %transition;
+
+      @include mixins.media-laptop {
+        gap: 2.2rem;
+      }
+
+      & > li:hover {
+        text-decoration: 2px underline constants.$color-caption;
+      }
     }
 
     &__donation {

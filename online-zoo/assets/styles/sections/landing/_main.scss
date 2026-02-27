@@ -1,8 +1,17 @@
+@use '../../abstract/mixins';
+
 .main {
   width: 100%;
   padding: 13rem 0;
   background-image: url('../../assets/images/main-background.png');
   background-position: left bottom;
+  @include mixins.media-laptop {
+    padding: 10rem 0;
+    background-position-y: bottom;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   &__content {
     display: flex;
@@ -10,11 +19,17 @@
     gap: 3rem;
     max-width: 90rem;
     text-align: left;
+    @include mixins.media-laptop {
+      gap: 1rem;
+    }
   }
 
   &__text{
     max-width: 43rem;
     text-align: left;
     margin-bottom: 13px;
+    @include mixins.media-laptop {
+      max-width: 36rem;
+    }
   }
 }
