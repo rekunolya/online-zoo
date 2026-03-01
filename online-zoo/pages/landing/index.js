@@ -54,18 +54,18 @@ function setSwapSlider() {
   if (windowWidth >= 1200) {
     start = 0; // according to the layout, with a width > 1200px, the slider's left margin = 0
     swapSlider = 480; // 480 - width of one card + space between cards
-    console.log('swapSlider after', swapSlider);
+
     visibleArea = windowWidth - start; // Slider's visible area = screen width - left margin
-    console.log('visibleArea after', visibleArea);
+
   } /*else if (windowWidth < 769 && windowWidth >= 380) {
     start = 10;
     swapSlider = (sliderWidth - (windowWidth - start)) / 6;
   } */
   offset = start;
-  console.log('offset', offset);
+
   SLIDER.style.left = offset + 'px';
   visibleArea = sliderWidth - (windowWidth - offset);
-  console.log('visibleArea', visibleArea);
+
   swapSlider = Math.round(swapSlider);
   disableButton(PET_BUTTON_LEFT, moveLeft);
   enableButton(PET_BUTTON_RIGHT, moveRight);
