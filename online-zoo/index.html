@@ -9,8 +9,8 @@
       href="../../assets/images/favicon.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="../../assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="./pages/landing/style.css" />
+    <link rel="stylesheet" href="./assets/fonts/fonts.css" />
   </head>
   <body>
     <header class="header">
@@ -18,18 +18,18 @@
         <div class="header__container">
           <div class="header__logo">
             <a href="../landing/index.html">
-              <img src="../../assets/images/logo.png" alt="Online Zoo Logo" />
+              <img src="./assets/images/logo.png" alt="Online Zoo Logo" />
             </a>
           </div>
           <div class="header__navigation">
             <nav>
               <ul class="header__nav-list">
                 <li class="active">
-                  <a href="../landing/index.html">about</a>
+                  <a href="index.html">about</a>
                 </li>
-                <li><a href="../map/map.html">map</a></li>
-                <li><a href="../animal/animal.html">zoos</a></li>
-                <li><a href="../contact/contact.html">contact us</a></li>
+                <li><a href="./pages/map/map.html">map</a></li>
+                <li><a href="./pages/animal/animal.html">zoos</a></li>
+                <li><a href="./pages/contact/contact.html">contact us</a></li>
                 <li>
                   <a
                     href="https://www.figma.com/design/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project?node-id=0-1&p=f&t=tplF2ruX7SwdGEs5-0"
@@ -76,8 +76,8 @@
               natural setting without leaving your home.
             </p>
             <button class="button-primary">
-              <div>VIEW LIVE CAM</div>
-              <div class="button-arrow button-arrow__right"></div>
+              <span>VIEW LIVE CAM</span>
+              <span class="button-arrow button-arrow__right"></span>
             </button>
           </div>
         </div>
@@ -129,12 +129,12 @@
               </p>
             </div>
             <div class="donation__button">
-              <h5>Quick Donate</h5>
+              <p class="subheader">Quick Donate</p>
               <button id="donation-button" class="button-transparent button-transparent__light">
-                <div class="button-transparent__text">$ Donation Amount</div>
-                <div class="button-arrow-background__primary">
-                  <div class="button-arrow button-arrow__right"></div>
-                </div>
+                <span class="button-transparent__text">$ Donation Amount</span>
+                <span class="button-arrow-background__primary">
+                  <span class="button-arrow button-arrow__right"></span>
+                </span>
               </button>
             </div>
           </div>
@@ -144,313 +144,313 @@
         <div class="pets">
           <div class="pets__information">
             <h2>meet some our Pets</h2>
-            <h5>
+            <p class="subheader">
               Do you have a special place in your heart for animals? Who are
               your favorites? Perhaps you'd like to donate to special ones or
               all our pets? We think it's important for you to choose how your
               donation is used.
-            </h5>
+            </p>
           </div>
           <div class="pets__slider">
             <div class="pets__arrow-buttons">
               <button id="pet-button-left" class="arrow-navigation arrow-navigation__dark">
-                <div class="arrow arrow__left-dark"></div>
+                <span class="arrow arrow__left-dark"></span>
               </button>
               <button id="pet-button-right" class="arrow-navigation arrow-navigation__dark">
-                <div class="arrow arrow__right-dark"></div>
+                <span class="arrow arrow__right-dark"></span>
               </button>
             </div>
             <div class="pets__container" id="pets__container">
               <div class="slider-slider" id="slider-carousel">
                 <div class="slider__part-up">
                   <div class="card">
-                    <h5 class="pet__name">Lucas</h5>
+                    <p class="subheader pet__name">Lucas</p>
                     <div class="pet__image">
                       <img
-                        src="../../assets/images/pets/panda-lucas.png"
+                        src="./assets/images/pets/panda-lucas.png"
                         alt="panda"
                       />
                     </div>
-                    <h5 class="pet__animal">Giant Panda</h5>
+                    <p class="subheader pet__animal">Giant Panda</p>
                     <p class="pet__description">
                       Native to central China, giant pandas have come to
                       symbolize vulnerable species.
                     </p>
                     <button class="button-transparent pet__button">
-                      <div>VIEW LIVE CAM</div>
-                      <div class="button-arrow button-arrow__color"></div>
+                      <span>VIEW LIVE CAM</span>
+                      <span class="button-arrow button-arrow__color"></span>
                     </button>
                   </div>
                   <div class="card">
-                    <h5 class="pet__name">Andy</h5>
+                    <p class="subheader pet__name">Andy</p>
                     <div class="pet__image">
                       <img
-                        src="../../assets/images/pets/lemur-andy.png"
+                        src="./assets/images/pets/lemur-andy.png"
                         alt="lemur"
                       />
                     </div>
-                    <h5 class="pet__animal">Madagascarian Lemur</h5>
+                    <p class="subheader pet__animal">Madagascarian Lemur</p>
                     <p class="pet__description">
                       Lemurs are considered the world’s most endangered group of
                       mammals.
                     </p>
                     <button class="button-transparent pet__button">
-                      <div>VIEW LIVE CAM</div>
-                      <div class="button-arrow button-arrow__color"></div>
+                      <span>VIEW LIVE CAM</span>
+                      <span class="button-arrow button-arrow__color"></span>
                     </button>
                   </div>
                   <div class="card">
-                    <h5 class="pet__name">Glen</h5>
+                    <p class="subheader pet__name">Glen</p>
                     <div class="pet__image">
                       <img
-                        src="../../assets/images/pets/gorilla-glen.png"
+                        src="./assets/images/pets/gorilla-glen.png"
                         alt="lemur"
                       />
                     </div>
-                    <h5 class="pet__animal">Gorilla in Congo</h5>
+                    <p class="subheader pet__animal">Gorilla in Congo</p>
                     <p class="pet__description">
                       Variety of snacks very important for the healthy life of
                       gorillas and his plenty of babies.
                     </p>
                     <button class="button-transparent pet__button">
-                      <div>VIEW LIVE CAM</div>
-                      <div class="button-arrow button-arrow__color"></div>
+                      <span>VIEW LIVE CAM</span>
+                      <span class="button-arrow button-arrow__color"></span>
                     </button>
                   </div>
                   <div class="card">
-                    <h5 class="pet__name">Mike</h5>
+                    <p class="subheader pet__name">Mike</p>
                     <div class="pet__image">
                       <img
-                        src="../../assets/images/pets/alligator-mike.png"
+                        src="./assets/images/pets/alligator-mike.png"
                         alt="alligator"
                       />
                     </div>
-                    <h5 class="pet__animal">Chinese Alligator</h5>
+                    <p class="subheader pet__animal">Chinese Alligator</p>
                     <p class="pet__description">
                       From nose to tail, belly to back, hard scales protect this
                       petite alligator.
                     </p>
                     <button class="button-transparent pet__button">
-                      <div>VIEW LIVE CAM</div>
-                      <div class="button-arrow button-arrow__color"></div>
+                      <span>VIEW LIVE CAM</span>
+                      <span class="button-arrow button-arrow__color"></span>
                     </button>
                   </div>
                   <div class="card">
-                    <h5 class="pet__name">Sam & Lora</h5>
+                    <p class="subheader pet__name">Sam & Lora</p>
                     <div class="pet__image">
                       <img
-                        src="../../assets/images/pets/eagles-sam-lora.png"
+                        src="./assets/images/pets/eagles-sam-lora.png"
                         alt="eagles"
                       />
                     </div>
-                    <h5 class="pet__animal">West End Bald Eagles</h5>
+                    <p class="subheader pet__animal">West End Bald Eagles</p>
                     <p class="pet__description">
                       Pair of eagle parents lay and protect eggs, feed their
                       chicks and teach them to hunt and fly.
                     </p>
                     <button class="button-transparent pet__button">
-                      <div>VIEW LIVE CAM</div>
-                      <div class="button-arrow button-arrow__color"></div>
+                      <span>VIEW LIVE CAM</span>
+                      <span class="button-arrow button-arrow__color"></span>
                     </button>
                   </div>
                   <div class="card">
-                    <h5 class="pet__name">Liz</h5>
+                    <p class="subheader pet__name">Liz</p>
                     <div class="pet__image">
                       <img
-                        src="../../assets/images/pets/koala-liz.png"
+                        src="./assets/images/pets/koala-liz.png"
                         alt="koala"
                       />
                     </div>
-                    <h5 class="pet__animal">Australian Koala</h5>
+                    <p class="subheader pet__animal">Australian Koala</p>
                     <p class="pet__description">
                       The elevated walkways bring you to eye level with the
                       koalas as they perch in their forest.
                     </p>
                     <button class="button-transparent pet__button">
-                      <div>VIEW LIVE CAM</div>
-                      <div class="button-arrow button-arrow__color"></div>
+                      <span>VIEW LIVE CAM</span>
+                      <span class="button-arrow button-arrow__color"></span>
                     </button>
                   </div>
                   <div class="card">
-                    <h5 class="pet__name">Shake</h5>
+                    <p class="subheader pet__name">Shake</p>
                     <div class="pet__image">
                       <img
-                        src="../../assets/images/pets/lion-shake.png"
+                        src="./assets/images/pets/lion-shake.png"
                         alt="lion"
                       />
                     </div>
-                    <h5 class="pet__animal">African Lion</h5>
+                    <p class="subheader pet__animal">African Lion</p>
                     <p class="pet__description">
                       Lions roam the savannas and grasslands of Africa, hunting
                       and raising cubs in the pride.
                     </p>
                     <button class="button-transparent pet__button">
-                      <div>VIEW LIVE CAM</div>
-                      <div class="button-arrow button-arrow__color"></div>
+                      <span>VIEW LIVE CAM</span>
+                      <span class="button-arrow button-arrow__color"></span>
                     </button>
                   </div>
                   <div class="card">
-                    <h5 class="pet__name">Senja</h5>
+                    <p class="subheader pet__name">Senja</p>
                     <div class="pet__image">
                       <img
-                        src="../../assets/images/pets/tiger.png"
+                        src="./assets/images/pets/tiger.png"
                         alt="tiger"
                       />
                     </div>
-                    <h5 class="pet__animal">Sumatran Tiger</h5>
+                    <p class="subheader pet__animal">Sumatran Tiger</p>
                     <p class="pet__description">
                       Sumatran Tigers are the smallest of the five sub-species,
                       and are found in Indonesia.
                     </p>
                     <button class="button-transparent pet__button">
-                      <div>VIEW LIVE CAM</div>
-                      <div class="button-arrow button-arrow__color"></div>
+                      <span>VIEW LIVE CAM</span>
+                      <span class="button-arrow button-arrow__color"></span>
                     </button>
                   </div>
                 </div>
                 <div class="slider__part-down">
                   <div class="card">
-                    <h5 class="pet__name">Sam & Lora</h5>
+                    <p class="subheader pet__name">Sam & Lora</p>
                     <div class="pet__image">
                       <img
-                        src="../../assets/images/pets/eagles-sam-lora.png"
+                        src="./assets/images/pets/eagles-sam-lora.png"
                         alt="eagles"
                       />
                     </div>
-                    <h5 class="pet__animal">West End Bald Eagles</h5>
+                    <p class="subheader pet__animal">West End Bald Eagles</p>
                     <p class="pet__description">
                       Pair of eagle parents lay and protect eggs, feed their
                       chicks and teach them to hunt and fly.
                     </p>
                     <button class="button-transparent pet__button">
-                      <div>VIEW LIVE CAM</div>
-                      <div class="button-arrow button-arrow__color"></div>
+                      <span>VIEW LIVE CAM</span>
+                      <span class="button-arrow button-arrow__color"></span>
                     </button>
                   </div>
                   <div class="card">
-                    <h5 class="pet__name">Liz</h5>
+                    <p class="subheader pet__name">Liz</p>
                     <div class="pet__image">
                       <img
-                        src="../../assets/images/pets/koala-liz.png"
+                        src="./assets/images/pets/koala-liz.png"
                         alt="koala"
                       />
                     </div>
-                    <h5 class="pet__animal">Australian Koala</h5>
+                    <p class="subheader pet__animal">Australian Koala</p>
                     <p class="pet__description">
                       The elevated walkways bring you to eye level with the
                       koalas as they perch in their forest.
                     </p>
                     <button class="button-transparent pet__button">
-                      <div>VIEW LIVE CAM</div>
-                      <div class="button-arrow button-arrow__color"></div>
+                      <span>VIEW LIVE CAM</span>
+                      <span class="button-arrow button-arrow__color"></span>
                     </button>
                   </div>
                   <div class="card">
-                    <h5 class="pet__name">Shake</h5>
+                    <p class="subheader pet__name">Shake</p>
                     <div class="pet__image">
                       <img
-                        src="../../assets/images/pets/lion-shake.png"
+                        src="./assets/images/pets/lion-shake.png"
                         alt="lion"
                       />
                     </div>
-                    <h5 class="pet__animal">African Lion</h5>
+                    <p class="subheader pet__animal">African Lion</p>
                     <p class="pet__description">
                       Lions roam the savannas and grasslands of Africa, hunting
                       and raising cubs in the pride.
                     </p>
                     <button class="button-transparent pet__button">
-                      <div>VIEW LIVE CAM</div>
-                      <div class="button-arrow button-arrow__color"></div>
+                      <span>VIEW LIVE CAM</span>
+                      <span class="button-arrow button-arrow__color"></span>
                     </button>
                   </div>
                   <div class="card">
-                    <h5 class="pet__name">Senja</h5>
+                    <p class="subheader pet__name">Senja</p>
                     <div class="pet__image">
                       <img
-                        src="../../assets/images/pets/tiger.png"
+                        src="./assets/images/pets/tiger.png"
                         alt="tiger"
                       />
                     </div>
-                    <h5 class="pet__animal">Sumatran Tiger</h5>
+                    <p class="subheader pet__animal">Sumatran Tiger</p>
                     <p class="pet__description">
                       Sumatran Tigers are the smallest of the five sub-species,
                       and are found in Indonesia.
                     </p>
                     <button class="button-transparent pet__button">
-                      <div>VIEW LIVE CAM</div>
-                      <div class="button-arrow button-arrow__color"></div>
+                      <span>VIEW LIVE CAM</span>
+                      <span class="button-arrow button-arrow__color"></span>
                     </button>
                   </div>
                   <div class="card">
-                    <h5 class="pet__name">Lucas</h5>
+                    <p class="subheader pet__name">Lucas</p>
                     <div class="pet__image">
                       <img
-                        src="../../assets/images/pets/panda-lucas.png"
+                        src="./assets/images/pets/panda-lucas.png"
                         alt="panda"
                       />
                     </div>
-                    <h5 class="pet__animal">Giant Panda</h5>
+                    <p class="subheader pet__animal">Giant Panda</p>
                     <p class="pet__description">
                       Native to central China, giant pandas have come to
                       symbolize vulnerable species.
                     </p>
                     <button class="button-transparent pet__button">
-                      <div>VIEW LIVE CAM</div>
-                      <div class="button-arrow button-arrow__color"></div>
+                      <span>VIEW LIVE CAM</span>
+                      <span class="button-arrow button-arrow__color"></span>
                     </button>
                   </div>
                   <div class="card">
-                    <h5 class="pet__name">Andy</h5>
+                    <p class="subheader pet__name">Andy</p>
                     <div class="pet__image">
                       <img
-                        src="../../assets/images/pets/lemur-andy.png"
+                        src="./assets/images/pets/lemur-andy.png"
                         alt="lemur"
                       />
                     </div>
-                    <h5 class="pet__animal">Madagascarian Lemur</h5>
+                    <p class="subheader pet__animal">Madagascarian Lemur</p>
                     <p class="pet__description">
                       Lemurs are considered the world’s most endangered group of
                       mammals.
                     </p>
                     <button class="button-transparent pet__button">
-                      <div>VIEW LIVE CAM</div>
-                      <div class="button-arrow button-arrow__color"></div>
+                      <span>VIEW LIVE CAM</span>
+                      <span class="button-arrow button-arrow__color"></span>
                     </button>
                   </div>
                   <div class="card">
-                    <h5 class="pet__name">Glen</h5>
+                    <p class="subheader pet__name">Glen</p>
                     <div class="pet__image">
                       <img
-                        src="../../assets/images/pets/gorilla-glen.png"
+                        src="./assets/images/pets/gorilla-glen.png"
                         alt="lemur"
                       />
                     </div>
-                    <h5 class="pet__animal">Gorilla in Congo</h5>
+                    <p class="subheader pet__animal">Gorilla in Congo</p>
                     <p class="pet__description">
                       Variety of snacks very important for the healthy life of
                       gorillas and his plenty of babies.
                     </p>
                     <button class="button-transparent pet__button">
-                      <div>VIEW LIVE CAM</div>
-                      <div class="button-arrow button-arrow__color"></div>
+                      <span>VIEW LIVE CAM</span>
+                      <span class="button-arrow button-arrow__color"></span>
                     </button>
                   </div>
                   <div class="card">
-                    <h5 class="pet__name">Mike</h5>
+                    <p class="subheader pet__name">Mike</p>
                     <div class="pet__image">
                       <img
-                        src="../../assets/images/pets/alligator-mike.png"
+                        src="./assets/images/pets/alligator-mike.png"
                         alt="alligator"
                       />
                     </div>
-                    <h5 class="pet__animal">Chinese Alligator</h5>
+                    <p class="subheader pet__animal">Chinese Alligator</p>
                     <p class="pet__description">
                       From nose to tail, belly to back, hard scales protect this
                       petite alligator.
                     </p>
                     <button class="button-transparent pet__button">
-                      <div>VIEW LIVE CAM</div>
-                      <div class="button-arrow button-arrow__color"></div>
+                      <span>VIEW LIVE CAM</span>
+                      <span class="button-arrow button-arrow__color"></span>
                     </button>
                   </div>
                 </div>
@@ -459,8 +459,8 @@
           </div>
           <div class="pets__button">
             <button class="button-transparent button-transparent__dark">
-              <div>Choose your faforite</div>
-              <div class="button-arrow button-arrow__dark"></div>
+              <span>Choose your faforite</span>
+              <span class="button-arrow button-arrow__dark"></span>
             </button>
           </div>
         </div>
@@ -471,18 +471,18 @@
           <div class="pay-and-feed__content">
             <div class="pay-and-feed__card-content">
               <div class="pay-and-feed__devider">
-                <h5>01</h5>
+                <p class="subheader">01</p>
                 <div class="pay-and-feed__line"></div>
               </div>
               <div class="pay-and-feed__card">
                 <div class="pay-and-feed__image">
-                  <img src="../../assets/images/pets/monkey.png" alt="monkey" />
+                  <img src="./assets/images/pets/monkey.png" alt="monkey" />
                 </div>
                 <div class="pay-and-feed__information">
                   <div class="pay-and-feed__icon heart"></div>
-                  <h5 class="pay-and-feed__caption">
+                  <p class="subheader pay-and-feed__caption">
                     Your donation has an impact
-                  </h5>
+                  </p>
                   <p class="pay-and-feed__text">
                     Providing our animals with high-quality nutritious diets is
                     just one element of animal care at our Zoo. We do all the
@@ -499,19 +499,19 @@
             </div>
             <div class="pay-and-feed__card-content">
               <div class="pay-and-feed__devider">
-                <h5>02</h5>
+                <p class="subheader">02</p>
                 <div class="pay-and-feed__line"></div>
               </div>
               <div class="pay-and-feed__card">
                 <div class="pay-and-feed__image">
                   <img
-                    src="../../assets/images/pets/animal-food.png"
+                    src="./assets/images/pets/animal-food.png"
                     alt="animal food"
                   />
                 </div>
                 <div class="pay-and-feed__information">
                   <div class="pay-and-feed__icon donation-icon"></div>
-                  <h5 class="pay-and-feed__caption">Make a donation</h5>
+                  <p class="subheader pay-and-feed__caption">Make a donation</p>
                   <p class="pay-and-feed__text">
                     You can donate through your credit card without any fees. It
                     is easy and safe. We do not keep donors' personal
@@ -524,22 +524,22 @@
             </div>
             <div class="pay-and-feed__card-content">
               <div class="pay-and-feed__devider">
-                <h5>03</h5>
+                <p class="subheader">03</p>
                 <div class="pay-and-feed__line"></div>
               </div>
               <div class="pay-and-feed__card">
                 <div class="pay-and-feed__image">
                   <img
-                    src="../../assets/images/pets/monkey-with-banan.png"
+                    src="./assets/images/pets/monkey-with-banan.png"
                     alt="monkey-with-banan"
                   />
                 </div>
                 <div class="pay-and-feed__information">
                   <div class="pay-and-feed__icon cart-with-food"></div>
-                  <h5 class="pay-and-feed__caption">
+                  <p class="subheader pay-and-feed__caption">
                     Bring your food charity — straight to<br />
                     your favorites pets.
-                  </h5>
+                  </p>
                   <p class="pay-and-feed__text">
                     After your donation, the animal receives its favorite foods.
                     You can support your favorite animals or any animal you care
@@ -547,8 +547,8 @@
                     donation can make a difference even if it is small.
                   </p>
                   <button class="button-primary pay-and-feed__button">
-                    <div>donate now</div>
-                    <div class="button-arrow button-arrow__right"></div>
+                    <span>donate now</span>
+                    <span class="button-arrow button-arrow__right"></span>
                   </button>
                 </div>
               </div>
@@ -564,17 +564,17 @@
                 what our<br />
                 users think
               </h2>
-              <h5>
+              <p class="subheader">
                 We are continuously striving to improve the experiences of our
                 future guests. Below you can leave your own feedback, or simply
                 view feedback from past clients.
-              </h5>
+              </p>
             </div>
             <div class="what-our-users-think__content-navigation">
               <div class="what-our-users-think__cards-container">
                 <div class="what-our-users-think__card">
                   <div class="what-our-users-think__card-icon"></div>
-                  <h5>New Jersey, June 2020</h5>
+                  <p class="subheader">New Jersey, June 2020</p>
                   <p class="what-our-users-think__card__feedback">
                     I am writing to thank you for your mission is to bring
                     people closer to nature! Like myself, children were very
@@ -585,7 +585,7 @@
                 </div>
                 <div class="what-our-users-think__card">
                   <div class="what-our-users-think__card-icon"></div>
-                  <h5>Toronto, November 2020</h5>
+                  <p class="subheader">Toronto, November 2020</p>
                   <p class="what-our-users-think__card__feedback">
                     We so enjoy the ever-evolving selection of animals from
                     around the globe. THANK YOU for sharing these fascinating
@@ -596,7 +596,7 @@
                 </div>
                 <div class="what-our-users-think__card">
                   <div class="what-our-users-think__card-icon"></div>
-                  <h5>London, February 2020</h5>
+                  <p class="subheader">London, February 2020</p>
                   <p class="what-our-users-think__card__feedback">
                     A fantastic experience for kids and adults alike! If anyone
                     is looking for an attraction that educates people on wild
@@ -607,7 +607,7 @@
                 </div>
                 <div class="what-our-users-think__card">
                   <div class="what-our-users-think__card-icon"></div>
-                  <h5>Amsterdam, June 2020</h5>
+                  <p class="subheader">Amsterdam, June 2020</p>
                   <p class="what-our-users-think__card__feedback">
                     I want to thank you for the amazing sites you find to put
                     your cameras to let each of us see things that we would
@@ -619,21 +619,19 @@
               </div>
               <div class="what-our-users-think__arrows-container">
                 <button class="arrow-navigation arrow-navigation__light">
-                  <div class="arrow arrow__left-white"></div>
+                  <span class="arrow arrow__left-white"></span>
                 </button>
                 <button class="arrow-navigation arrow-navigation__light">
-                  <div class="arrow arrow__right-white"></div>
+                  <span class="arrow arrow__right-white"></span>
                 </button>
               </div>
             </div>
           </div>
           <div class="what-our-users-think__button-container">
-                      <button
-            class="button-transparent button-transparent__light what-our-users-think__button"
-          >
-            <div>leave feedback</div>
-            <div class="button-arrow button-arrow__light"></div>
-          </button>
+            <button class="button-transparent button-transparent__light what-our-users-think__button">
+              <span>leave feedback</span>
+              <span class="button-arrow button-arrow__light"></span>
+            </button>
           </div>
 
         </div>
@@ -643,19 +641,19 @@
           <div class="favorit-animals">
             <div class="favorit-animals__header">
               <h2>care for the animals you love</h2>
-              <h5>
+              <p class="subheader">
                 You can help to look after the animals you love with your gift
                 today
-              </h5>
+              </p>
             </div>
 
             <div class="favorit-animals__container">
               <div>
-                <img src="../../assets/images/pets/koala.png" alt="koala" />
+                <img src="./assets/images/pets/koala.png" alt="koala" />
               </div>
               <div class="favorit-animals__donate-card">
                 <img
-                  src="../../assets/images/pets/feed-panda.png"
+                  src="./assets/images/pets/feed-panda.png"
                   alt="panda"
                 />
                 <p>
@@ -663,13 +661,13 @@
                   a slice of panda cake, made with our secret recipe.
                 </p>
                 <button class="button-transparent pet__button">
-                  <div>feed</div>
-                  <div class="button-arrow button-arrow__color"></div>
+                  <span>feed</span>
+                  <span class="button-arrow button-arrow__color"></span>
                 </button>
               </div>
               <div class="favorit-animals__donate-card">
                 <img
-                  src="../../assets/images/pets/feed-tiger.png"
+                  src="./assets/images/pets/feed-tiger.png"
                   alt="tiger"
                 />
                 <p>
@@ -677,13 +675,13 @@
                   a Sumatran tiger, for three weeks.
                 </p>
                 <button class="button-transparent pet__button">
-                  <div>feed</div>
-                  <div class="button-arrow button-arrow__color"></div>
+                  <span>feed</span>
+                  <span class="button-arrow button-arrow__color"></span>
                 </button>
               </div>
               <div class="favorit-animals__donate-card">
                 <img
-                  src="../../assets/images/pets/feed-lemour.png"
+                  src="./assets/images/pets/feed-lemour.png"
                   alt="lemour"
                 />
                 <p>
@@ -692,13 +690,13 @@
                   season in its natural habitat.
                 </p>
                 <button class="button-transparent pet__button">
-                  <div>feed</div>
-                  <div class="button-arrow button-arrow__color"></div>
+                  <span>feed</span>
+                  <span class="button-arrow button-arrow__color"></span>
                 </button>
               </div>
               <div class="favorit-animals__donate-card">
                 <img
-                  src="../../assets/images/pets/feed-eagles.png"
+                  src="./assets/images/pets/feed-eagles.png"
                   alt="eagles"
                 />
                 <p>
@@ -706,17 +704,17 @@
                   happy with your help.
                 </p>
                 <button class="button-transparent pet__button">
-                  <div>feed</div>
-                  <div class="button-arrow button-arrow__color"></div>
+                  <span>feed</span>
+                  <span class="button-arrow button-arrow__color"></span>
                 </button>
               </div>
             </div>
             <button class="button-transparent button-transparent__dark">
-              <div>Choose your faforite</div>
-              <div class="button-arrow button-arrow__dark"></div>
+              <span>Choose your faforite</span>
+              <span class="button-arrow button-arrow__dark"></span>
             </button>
             <img
-              src="../../assets/images/pets/touch-the-animal.png"
+              src="./assets/images/pets/touch-the-animal.png"
               alt="touch the animal"
             />
           </div>
@@ -736,18 +734,18 @@
               <nav>
                 <ul class="footer-container__information__nav-list">
                   <li>
-                    <a href="../landing/index.html">about</a>
+                    <a href="index.html">about</a>
                   </li>
-                  <li><a href="../map/map.html">map</a></li>
-                  <li><a href="../animal/animal.html">zoos</a></li>
-                  <li><a href="../contact/contact.html">contact us</a></li>
+                  <li><a href="./pages/map/map.html">map</a></li>
+                  <li><a href="./pages/animal/animal.html">zoos</a></li>
+                  <li><a href="./pages/contact/contact.html">contact us</a></li>
                 </ul>
               </nav>
             </div>
             <div class="footer-container__information__donation">
               <button class="button-transparent button-transparent__light">
-                <div>donate for volunteers</div>
-                <div class="button-arrow button-arrow__light"></div>
+                <span>donate for volunteers</span>
+                <span class="button-arrow button-arrow__light"></span>
               </button>
             </div>
           </div>
@@ -787,6 +785,6 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="./index.js"></script>
+    <script type="module" src="./pages/landing/index.js"></script>
   </body>
 </html>
