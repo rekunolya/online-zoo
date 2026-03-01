@@ -1334,6 +1334,43 @@ footer {
   line-height: 150%;
   border-radius: 5px;
 }
+.donation__card {
+  display: flex;
+  justify-content: space-between;
+}
+.donation__card input {
+  padding: 25px;
+  border-radius: 5px;
+}
+.donation__card-number {
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+  width: 65%;
+}
+.donation__card-cvv {
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+  width: 29%;
+}
+.donation__card-expiration {
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+}
+.donation__card-expiration-date {
+  display: flex;
+  gap: 30px;
+}
+.donation__card-expiration-date select {
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-family: "Montserrat-Regular", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  line-height: 150%;
+  text-align: center;
+}
 .donation__submit {
   background-color: #00A092;
   padding: 26px 58px;
@@ -1343,7 +1380,7 @@ footer {
 }
 .donation__complete {
   background-color: #F58021;
-  padding: 26px 58px;
+  padding: 26px 20px;
 }
 .donation__complete:hover {
   background-color: #D26004;
