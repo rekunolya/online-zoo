@@ -155,11 +155,11 @@
     row-gap: 12px;
 
     & input {
-      width: 100%;
-      padding: 20px 25px;
+      padding: 15px 25px;
       font-family: constants.$font-family-regular;
       font-size: 1.8rem;
       line-height: 150%;
+      border-radius: 5px;
     }
   }
 
