@@ -93,12 +93,13 @@ export class DonationModal extends Modal {
                 <input type="text" name="card-number" id="card-number"/>
               </div>
               <div class="donation__card-cvv">
-                <label for="card-cvv"><span class="required">* </span>* CVV Number</label>
+                <label for="card-cvv"><span class="required">* </span>CVV Number</label>
                 <input type="text" name="card-cvv" id="card-cvv"/>
               </div>
             </div>
             <div class="donation__card-expiration">
               <label for="card-month"><span class="required">* </span>Expiration Date</label>
+              <div class="donation__card-expiration-date">
               <select name="card-month" id="card-month">
                 <option value="" disabled selected>Month</option>
                 <option value="01">01</option>
@@ -114,7 +115,6 @@ export class DonationModal extends Modal {
                 <option value="11">11</option>
                 <option value="12">12</option>
               </select>
-              <label for="card-year"></label>
               <select name="card-year" id="card-year">
                 <option value="" disabled selected>Year</option>
                 <option value="2026">2026</option>
@@ -124,6 +124,9 @@ export class DonationModal extends Modal {
                 <option value="2030">2030</option>
                 <option value="2031">2031</option>
               </select>
+               </div>
+              
+              
             </div>
           </div>
 

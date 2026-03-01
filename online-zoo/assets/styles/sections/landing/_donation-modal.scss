@@ -163,6 +163,52 @@
     }
   }
 
+  &__card {
+    display: flex;
+    justify-content: space-between;
+
+    & input {
+      padding: 25px;
+      border-radius: 5px;
+    }
+  }
+
+  &__card-number {
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+    width: 65%;
+  }
+
+  &__card-cvv {
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+    width: 29%;
+  }
+
+  &__card-expiration {
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+  }
+
+  &__card-expiration-date {
+    display: flex;
+    gap: 30px;
+
+    & select {
+    
+      padding: 15px 25px;
+      border-radius: 5px;
+      font-family: constants.$font-family-regular;
+      font-size: 1.8rem;
+      line-height: 150%;
+      text-align: center;
+    }
+     
+  }
+
   &__submit {
     background-color: constants.$color-caption;
     padding: 26px 58px;;
@@ -174,7 +220,7 @@
 
   &__complete {
     background-color: constants.$color-primary;
-    padding: 26px 58px;
+    padding: 26px 20px;
 
     &:hover {
       background-color: constants.$color-primary-hover;
