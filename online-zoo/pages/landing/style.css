@@ -1214,7 +1214,8 @@ footer {
   color: #FFFFFF;
   background-color: #F58021;
   text-align: center;
-  padding: 43px 0;
+  padding: 42px 0;
+  border-radius: 5px 5px 0 0;
 }
 .donation__header > h3 {
   font-family: "Montserrat-Medium", Arial, Helvetica, sans-serif;
@@ -1320,6 +1321,18 @@ footer {
   height: 10px;
   border-radius: 50%;
   box-sizing: border-box;
+}
+.donation__personal-information {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.donation__personal-information input {
+  width: 100%;
+  padding: 20px 25px;
+  font-family: "Montserrat-Regular", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  line-height: 150%;
 }
 .donation__submit {
   background-color: #00A092;

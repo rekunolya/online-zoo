@@ -18,7 +18,8 @@
     color: constants.$color-background-light; 
     background-color: constants.$color-primary;
     text-align: center;
-    padding: 43px 0;
+    padding: 42px 0;
+    border-radius: 5px 5px 0 0;
 
     & > h3 {
       font-family: constants.$font-family-medium;
@@ -146,6 +147,20 @@
     height: 10px;
     border-radius: 50%;
     box-sizing: border-box;
+  }
+
+  &__personal-information {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+    & input {
+      width: 100%;
+      padding: 20px 25px;
+      font-family: constants.$font-family-regular;
+      font-size: 1.8rem;
+      line-height: 150%;
+    }
   }
 
   &__submit {
