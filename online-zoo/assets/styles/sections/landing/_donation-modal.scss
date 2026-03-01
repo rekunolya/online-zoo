@@ -1,0 +1,144 @@
+@use '../../abstract/constants.scss';
+
+.donation-modal {
+  display: flex;
+  flex-direction: column;
+  background-color: constants.$color-background-light;
+  align-items: start;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+
+  &__header {
+    color: constants.$color-background-light; 
+    background-color: constants.$color-primary;
+    text-align: center;
+    padding: 41px 231px 41px 200px;
+  }
+
+  &__title {
+    font-family: constants.$font-family-semi-bold;
+    font-size: 1.8rem;
+    line-height: 150%;
+    padding-left: 124px;
+    padding-top: 52px;
+    letter-spacing: 1.7px;
+  }
+
+
+  &__devider {
+    border-top: 2px solid constants.$color-devider;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  &__content{
+    padding: 41px 120px 50px 120px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 40px;
+  }
+
+  &__donation-amounts {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  &__text {
+    letter-spacing: 1px;
+  }
+
+  &__amounts {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__amount {
+    background-color: constants.$color-button-donation;
+    padding: 22px 25px;
+
+    &:hover {
+      background-color: constants.$color-caption-hover;
+    }
+  }
+
+  &__other-amount {
+    display: flex;
+    gap: 45px;
+
+    & input {
+      width: 147px;
+      padding: 10px 25px;
+      border-radius: 5px;
+
+      &:focus {
+        outline: none;
+        background-color: constants.$color-form-input-focus;
+      }
+    }
+  }
+
+  &__for-apecial-pet {
+    display: flex;
+    gap: 30px;
+
+    & select {
+      width: 64%;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-family: constants.$font-family-regular;
+      font-size: 1.8rem;
+      line-height: 150%;
+      text-align: center;
+    }
+  }
+
+  &__regular {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    letter-spacing: 1.2px;
+
+    & input {
+      width: 30px;
+      height: 33px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    column-gap: 325px;
+    margin-top: 9px;
+  }
+
+  &__progress{
+    display: flex;
+    gap: 10px;
+  }
+
+  &__progress-fill {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  &__submit {
+    background-color: constants.$color-caption;
+    padding: 26px 58px;;
+
+    &:hover {
+      background-color: constants.$color-caption-hover;
+    }
+  }
+}
+
+.fill {
+  background-color: constants.$color-caption;
+}
+
+.none {
+  background-color: none;
+  border: 1px solid constants.$color-caption;
+}

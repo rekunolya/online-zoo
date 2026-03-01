@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./modal.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="donation-modal">
+        <h3 class="donation-modal__header">Make your donation</h3>
+        <p class="donation-modal__title">Donation Information:</p>
+        <div class="donation-modal__devider"></div>
+        <form class="donation-modal__content">
+          <div class="donation-modal__donation-amounts">
+            <p class="donation-modal__text">
+              <span class="required">* </span>Choose your donation amount:
+            </p>
+            <div class="donation-modal__amounts">
+              <button class="button donation-modal__amount">$10</button>
+              <button class="button donation-modal__amount">$20</button>
+              <button class="button donation-modal__amount">$30</button>
+              <button class="button donation-modal__amount">$50</button>
+              <button class="button donation-modal__amount">$80</button>
+              <button class="button donation-modal__amount">$100</button>
+            </div>
+          </div>
+          <div class="donation-modal__other-amount">
+            <button class="button donation-modal__amount">Other amount</button>
+            <input type="text" name="other-amount" />
+          </div>
+          <div class="donation-modal__for-apecial-pet">
+            <button class="button donation-modal__amount">
+              For special pet
+            </button>
+            <select name="special-pet" id="special-pet-select">
+              <option value="" disabled selected>Choose your favourite</option>
+              <option value="panda">Lukas the Panda</option>
+              <option value="lemur">Andy the Lemur</option>
+              <option value="gorilla">Glen the Gorilla</option>
+              <option value="alligator">Mike the Alligator</option>
+              <option value="eagles">Sam & Lora the eagles family</option>
+              <option value="koala">Liz the Koala</option>
+              <option value="lion">Shake the Lion</option>
+              <option value="tiger">Senja the Tiger</option>
+            </select>
+          </div>
+          <div class="donation-modal__regular">
+            <input
+              type="checkbox"
+              name="regular-donation"
+              id="regular-donation"
+            />
+            <label for="regular-donation"
+              >Make this a monthly recurring gift</label
+            >
+          </div>
+          <div class="donation-modal__footer">
+            <div class="donation-modal__progress">
+
+                <div class="donation-modal__progress-fill fill"></div>
+                <div class="donation-modal__progress-fill none"></div>
+                <div class="donation-modal__progress-fill none"></div>
+
+            </div>
+            <button class="button donation-modal__submit">
+              <div>next</div>
+              <div class="button-arrow button-arrow__light"></div>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

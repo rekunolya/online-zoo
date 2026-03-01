@@ -243,6 +243,10 @@ li {
   }
 }
 
+.required {
+  color: #00A092;
+}
+
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
@@ -1167,6 +1171,67 @@ footer {
 
 .favorit-animals button:hover .button-arrow__dark {
   background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+}
+
+.scroll-hidden {
+  overflow-y: hidden;
+}
+
+.modal__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(24, 28, 41, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.modal__window {
+  max-width: 1200px;
+  border-radius: 15px;
+}
+
+.donation-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #FFFFFF;
+  align-items: start;
+}
+.donation-modal__header {
+  color: #FFFFFF;
+  background-color: #F58021;
+  padding: 41px 200px;
+  text-align: center;
+}
+.donation-modal__title {
+  font-family: "Montserrat-SemiBold", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  line-height: 150%;
+  padding-left: 120px;
+  padding-top: 40px;
+}
+.donation-modal__devider {
+  border-top: 2px solid #A4A8AE;
+  width: 100%;
+  margin-top: 29px;
+}
+.donation-modal__amounts {
+  display: flex;
+  gap: 20px;
+}
+.donation-modal__amount {
+  background-color: rgba(0, 160, 146, 0.5);
+  padding: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

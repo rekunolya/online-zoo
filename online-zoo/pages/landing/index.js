@@ -1,3 +1,5 @@
+import { DonationModal } from '../modal/DonationModal.js'; 
+
 //Slider
 const PET_BUTTON_LEFT = document.getElementById('pet-button-left'); 
 const PET_BUTTON_RIGHT = document.getElementById('pet-button-right');
@@ -74,3 +76,11 @@ window.addEventListener('resize', setSwapSlider);
 
 PET_BUTTON_RIGHT.addEventListener('click', moveRight);
 PET_BUTTON_LEFT.addEventListener('click', moveLeft); 
+
+//Donation button
+const DONATION_BUTTON = document.getElementById('donation-button');
+DONATION_BUTTON.addEventListener('click', () => {
+  console.log('Donation button clicked');
+  const donationModal = new DonationModal(['donation-modal']);
+  donationModal.renderModal();
+});
