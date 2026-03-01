@@ -421,17 +421,17 @@ footer {
 
 .logo {
   width: 96px;
-  background: url("../../../../online-zoo/assets/icons/logo-light.svg") no-repeat center;
+  background: url("../../../../../online-zoo/online-zoo/assets/icons/logo-light.svg") no-repeat center;
 }
 
 .yem-digital {
   width: 50px;
-  background: url("../../../../online-zoo/assets/icons/yem-digital.svg") no-repeat center;
+  background: url("../../../../../online-zoo/online-zoo/assets/icons/yem-digital.svg") no-repeat center;
 }
 
 .rsschool {
   width: 138px;
-  background: url("../../../../online-zoo/assets/icons/rsschool.svg") no-repeat center;
+  background: url("../../../../../online-zoo/online-zoo/assets/icons/rsschool.svg") no-repeat center;
 }
 
 .main {
@@ -883,15 +883,15 @@ footer {
 }
 
 .heart {
-  background: url("../../../../../online-zoo/assets/icons/heart.svg") no-repeat center;
+  background: url("../../../../../online-zoo/online-zoo/assets/icons/heart.svg") no-repeat center;
 }
 
 .donation-icon {
-  background: url("../../../../../online-zoo/assets/icons/donation-icon.svg") no-repeat center;
+  background: url("../../../../../online-zoo/online-zoo/assets/icons/donation-icon.svg") no-repeat center;
 }
 
 .cart-with-food {
-  background: url("../../../../../online-zoo/assets/icons/cart-with-food.svg") no-repeat center;
+  background: url("../../../../../online-zoo/online-zoo/assets/icons/cart-with-food.svg") no-repeat center;
 }
 
 @media (max-width: 1200px) {
