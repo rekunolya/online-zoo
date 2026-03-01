@@ -14,7 +14,7 @@ export class Modal {
       "div",
       "modal__wrapper",
     );
-    console.log('this.modalWrapper', this.modalWrapper);
+    //console.log('this.modalWrapper', this.modalWrapper);
 
     //Modal
     this.modal = this.createDomNode(this.modal, "div", "modal");
@@ -48,7 +48,7 @@ export class Modal {
   }
 
   setContent(content) {
-    console.log('setContent content', content);
+    //console.log('setContent content', content);
     if (typeof content === "string") {
       this.modalContent.innerHTML = content;
     } else {

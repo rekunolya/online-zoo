@@ -1,28 +1,43 @@
 @use '../../abstract/constants.scss';
 
-.donation-modal {
-  display: flex;
-  flex-direction: column;
-  background-color: constants.$color-background-light;
-  align-items: start;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+.donation{
 
+  &__modal {
+    width: constants.$content-modal-width;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: constants.$color-background-light;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  &__wrapper {
+    padding: 0 120px;
+  }
+  
   &__header {
     color: constants.$color-background-light; 
     background-color: constants.$color-primary;
     text-align: center;
-    padding: 41px 231px 41px 200px;
+    padding: 43px 0;
+
+    & > h3 {
+      font-family: constants.$font-family-medium;
+      font-size: 4.2rem;
+      line-height: auto;
+    }
   }
 
   &__title {
     font-family: constants.$font-family-semi-bold;
     font-size: 1.8rem;
     line-height: 150%;
-    padding-left: 124px;
+    //padding-left: 124px;
     padding-top: 52px;
-    letter-spacing: 1.7px;
+    letter-spacing: 0.9px;
+    align-self: flex-start;
+    font-weight: bold;
+    text-align: left;
   }
-
 
   &__devider {
     border-top: 2px solid constants.$color-devider;
@@ -30,11 +45,21 @@
     margin-top: 8px;
   }
 
-  &__content{
-    padding: 41px 120px 50px 120px;
+  &__form {
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 50px;
+
+    & > form {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+
+  &__form-content {
     display: flex;
     flex-direction: column;
-    text-align: left;
     gap: 40px;
   }
 
@@ -109,7 +134,6 @@
     display: flex;
     align-items: center;
     column-gap: 325px;
-    margin-top: 9px;
   }
 
   &__progress{
@@ -132,6 +156,15 @@
       background-color: constants.$color-caption-hover;
     }
   }
+
+  &__complete {
+    background-color: constants.$color-primary;
+    padding: 26px 58px;
+
+    &:hover {
+      background-color: constants.$color-primary-hover;
+    }
+  }
 }
 
 .fill {
@@ -141,4 +174,8 @@
 .none {
   background-color: none;
   border: 1px solid constants.$color-caption;
+}
+
+.invisible {
+  display: none;
 }
