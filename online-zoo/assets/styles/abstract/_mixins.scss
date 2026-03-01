@@ -1,0 +1,5 @@
+@use '../abstract/constants';
+
+@mixin media-laptop{
+  @media (max-width: constants.$content-small-width) {@content;}
+}

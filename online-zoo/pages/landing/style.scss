@@ -1,0 +1,20 @@
+@use '../../assets/styles/abstract/constants.scss';
+@use '../../assets/styles/base/base.scss';
+@use '../../assets/styles/layouts/wrapper.scss';
+@use '../../assets/styles/layouts/header.scss';
+@use '../../assets/styles/layouts/footer.scss';
+
+//sections
+@use '../../assets/styles/sections/landing/main.scss';
+@use '../../assets/styles/sections/landing/how-it-works.scss';
+@use '../../assets/styles/sections/landing/donation.scss';
+@use '../../assets/styles/sections/landing/pets.scss';
+@use '../../assets/styles/sections/landing/pay-and-feed.scss';
+@use '../../assets/styles/sections/landing/what-our-users-think.scss';
+@use '../../assets/styles/sections/landing/favorit-animals.scss';
+
+
+//modal
+@use '../../assets/styles/layouts/modal.scss';
+@use '../../assets/styles/sections/landing/_donation-modal.scss';
+

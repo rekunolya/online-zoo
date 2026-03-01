@@ -1,0 +1,115 @@
+@use '../abstract/constants.scss';
+@use '../abstract/mixins.scss';
+@use '../abstract/placeholders.scss';
+
+footer {
+  width: 100%;
+  background-color: constants.$color-background-dark;
+  color: constants.$color-background-light;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding: 7rem 0;
+
+  &__information {
+    display: flex;
+    justify-content: space-between;
+
+    &__partners {
+      display: flex;
+      justify-content: space-between;
+      gap: 6.5rem;
+      @include mixins.media-laptop {
+        gap: 3rem;
+      }
+    }
+
+    &__navigation {
+      display: flex;
+      justify-content: space-between;
+      align-self: center;
+    }
+
+    &__nav-list {
+      text-transform: uppercase;
+      display: flex;
+      gap: 4.9rem;
+      align-items: center;
+      @extend %transition;
+
+      @include mixins.media-laptop {
+        gap: 2.2rem;
+      }
+
+      & > li:hover {
+        text-decoration: 2px underline constants.$color-caption;
+      }
+    }
+
+    &__donation {
+      &>button {
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 24px 25px;
+        box-sizing: border-box;
+
+        &:hover {
+          background-color: constants.$color-caption;
+
+          > .button-arrow__light {
+            background: url('../../assets/icons/arrow-right-white.svg') no-repeat center;
+          }
+        }
+      }
+    }
+
+  }
+
+  &__devider {
+    border-top: 2px solid constants.$color-background-light; 
+    width: 100%;
+    margin-top: 29px;
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+
+    &__copyright {
+      display: flex;
+      justify-content: space-between;
+      gap: 50px;
+      align-items: center;
+    }
+  }
+
+  &__social-media {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+}
+
+.partners {
+  display: block;
+  height: 74px;
+}
+
+.logo {
+  width: 96px;
+  background: url('../../../../online-zoo/assets/icons/logo-light.svg') no-repeat center;
+}
+
+.yem-digital {
+  width: 50px;
+  background: url('../../../../online-zoo/assets/icons/yem-digital.svg') no-repeat center;
+}
+
+.rsschool {
+  width: 138px;
+  background: url('../../../../online-zoo/assets/icons/rsschool.svg') no-repeat center;
+}
