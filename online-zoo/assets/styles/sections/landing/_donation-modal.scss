@@ -134,7 +134,7 @@
   &__footer {
     display: flex;
     align-items: center;
-    column-gap: 325px;
+    justify-content: space-between;
   }
 
   &__progress{
@@ -168,7 +168,7 @@
     justify-content: space-between;
 
     & input {
-      padding: 25px;
+      padding: 23px 25px;
       border-radius: 5px;
     }
   }
@@ -195,11 +195,10 @@
 
   &__card-expiration-date {
     display: flex;
-    gap: 30px;
+    gap: 40px;
 
     & select {
-    
-      padding: 15px 25px;
+      padding: 20px 59px;
       border-radius: 5px;
       font-family: constants.$font-family-regular;
       font-size: 1.8rem;
@@ -220,7 +219,7 @@
 
   &__complete {
     background-color: constants.$color-primary;
-    padding: 26px 20px;
+    padding: 26px 56px;
 
     &:hover {
       background-color: constants.$color-primary-hover;

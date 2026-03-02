@@ -434,4 +434,152 @@ footer {
   background: url("../../../../../online-zoo/online-zoo/assets/icons/rsschool.svg") no-repeat center;
 }
 
+.map {
+  padding: 39px 0 140px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 58px;
+  align-items: center;
+}
+.map__title {
+  color: #20113D;
+  width: 530px;
+}
+.map__map {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9/6;
+}
+.map__image {
+  display: block;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  background: url("../../../../../online-zoo/assets/images/Map.png") center/contain no-repeat;
+}
+
+.location {
+  display: block;
+}
+
+.location.eagle {
+  width: 100px;
+  height: 144px;
+  position: absolute;
+  background: url("../../../../online-zoo/assets/icons/eagle.svg") center no-repeat;
+}
+.location.eagle:hover {
+  z-index: 2;
+  background: url("../../../../online-zoo/assets/icons/eagle-hover.svg") center no-repeat;
+}
+.location.eagle {
+  left: 11.5%;
+  top: 43%;
+}
+
+.location.alligator {
+  width: 100px;
+  height: 144px;
+  position: absolute;
+  background: url("../../../../online-zoo/assets/icons/alligator.svg") center no-repeat;
+}
+.location.alligator:hover {
+  z-index: 2;
+  background: url("../../../../online-zoo/assets/icons/alligator-hover.svg") center no-repeat;
+}
+.location.alligator {
+  left: 20.5%;
+  top: 45%;
+}
+
+.location.lion {
+  width: 100px;
+  height: 144px;
+  position: absolute;
+  background: url("../../../../online-zoo/assets/icons/lion.svg") center no-repeat;
+}
+.location.lion:hover {
+  z-index: 2;
+  background: url("../../../../online-zoo/assets/icons/lion-hover.svg") center no-repeat;
+}
+.location.lion {
+  left: 40.5%;
+  top: 49.5%;
+}
+
+.location.gorilla {
+  width: 100px;
+  height: 144px;
+  position: absolute;
+  background: url("../../../../online-zoo/assets/icons/gorilla.svg") center no-repeat;
+}
+.location.gorilla:hover {
+  z-index: 2;
+  background: url("../../../../online-zoo/assets/icons/gorilla-hover.svg") center no-repeat;
+}
+.location.gorilla {
+  top: 52%;
+  left: 48.8%;
+}
+
+.location.lemur {
+  width: 100px;
+  height: 144px;
+  position: absolute;
+  background: url("../../../../online-zoo/assets/icons/lemur.svg") center no-repeat;
+}
+.location.lemur:hover {
+  z-index: 2;
+  background: url("../../../../online-zoo/assets/icons/lemur-hover.svg") center no-repeat;
+}
+.location.lemur {
+  top: 65%;
+  left: 56.1%;
+}
+
+.location.panda {
+  width: 100px;
+  height: 144px;
+  position: absolute;
+  background: url("../../../../online-zoo/assets/icons/panda.svg") center no-repeat;
+}
+.location.panda:hover {
+  z-index: 2;
+  background: url("../../../../online-zoo/assets/icons/panda-hover.svg") center no-repeat;
+}
+.location.panda {
+  top: 38.5%;
+  left: 67.3%;
+}
+
+.location.tiger {
+  width: 100px;
+  height: 144px;
+  position: absolute;
+  background: url("../../../../online-zoo/assets/icons/tiger.svg") center no-repeat;
+}
+.location.tiger:hover {
+  z-index: 2;
+  background: url("../../../../online-zoo/assets/icons/tiger-hover.svg") center no-repeat;
+}
+.location.tiger {
+  left: 72%;
+  top: 55.5%;
+}
+
+.location.coala {
+  width: 100px;
+  height: 144px;
+  position: absolute;
+  background: url("../../../../online-zoo/assets/icons/coala.svg") center no-repeat;
+}
+.location.coala:hover {
+  z-index: 2;
+  background: url("../../../../online-zoo/assets/icons/coala-hover.svg") center no-repeat;
+}
+.location.coala {
+  left: 81%;
+  top: 68%;
+}
+
 /*# sourceMappingURL=map.css.map */
