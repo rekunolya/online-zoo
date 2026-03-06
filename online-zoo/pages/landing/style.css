@@ -1,4 +1,4 @@
-.slider__part-up, .slider__part-down, .footer-container__information__nav-list, .header__nav-list, .social-media, button, .button-arrow-background, .button-transparent:hover .button-arrow-background__primary {
+.donation__amount, .slider__part-up, .slider__part-down, .footer-container__information__nav-list, .header__nav-list, .social-media, button, .button-arrow-background, .button-transparent:hover .button-arrow-background__primary {
   transition: all 0.3s ease-out;
 }
 
@@ -1206,6 +1206,8 @@ footer {
   border-radius: 5px;
   background-color: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  font-family: "Montserrat-SemiBold", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
 }
 .donation__wrapper {
   padding: 0 120px;
@@ -1223,8 +1225,6 @@ footer {
   line-height: auto;
 }
 .donation__title {
-  font-family: "Montserrat-SemiBold", Arial, Helvetica, sans-serif;
-  font-size: 1.8rem;
   line-height: 150%;
   padding-top: 52px;
   letter-spacing: 0.9px;
@@ -1267,8 +1267,14 @@ footer {
 .donation__amount {
   background-color: rgba(0, 160, 146, 0.5);
   padding: 22px 25px;
+  border-radius: 5px;
+  color: #FFFFFF;
 }
 .donation__amount:hover {
+  cursor: pointer;
+  background-color: #05786E;
+}
+.donation__amount__selected {
   background-color: #05786E;
 }
 .donation__other-amount {
@@ -1277,12 +1283,14 @@ footer {
 }
 .donation__other-amount input {
   width: 147px;
+  height: stretch;
   padding: 10px 25px;
   border-radius: 5px;
 }
 .donation__other-amount input:focus {
   outline: none;
-  background-color: rgba(0, 160, 146, 0.3);
+  border: 2px solid rgba(0, 160, 146, 0.3);
+  box-shadow: 0 0 10px rgba(0, 160, 146, 0.3);
 }
 .donation__for-apecial-pet {
   display: flex;
@@ -1371,12 +1379,20 @@ footer {
   line-height: 150%;
   text-align: center;
 }
-.donation__submit {
+.donation__next {
   background-color: #00A092;
   padding: 26px 58px;
 }
-.donation__submit:hover {
+.donation__next:hover {
   background-color: #05786E;
+}
+.donation__next-not-active {
+  padding: 26px 58px;
+  background-color: #80CFC8;
+}
+.donation__next-not-active:hover {
+  cursor: default;
+  pointer-events: none;
 }
 .donation__complete {
   background-color: #F58021;
@@ -1397,6 +1413,32 @@ footer {
 
 .invisible {
   display: none;
+}
+
+.other-amount-input-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.other-amount-error input {
+  border: 2px solid #F58021;
+  box-shadow: 0 0 10px rgba(245, 128, 33, 0.2);
+  background-color: rgba(245, 128, 33, 0.2);
+}
+.other-amount-error input:focus {
+  outline: none;
+  border: 2px solid #F58021;
+  box-shadow: 0 0 10px rgba(245, 128, 33, 0.2);
+}
+.other-amount-error::after {
+  content: "Amount should be greater 0";
+  margin-top: 6px;
+  color: #F58021;
+  font-size: 10px;
+  position: absolute;
+  left: 0;
+  top: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

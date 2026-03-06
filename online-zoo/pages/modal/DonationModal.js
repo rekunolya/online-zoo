@@ -36,20 +36,22 @@ export class DonationModal extends Modal {
                 <span class="required">* </span>Choose your donation amount:
               </p>
               <div class="donation__amounts">
-                <button class="button donation__amount">$10</button>
-                <button class="button donation__amount">$20</button>
-                <button class="button donation__amount">$30</button>
-                <button class="button donation__amount">$50</button>
-                <button class="button donation__amount">$80</button>
-                <button class="button donation__amount">$100</button>
+                <div class="donation__amount">$10</div>
+                <div class="donation__amount">$20</div>
+                <div class="donation__amount">$30</div>
+                <div class="donation__amount">$50</div>
+                <div class="donation__amount">$80</div>
+                <div class="donation__amount">$100</div>
               </div>
             </div>
             <div class="donation__other-amount">
-              <button class="button donation__amount">Other amount</button>
-              <input type="text" name="other-amount" />
+              <label class="donation__amount" for="other-amount">Other amount</label>
+              <div class="other-amount-input-wrapper">
+                <input id="other-amount" type="text" name="other-amount" />
+              </div>
             </div>
             <div class="donation__for-apecial-pet">
-              <button class="button donation__amount">For special pet</button>
+              <label class="donation__amount" for="special-pet-select">For special pet</label>
               <select name="special-pet" id="special-pet-select">
                 <option value="" disabled selected> Choose your favourite</option>
                 <option value="panda">Lukas the Panda</option>
@@ -139,7 +141,7 @@ export class DonationModal extends Modal {
               <div class="donation__progress-fill none"></div>
               <div class="donation__progress-fill none"></div>
             </div>
-            <button class="button donation__submit" id="next-button">
+            <button class="button donation__next-not-active" id="next-button">
               <span>next</span>
               <span class="button-arrow button-arrow__light"></span>
             </button>
@@ -165,33 +167,142 @@ export class DonationModal extends Modal {
   }
 
   initSteps() {
-  console.log('initSteps called');
-  let steps = document.querySelectorAll('.donation__form-content');
-  let nextButton = document.querySelector('#next-button');
-  let currentStep = 0;
-  let progressFills = document.querySelectorAll('.donation__progress-fill');
-  let donationTitle = document.querySelector('.donation__title > p');
-
-  nextButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    console.log('Next button clicked');
-
-    steps[currentStep].classList.add('invisible');
-    currentStep++;
-    if (currentStep >= steps.length) { 
-      currentStep = steps.length - 1; 
-      return; 
-    } 
-    steps[currentStep].classList.remove('invisible');
-    progressFills[currentStep].classList.remove('none');
-    progressFills[currentStep].classList.add('fill');
-    donationTitle.textContent = currentStep === 0 ? 'Donation Information:' : currentStep === 1 ? 'Billing Information:' : 'Payment Information:';
+    console.log('initSteps called');
+    let steps = document.querySelectorAll('.donation__form-content');
+    let nextButton = document.querySelector('#next-button');
+    let currentStep = 0;
+    let progressFills = document.querySelectorAll('.donation__progress-fill');
+    let donationTitle = document.querySelector('.donation__title > p');
     
-    if (currentStep === steps.length - 1) {
-      nextButton.classList.add('invisible');
-      const completeButton = document.querySelector('.donation__complete');
-      completeButton.classList.remove('invisible');
+    this.selectDonationAmount();
+    this.setOtherAmount();
+    this.checkSelectedPet();
+    this.validateStep1();
+
+    nextButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      console.log('next button clicked')
+
+      steps[currentStep].classList.add('invisible');
+      currentStep++;
+
+      if (currentStep >= steps.length) {
+        currentStep = steps.length - 1;
+      }
+
+      steps[currentStep].classList.remove('invisible');
+      progressFills[currentStep].classList.remove('none');
+      progressFills[currentStep].classList.add('fill');
+      
+      donationTitle.textContent = 
+        currentStep === 0 ? 'Donation Information:' : 
+        currentStep === 1 ? 'Billing Information:' : 
+        'Payment Information:';
+
+      if (currentStep === steps.length -1) {
+        nextButton.classList.add('invisible');
+        const completeButton = document.querySelector('.donation__complete');
+        completeButton.classList.remove('invisible');
+      }
+    });
+  }
+
+  selectDonationAmount() {
+    const container = document.querySelector('.donation__amounts');
+    const donationAmountInput = document.querySelector('#other-amount'); 
+    const donationAmountLabel = document.querySelector('label[for="other-amount"]');
+
+    container.addEventListener('click', (event) => {
+      const target = event.target;
+      console.log('target', target);
+
+      if (target.classList.contains('donation__amount')) {
+        container.querySelectorAll('.donation__amount')
+        .forEach((el) => el.classList.remove('donation__amount__selected'))
+
+        donationAmountLabel.classList.remove('donation__amount__selected');
+        donationAmountInput.value = '';
+        donationAmountInput.parentElement.classList.remove('other-amount-error');
+
+        target.classList.add('donation__amount__selected');
+
+        this.validateStep1();
+      }
+    })
+  }
+
+  setOtherAmount() {
+    console.log('set other amount');
+    const container = document.querySelector('.donation__amounts');
+    const donationAmountInput = document.querySelector('#other-amount'); 
+    const donationAmountLabel = document.querySelector('label[for="other-amount"]');
+    console.log('donationAmountLAbel', donationAmountLabel);
+    
+    donationAmountInput.addEventListener('input', () => { 
+      container.querySelectorAll('.donation__amount')
+      .forEach((el) => el.classList.remove('donation__amount__selected'));
+      
+      const donationValue = Number(donationAmountInput.value); 
+
+      if (donationValue <= 0) {
+        donationAmountLabel.classList.remove('donation__amount__selected');
+        donationAmountInput.parentElement.classList.add('other-amount-error');
+      } else {
+        donationAmountInput.parentElement.classList.remove('other-amount-error');
+        donationAmountLabel.classList.add('donation__amount__selected');
+      }
+      
+      console.log('donationValue:', donationValue); 
+      this.validateStep1();
+    });
+
+    donationAmountLabel.addEventListener('click', () => {
+      container.querySelectorAll('.donation__amount')
+        .forEach((el) => el.classList.remove('donation__amount__selected'));
+
+      donationAmountInput.value = '';
+      donationAmountInput.parentElement.classList.remove('other-amount-error');
+      donationAmountLabel.classList.add('donation__amount__selected');
+      this.validateStep1();
+    })
+  }
+
+  checkSelectedPet() {
+    let selectedPet = document.querySelector('#special-pet-select');
+    let selectedPetLabel = document.querySelector('label[for="special-pet-select"]');
+    console.log('selectedPet', selectedPet);
+
+    selectedPet.addEventListener('change', () => {
+      selectedPetLabel.classList.add('donation__amount__selected');
+      this.validateStep1();
+      //console.log('el', selectedPet.value)
+    })
+  }
+
+  validateStep1() {
+    console.log('validate step');
+    const nextButton = document.querySelector('#next-button');
+
+    const selectedAmount = document.querySelector('.donation__amount__selected');
+    const otherInput = document.querySelector('#other-amount');
+    const petSelected = document.querySelector('#special-pet-select');
+    
+    const otherAmount = Number(otherInput.value);
+
+    const fixedAmountValid = !!selectedAmount;
+
+    const otherAmountValid = otherAmount > 0 && !isNaN(otherAmount);
+
+    const petValid = petSelected.value !== "";
+
+    const amountValid = fixedAmountValid || otherAmountValid
+
+    if(amountValid && petValid) {
+      nextButton.classList.remove('donation__next-not-active');
+      nextButton.classList.add('donation__next');
+    } else {
+      nextButton.classList.add('donation__next-not-active');
+      nextButton.classList.remove('donation__next');
     }
-  });
   }
 }
