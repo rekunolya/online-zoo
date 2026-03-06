@@ -1,13 +1,15 @@
 @use '../../abstract/constants.scss';
+@use '../../abstract/placeholders.scss';
 
 .donation{
-
   &__modal {
     width: constants.$content-modal-width;
     margin: 0 auto;
     border-radius: 5px;
     background-color: constants.$color-background-light;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+      font-family: constants.$font-family-semi-bold;
+  font-size: 1.8rem;
   }
 
   &__wrapper {
@@ -29,10 +31,7 @@
   }
 
   &__title {
-    font-family: constants.$font-family-semi-bold;
-    font-size: 1.8rem;
     line-height: 150%;
-    //padding-left: 124px;
     padding-top: 52px;
     letter-spacing: 0.9px;
     align-self: flex-start;
@@ -82,8 +81,16 @@
   &__amount {
     background-color: constants.$color-button-donation;
     padding: 22px 25px;
-
+    @extend %transition;
+    border-radius: 5px;
+    color: constants.$color-background-light;
+    
     &:hover {
+      cursor: pointer;
+      background-color: constants.$color-caption-hover;
+    }
+    
+    &__selected {
       background-color: constants.$color-caption-hover;
     }
   }
@@ -94,12 +101,14 @@
 
     & input {
       width: 147px;
+      height: stretch;
       padding: 10px 25px;
       border-radius: 5px;
 
       &:focus {
         outline: none;
-        background-color: constants.$color-form-input-focus;
+        border: 2px solid constants.$color-form-input-focus;
+        box-shadow: 0 0 10px constants.$color-form-input-focus;
       }
     }
   }
@@ -134,7 +143,7 @@
   &__footer {
     display: flex;
     align-items: center;
-    column-gap: 325px;
+    justify-content: space-between;
   }
 
   &__progress{
@@ -168,7 +177,7 @@
     justify-content: space-between;
 
     & input {
-      padding: 25px;
+      padding: 23px 25px;
       border-radius: 5px;
     }
   }
@@ -195,11 +204,10 @@
 
   &__card-expiration-date {
     display: flex;
-    gap: 30px;
+    gap: 40px;
 
     & select {
-    
-      padding: 15px 25px;
+      padding: 20px 59px;
       border-radius: 5px;
       font-family: constants.$font-family-regular;
       font-size: 1.8rem;
@@ -209,18 +217,28 @@
      
   }
 
-  &__submit {
+  &__next {
     background-color: constants.$color-caption;
-    padding: 26px 58px;;
+    padding: 26px 58px;
 
     &:hover {
       background-color: constants.$color-caption-hover;
     }
   }
 
+  &__next-not-active {
+    padding: 26px 58px;
+    background-color: constants.$color-caption-not-active;
+
+    &:hover {
+      cursor: default;
+      pointer-events: none;
+    }
+  }
+
   &__complete {
     background-color: constants.$color-primary;
-    padding: 26px 20px;
+    padding: 26px 56px;
 
     &:hover {
       background-color: constants.$color-primary-hover;
@@ -240,3 +258,38 @@
 .invisible {
   display: none;
 }
+
+.other-amount-input-wrapper{
+  position:relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.other-amount-error {
+  & input {
+    border: 2px solid constants.$color-primary;
+    box-shadow: 0 0 10px constants.$color-form-input-error;
+    background-color: constants.$color-form-input-error;
+
+    &:focus {
+      outline: none;
+      border: 2px solid constants.$color-primary;
+      box-shadow: 0 0 10px constants.$color-form-input-error;
+    }
+  }
+
+  &::after {
+    content: "Amount should be greater 0";
+    //outline: none;
+    
+    margin-top: 6px;
+    //padding: 5px 10px;
+    color: constants.$color-primary;
+    font-size: 10px;
+
+    position: absolute;
+    left: 0;
+    top: 100%
+  }
+}
+
