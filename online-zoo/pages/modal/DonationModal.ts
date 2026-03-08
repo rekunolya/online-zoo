@@ -1,7 +1,7 @@
-import { Modal } from "./Modal.js";
+import { Modal } from "./Modal";
 
 export class DonationModal extends Modal {
-  constructor(classes) {
+  constructor(classes: string[]) {
     super(classes);
     //this.name = name;
     //this.description = description;
@@ -169,10 +169,10 @@ export class DonationModal extends Modal {
   initSteps() {
     console.log('initSteps called');
     let steps = document.querySelectorAll('.donation__form-content');
-    let nextButton = document.querySelector('#next-button');
+    let nextButton = document.querySelector('#next-button') as HTMLButtonElement;
     let currentStep = 0;
     let progressFills = document.querySelectorAll('.donation__progress-fill');
-    let donationTitle = document.querySelector('.donation__title > p');
+    let donationTitle = document.querySelector('.donation__title > p') as HTMLParagraphElement;
     
     this.selectDonationAmount();
     this.setOtherAmount();
@@ -194,26 +194,28 @@ export class DonationModal extends Modal {
       progressFills[currentStep].classList.remove('none');
       progressFills[currentStep].classList.add('fill');
       
-      donationTitle.textContent = 
-        currentStep === 0 ? 'Donation Information:' : 
-        currentStep === 1 ? 'Billing Information:' : 
-        'Payment Information:';
+      if (donationTitle) {
+        donationTitle.textContent = 
+          currentStep === 0 ? 'Donation Information:' : 
+          currentStep === 1 ? 'Billing Information:' : 
+          'Payment Information:';
+      }
 
       if (currentStep === steps.length -1) {
         nextButton.classList.add('invisible');
-        const completeButton = document.querySelector('.donation__complete');
+        const completeButton = document.querySelector('.donation__complete') as HTMLButtonElement;
         completeButton.classList.remove('invisible');
       }
     });
   }
 
   selectDonationAmount() {
-    const container = document.querySelector('.donation__amounts');
-    const donationAmountInput = document.querySelector('#other-amount'); 
-    const donationAmountLabel = document.querySelector('label[for="other-amount"]');
+    const container = document.querySelector('.donation__amounts') as HTMLElement;
+    const donationAmountInput = document.querySelector('#other-amount') as HTMLFormElement; 
+    const donationAmountLabel = document.querySelector('label[for="other-amount"]') as HTMLFormElement;
 
     container.addEventListener('click', (event) => {
-      const target = event.target;
+      const target = event.target as HTMLElement;
       console.log('target', target);
 
       if (target.classList.contains('donation__amount')) {
@@ -222,7 +224,7 @@ export class DonationModal extends Modal {
 
         donationAmountLabel.classList.remove('donation__amount__selected');
         donationAmountInput.value = '';
-        donationAmountInput.parentElement.classList.remove('other-amount-error');
+        donationAmountInput.parentElement?.classList.remove('other-amount-error');
 
         target.classList.add('donation__amount__selected');
 
@@ -233,9 +235,9 @@ export class DonationModal extends Modal {
 
   setOtherAmount() {
     console.log('set other amount');
-    const container = document.querySelector('.donation__amounts');
-    const donationAmountInput = document.querySelector('#other-amount'); 
-    const donationAmountLabel = document.querySelector('label[for="other-amount"]');
+    const container = document.querySelector('.donation__amounts') as HTMLElement;
+    const donationAmountInput = document.querySelector('#other-amount') as HTMLInputElement; 
+    const donationAmountLabel = document.querySelector('label[for="other-amount"]') as HTMLFormElement;
     console.log('donationAmountLAbel', donationAmountLabel);
     
     donationAmountInput.addEventListener('input', () => { 
@@ -246,9 +248,9 @@ export class DonationModal extends Modal {
 
       if (donationValue <= 0) {
         donationAmountLabel.classList.remove('donation__amount__selected');
-        donationAmountInput.parentElement.classList.add('other-amount-error');
+        donationAmountInput.parentElement?.classList.add('other-amount-error');
       } else {
-        donationAmountInput.parentElement.classList.remove('other-amount-error');
+        donationAmountInput.parentElement?.classList.remove('other-amount-error');
         donationAmountLabel.classList.add('donation__amount__selected');
       }
       
@@ -261,15 +263,15 @@ export class DonationModal extends Modal {
         .forEach((el) => el.classList.remove('donation__amount__selected'));
 
       donationAmountInput.value = '';
-      donationAmountInput.parentElement.classList.remove('other-amount-error');
+      donationAmountInput.parentElement?.classList.remove('other-amount-error');
       donationAmountLabel.classList.add('donation__amount__selected');
       this.validateStep1();
     })
   }
 
   checkSelectedPet() {
-    let selectedPet = document.querySelector('#special-pet-select');
-    let selectedPetLabel = document.querySelector('label[for="special-pet-select"]');
+    let selectedPet = document.querySelector('#special-pet-select') as HTMLFormElement;
+    let selectedPetLabel = document.querySelector('label[for="special-pet-select"]') as HTMLFormElement;
     console.log('selectedPet', selectedPet);
 
     selectedPet.addEventListener('change', () => {
@@ -281,11 +283,11 @@ export class DonationModal extends Modal {
 
   validateStep1() {
     console.log('validate step');
-    const nextButton = document.querySelector('#next-button');
+    const nextButton = document.querySelector('#next-button') as HTMLButtonElement;
 
     const selectedAmount = document.querySelector('.donation__amount__selected');
-    const otherInput = document.querySelector('#other-amount');
-    const petSelected = document.querySelector('#special-pet-select');
+    const otherInput = document.querySelector('#other-amount') as HTMLInputElement;
+    const petSelected = document.querySelector('#special-pet-select') as HTMLFormElement;
     
     const otherAmount = Number(otherInput.value);
 
@@ -304,5 +306,24 @@ export class DonationModal extends Modal {
       nextButton.classList.add('donation__next-not-active');
       nextButton.classList.remove('donation__next');
     }
+  }
+
+  validateStep2() {
+    let donationName = document.querySelector('#donation-name') as HTMLInputElement;
+    let isValidDonationName: boolean = false;
+
+    donationName.addEventListener('input', () => {
+      const value = donationName.value;
+
+      isValidDonationName = /[a-zA-z\s]/g.test(value);
+      console.log('isValidDonationName', isValidDonationName);
+
+      if(!isValidDonationName) {
+        donationName.classList.add('donation-name-error');
+      } else {
+        donationName.classList.remove('donation-name-error');
+      }
+    })
+
   }
 }

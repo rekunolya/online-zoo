@@ -1,4 +1,4 @@
-import { DonationModal } from '../modal/DonationModal.js'; 
+import { DonationModal } from '../modal/DonationModal'; 
 
 //Slider
 const PET_BUTTON_LEFT = document.getElementById('pet-button-left'); 
@@ -6,38 +6,42 @@ const PET_BUTTON_RIGHT = document.getElementById('pet-button-right');
 let offset = 0; // initial left indent in the slider
 let start = 0;
 const SLIDER = document.getElementById('slider-carousel');
-let sliderWidth = SLIDER.offsetWidth; // slider width
+let sliderWidth: number = SLIDER?.offsetWidth || 0; // slider width
 let swapSlider = 0; // the length to scroll the slider
 let visibleArea = 0; // width of the slider's visible area
 
-function disableButton(btn, func) {
+function disableButton(btn: HTMLElement, func: () => void) {
   btn.removeEventListener('click', func);
   btn.classList.add('button-arrow_nonactive');
 }
 
-function enableButton(btn, func) {
+function enableButton(btn: HTMLElement, func: () => void) {
   btn.addEventListener('click', func);
   btn.classList.remove('button-arrow_nonactive');
 }
 const moveRight = () => {
   offset -= swapSlider;
-  SLIDER.style.left = offset + 'px';
-  if (offset < start) {
+  if (SLIDER) {
+    SLIDER.style.left = offset + 'px';
+  }
+  if (offset < start && PET_BUTTON_LEFT) {
     enableButton(PET_BUTTON_LEFT, moveLeft);
   }
-  if (offset <= -visibleArea - swapSlider) {
+  if (offset <= -visibleArea - swapSlider && PET_BUTTON_RIGHT) {
     disableButton(PET_BUTTON_RIGHT, moveRight);
   }
 }
 
 const moveLeft = () => {
   offset += swapSlider;
-  SLIDER.style.left = offset + 'px';
-  if (offset >= start) {
+  if (SLIDER) {
+    SLIDER.style.left = offset + 'px';
+  }
+  if (offset >= start && PET_BUTTON_LEFT) {
     disableButton(PET_BUTTON_LEFT, moveLeft);
   }
 
-  if (offset > -visibleArea) {
+  if (offset > -visibleArea && PET_BUTTON_RIGHT) {
     enableButton(PET_BUTTON_RIGHT, moveRight);
   }
 }
@@ -63,24 +67,32 @@ function setSwapSlider() {
   } */
   offset = start;
 
-  SLIDER.style.left = offset + 'px';
+  if (SLIDER) {
+    SLIDER.style.left = offset + 'px';
+  }
   visibleArea = sliderWidth - (windowWidth - offset);
 
   swapSlider = Math.round(swapSlider);
-  disableButton(PET_BUTTON_LEFT, moveLeft);
-  enableButton(PET_BUTTON_RIGHT, moveRight);
+  disableButton(PET_BUTTON_LEFT as HTMLButtonElement, moveLeft);
+  enableButton(PET_BUTTON_RIGHT as HTMLButtonElement, moveRight);
 } 
 
 setSwapSlider();
 window.addEventListener('resize', setSwapSlider);
 
-PET_BUTTON_RIGHT.addEventListener('click', moveRight);
-PET_BUTTON_LEFT.addEventListener('click', moveLeft); 
+if (PET_BUTTON_RIGHT) {
+  PET_BUTTON_RIGHT.addEventListener('click', moveRight);
+}
+if (PET_BUTTON_LEFT) {
+  PET_BUTTON_LEFT.addEventListener('click', moveLeft);
+}
 
 //Donation button
 const DONATION_BUTTON = document.getElementById('donation-button');
-DONATION_BUTTON.addEventListener('click', () => {
-  console.log('Donation button clicked');
-  const donationModal = new DonationModal(['donation-modal']);
-  donationModal.renderModal();
-});
+if (DONATION_BUTTON) {
+  DONATION_BUTTON.addEventListener('click', () => {
+    console.log('Donation button clicked');
+    const donationModal = new DonationModal(['donation-modal']);
+    donationModal.renderModal();
+  });
+}
