@@ -11,8 +11,6 @@ export class DonationModal extends Modal {
   }
 
   generateCardModule() {
-    console.log('generateCardModule called');
-
     let template = "";
     template += `<div class="donation__modal">`;
     template += `      
@@ -81,8 +79,10 @@ export class DonationModal extends Modal {
               <input type="text" name="donation-name" id="donation-name" placeholder="First and last name"/>
             </div>
             <div class="donation__personal-information">
-              <label for="donation-email"><span class="required">* </span>Your Email address</label>
-              <input type="email" name="donation-email" id="donation-email" placeholder="Enter your email"/>
+              <div class="donation__personal-information email">
+                <label for="donation-email"><span class="required">* </span>Your Email address</label>
+                <input type="email" name="donation-email" id="donation-email" placeholder="Enter your email"/>
+              </div>
               <p>You will receive emails from the Online Zoo, including updates and news on the latest discoveries and translations. You can unsubscribe at any time.</p>
             </div>
           </div>
@@ -160,14 +160,12 @@ export class DonationModal extends Modal {
   }
 
   renderModal() {
-    console.log('renderModal called');
     let content = this.generateCardModule();
     super.buildModal(content);
     this.initSteps();
   }
 
   initSteps() {
-    console.log('initSteps called');
     let steps = document.querySelectorAll('.donation__form-content');
     let nextButton = document.querySelector('#next-button') as HTMLButtonElement;
     let currentStep = 0;
@@ -178,6 +176,7 @@ export class DonationModal extends Modal {
     this.setOtherAmount();
     this.checkSelectedPet();
     this.validateStep1();
+    this.validateStep2();
 
     nextButton.addEventListener('click', (e) => {
       e.preventDefault();
@@ -193,6 +192,8 @@ export class DonationModal extends Modal {
       steps[currentStep].classList.remove('invisible');
       progressFills[currentStep].classList.remove('none');
       progressFills[currentStep].classList.add('fill');
+      nextButton.classList.remove('donation__next');
+      nextButton.classList.add('donation__next-not-active');
       
       if (donationTitle) {
         donationTitle.textContent = 
@@ -216,7 +217,6 @@ export class DonationModal extends Modal {
 
     container.addEventListener('click', (event) => {
       const target = event.target as HTMLElement;
-      console.log('target', target);
 
       if (target.classList.contains('donation__amount')) {
         container.querySelectorAll('.donation__amount')
@@ -234,11 +234,9 @@ export class DonationModal extends Modal {
   }
 
   setOtherAmount() {
-    console.log('set other amount');
     const container = document.querySelector('.donation__amounts') as HTMLElement;
     const donationAmountInput = document.querySelector('#other-amount') as HTMLInputElement; 
     const donationAmountLabel = document.querySelector('label[for="other-amount"]') as HTMLFormElement;
-    console.log('donationAmountLAbel', donationAmountLabel);
     
     donationAmountInput.addEventListener('input', () => { 
       container.querySelectorAll('.donation__amount')
@@ -254,7 +252,6 @@ export class DonationModal extends Modal {
         donationAmountLabel.classList.add('donation__amount__selected');
       }
       
-      console.log('donationValue:', donationValue); 
       this.validateStep1();
     });
 
@@ -272,17 +269,15 @@ export class DonationModal extends Modal {
   checkSelectedPet() {
     let selectedPet = document.querySelector('#special-pet-select') as HTMLFormElement;
     let selectedPetLabel = document.querySelector('label[for="special-pet-select"]') as HTMLFormElement;
-    console.log('selectedPet', selectedPet);
 
     selectedPet.addEventListener('change', () => {
       selectedPetLabel.classList.add('donation__amount__selected');
       this.validateStep1();
-      //console.log('el', selectedPet.value)
     })
   }
 
   validateStep1() {
-    console.log('validate step');
+    console.log('validate step1');
     const nextButton = document.querySelector('#next-button') as HTMLButtonElement;
 
     const selectedAmount = document.querySelector('.donation__amount__selected');
@@ -303,27 +298,59 @@ export class DonationModal extends Modal {
       nextButton.classList.remove('donation__next-not-active');
       nextButton.classList.add('donation__next');
     } else {
-      nextButton.classList.add('donation__next-not-active');
       nextButton.classList.remove('donation__next');
+      nextButton.classList.add('donation__next-not-active');
     }
   }
 
   validateStep2() {
-    let donationName = document.querySelector('#donation-name') as HTMLInputElement;
+    console.log('validate step2')
+    let donationInputName = document.querySelector('#donation-name') as HTMLInputElement;
+    let donationInputEmail = document.querySelector('#donation-email') as HTMLInputElement;
+    let nextButton = document.querySelector('#next-button') as HTMLButtonElement;
+
     let isValidDonationName: boolean = false;
+    let isValidDonationEmail: boolean = false;
 
-    donationName.addEventListener('input', () => {
-      const value = donationName.value;
+    const validate = () => {
+      if (isValidDonationName && isValidDonationEmail) {
+        nextButton.classList.remove('donation__next-not-active')
+        nextButton.classList.add('donation__next');
+      } else {
+        nextButton.classList.remove('donation__next');
+        nextButton.classList.add('donation__next-not-active')
+      }
+    }
 
-      isValidDonationName = /[a-zA-z\s]/g.test(value);
-      console.log('isValidDonationName', isValidDonationName);
+
+    donationInputName.addEventListener('input', () => {
+      const value = donationInputName.value.trim();
+
+      isValidDonationName = /^[A-Za-z\s]+$/.test(value);
 
       if(!isValidDonationName) {
-        donationName.classList.add('donation-name-error');
+        donationInputName.parentElement?.classList.add('donation-name-error');
       } else {
-        donationName.classList.remove('donation-name-error');
+        donationInputName.parentElement?.classList.remove('donation-name-error');
       }
-    })
 
+      validate();
+    });
+
+    donationInputEmail.addEventListener('input', () => {
+      const emailValue = donationInputEmail.value.trim();
+
+      isValidDonationEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue);
+
+      if (!isValidDonationEmail) {
+        donationInputEmail.parentElement?.classList.add('donation-email-error');
+      } else {
+        donationInputEmail.parentElement?.classList.remove('donation-email-error');
+      }
+      
+      validate();
+    });
+
+    validate();
   }
 }

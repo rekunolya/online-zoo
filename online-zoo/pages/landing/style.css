@@ -1342,6 +1342,11 @@ footer {
   line-height: 150%;
   border-radius: 5px;
 }
+.donation__personal-information input:focus {
+  outline: none;
+  border: 2px solid rgba(0, 160, 146, 0.3);
+  box-shadow: 0 0 10px rgba(0, 160, 146, 0.3);
+}
 .donation__card {
   display: flex;
   justify-content: space-between;
@@ -1439,6 +1444,38 @@ footer {
   position: absolute;
   left: 0;
   top: 100%;
+}
+
+.donation-name-error input {
+  border: 2px solid #F58021;
+  box-shadow: 0 0 10px rgba(245, 128, 33, 0.2);
+  background-color: rgba(245, 128, 33, 0.2);
+}
+.donation-name-error input:focus {
+  outline: none;
+  border: 2px solid #F58021;
+  box-shadow: 0 0 10px rgba(245, 128, 33, 0.2);
+}
+.donation-name-error::after {
+  content: "Name should include only latin litters";
+  color: #F58021;
+  font-size: 10px;
+}
+
+.donation-email-error input {
+  border: 2px solid #F58021;
+  box-shadow: 0 0 10px rgba(245, 128, 33, 0.2);
+  background-color: rgba(245, 128, 33, 0.2);
+}
+.donation-email-error input:focus {
+  outline: none;
+  border: 2px solid #F58021;
+  box-shadow: 0 0 10px rgba(245, 128, 33, 0.2);
+}
+.donation-email-error::after {
+  content: "Email is not correct. Exp test@test.com";
+  color: #F58021;
+  font-size: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,7 +12,7 @@ export class Modal {
   }
 
   buildModal(content: string | HTMLElement) {
-    console.log("buildModal content");
+    //console.log("buildModal content");
     //Modal wrapper
     this.modalWrapper = this.createDomNode(
       this.modalWrapper,
