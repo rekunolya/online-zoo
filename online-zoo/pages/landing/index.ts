@@ -1,4 +1,7 @@
+import { Animal } from 'pages/interface/animal';
 import { DonationModal } from '../modal/DonationModal'; 
+import { createAnimalCard } from './cadr';
+import { AnimalImages } from 'pages/interface/animal-images';
 
 //Slider
 const PET_BUTTON_LEFT = document.getElementById('pet-button-left'); 
@@ -7,6 +10,7 @@ let offset = 0; // initial left indent in the slider
 let start = 0;
 const SLIDER = document.getElementById('slider-carousel');
 let sliderWidth: number = SLIDER?.offsetWidth || 0; // slider width
+console.log('sliderWidth', sliderWidth)
 let swapSlider = 0; // the length to scroll the slider
 let visibleArea = 0; // width of the slider's visible area
 
@@ -96,3 +100,59 @@ if (DONATION_BUTTON) {
     donationModal.renderModal();
   });
 }
+
+//Render animal card to landing page
+let animalArray: Animal[] = [];
+const URL: string = 'https://vsqsnqnxkh.execute-api.eu-central-1.amazonaws.com/prod/';
+
+let animalImages: AnimalImages[] = [];
+const animalImagesURL:string = '/pages/json/animal-images.json';
+
+async function getAnimal(): Promise<Animal[]> {
+  const response = await fetch(`${URL}/pets`);
+  const animals = await response.json();
+  console.log('animals', animals);
+  for (let animal of animals.data) {
+    animalArray.push(animal);
+  }
+  return animalArray;
+}
+
+async function getAnimalImages(): Promise<AnimalImages[]> {
+  console.log('getAnimalImages')
+  const response = await fetch(animalImagesURL);
+  const imageURLs = await response.json();
+  console.log('imageURLs', imageURLs)
+  for (let url of imageURLs) {
+    animalImages.push(url)
+  }
+
+  return animalImages;
+}
+
+let sliderContainer = document.querySelector('#slider__container')
+
+function setAnimalCards() {
+  if (!sliderContainer) return;
+
+  animalArray.forEach((animal) => {
+    const image: AnimalImages | undefined = animalImages.find((img) => img.name === animal.name);
+
+    const card = createAnimalCard(
+      animal.name,
+      image?.src || '',
+      image?.alt || '',
+      animal.commonName,
+      animal.description
+    );
+    sliderContainer.append(card);
+  })
+}
+
+async function init() {
+  await getAnimal();   // wait for loading animal
+  await getAnimalImages(); // wait for loading images
+  setAnimalCards();   
+}
+
+init();
