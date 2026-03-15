@@ -1,7 +1,7 @@
 [
   {
     "name": "Lucas",
-    "src": "/assets/images/pets/panda/panda-lucas.png",
+    "src": "assets/images/pets/panda/panda-lucas.png",
     "alt": "panda",
     "previewImages": {
       "urlImg1": "",
@@ -14,7 +14,7 @@
   },
   {
     "name": "Andy",
-    "src": "/assets/images/pets/lemur/lemur-andy.png",
+    "src": "assets/images/pets/lemur/lemur-andy.png",
     "alt": "lemur",
     "previewImages": {
       "urlImg1": "",
@@ -27,7 +27,7 @@
   },
   {
     "name": "Glen",
-    "src": "/assets/images/pets/gorilla/gorilla-glen.png",
+    "src": "assets/images/pets/gorilla/gorilla-glen.png",
     "alt": "gorilla",
     "previewImages": {
       "urlImg1": "",
@@ -40,7 +40,7 @@
   },
   {
     "name": "Mike",
-    "src": "/assets/images/pets/alligator/alligator-mike.png",
+    "src": "assets/images/pets/alligator/alligator-mike.png",
     "alt": "alligator",
     "previewImages": {
       "urlImg1": "",
@@ -53,7 +53,7 @@
   },
   {
     "name": "Sam & Lora",
-    "src": "/assets/images/pets/eagles/eagles-sam-lora.png",
+    "src": "assets/images/pets/eagles/eagles-sam-lora.png",
     "alt": "eagles",
     "previewImages": {
       "urlImg1": "",
@@ -66,7 +66,7 @@
   },
   {
     "name": "Liz",
-    "src": "/assets/images/pets/koala/koala-liz.png",
+    "src": "assets/images/pets/koala/koala-liz.png",
     "alt": "koala",
     "previewImages": {
       "urlImg1": "",
@@ -79,7 +79,7 @@
   },
   {
     "name": "Shake",
-    "src": "/assets/images/pets/lion/lion-shake.png",
+    "src": "assets/images/pets/lion/lion-shake.png",
     "alt": "lion",
     "previewImages": {
       "urlImg1": "",
@@ -92,7 +92,7 @@
   },
   {
     "name": "Senja",
-    "src": "/assets/images/pets/tiger/tiger.png",
+    "src": "assets/images/pets/tiger/tiger.png",
     "alt": "tiger",
     "previewImages": {
       "urlImg1": "",
@@ -105,7 +105,7 @@
   },
   {
     "name": "Bella",
-    "src": "/assets/images/pets/red-panda/red-panda.png",
+    "src": "assets/images/pets/red-panda/red-panda.png",
     "alt": "red panda",
     "previewImages": {
       "urlImg1": "",
@@ -118,7 +118,7 @@
   },
   {
     "name": "Rocky",
-    "src": "/assets/images/pets/mountain-gorilla/mountain-gorilla.jpg",
+    "src": "assets/images/pets/mountain-gorilla/mountain-gorilla.jpg",
     "alt": "mountain gorilla",
     "previewImages": {
       "urlImg1": "",
@@ -131,10 +131,10 @@
   },
   {
     "name": "Zara",
-    "src": "/assets/images/pets/african-elephant/african-elephant.jpg",
+    "src": "assets/images/pets/african-elephant/african-elephant.jpg",
     "alt": "african elephant",
     "previewImages": {
-      "urlImg1": "/assets/images/pets/african-elephant/african-elephant1.jpg",
+      "urlImg1": "assets/images/pets/african-elephant/african-elephant1.jpg",
       "urlImg2": "",
       "urlImg3": "",
       "urlImg4": "",
@@ -144,223 +144,223 @@
   },
   {
     "name": "Neptune",
-    "src": "/assets/images/pets/sea-otter/sea-otter.jpg",
+    "src": "assets/images/pets/sea-otter/sea-otter.jpg",
     "alt": "sea otter",
     "previewImages": {
-      "urlImg1": "/assets/images/pets/sea-otter/sea-otter1.jpg",
-      "urlImg2": "/assets/images/pets/sea-otter/sea-otter2.jpg",
-      "urlImg3": "/assets/images/pets/sea-otter/sea-otter3.jpg",
-      "urlImg4": "/assets/images/pets/sea-otter/sea-otter4.jpg",
-      "urlImg5": "/assets/images/pets/sea-otter/sea-otter5.jpg",
+      "urlImg1": "assets/images/pets/sea-otter/sea-otter1.jpg",
+      "urlImg2": "assets/images/pets/sea-otter/sea-otter2.jpg",
+      "urlImg3": "assets/images/pets/sea-otter/sea-otter3.jpg",
+      "urlImg4": "assets/images/pets/sea-otter/sea-otter4.jpg",
+      "urlImg5": "assets/images/pets/sea-otter/sea-otter5.jpg",
       "urlImg6": ""
     }
   },
   {
     "name": "Amber",
-    "src": "/assets/images/pets/bengal-tiger/bengal-tiger.jpg",
+    "src": "assets/images/pets/bengal-tiger/bengal-tiger.jpg",
     "alt": "bengal tiger",
     "previewImages": {
-      "urlImg1": "/assets/images/pets/bengal-tiger/bengal-tiger1.jpg",
-      "urlImg2": "/assets/images/pets/bengal-tiger/bengal-tiger2.jpg",
-      "urlImg3": "/assets/images/pets/bengal-tiger/bengal-tiger3.jpg",
-      "urlImg4": "/assets/images/pets/bengal-tiger/bengal-tiger4.jpg",
-      "urlImg5": "/assets/images/pets/bengal-tiger/bengal-tiger5.jpg",
-      "urlImg6": "/assets/images/pets/bengal-tiger/bengal-tiger6.jpg"
+      "urlImg1": "assets/images/pets/bengal-tiger/bengal-tiger1.jpg",
+      "urlImg2": "assets/images/pets/bengal-tiger/bengal-tiger2.jpg",
+      "urlImg3": "assets/images/pets/bengal-tiger/bengal-tiger3.jpg",
+      "urlImg4": "assets/images/pets/bengal-tiger/bengal-tiger4.jpg",
+      "urlImg5": "assets/images/pets/bengal-tiger/bengal-tiger5.jpg",
+      "urlImg6": "assets/images/pets/bengal-tiger/bengal-tiger6.jpg"
     }
   },
   {
     "name": "Duke",
-    "src": "/assets/images/pets/gray-wolf/gray-wolf.jpg",
+    "src": "assets/images/pets/gray-wolf/gray-wolf.jpg",
     "alt": "gray wolf",
     "previewImages": {
-      "urlImg1": "/assets/images/pets/gray-wolf/gray-wolf1.jpg",
-      "urlImg2": "/assets/images/pets/gray-wolf/gray-wolf2.jpg",
-      "urlImg3": "/assets/images/pets/gray-wolf/gray-wolf3.jpg",
-      "urlImg4": "/assets/images/pets/gray-wolf/gray-wolf4.jpg",
-      "urlImg5": "/assets/images/pets/gray-wolf/gray-wolf5.jpg",
-      "urlImg6": "/assets/images/pets/gray-wolf/gray-wolf6.jpg"
+      "urlImg1": "assets/images/pets/gray-wolf/gray-wolf1.jpg",
+      "urlImg2": "assets/images/pets/gray-wolf/gray-wolf2.jpg",
+      "urlImg3": "assets/images/pets/gray-wolf/gray-wolf3.jpg",
+      "urlImg4": "assets/images/pets/gray-wolf/gray-wolf4.jpg",
+      "urlImg5": "assets/images/pets/gray-wolf/gray-wolf5.jpg",
+      "urlImg6": "assets/images/pets/gray-wolf/gray-wolf6.jpg"
     }
   },
   {
     "name": "Sunny",
-    "src": "/assets/images/pets/fennec-fox/fennec-fox.jpg",
+    "src": "assets/images/pets/fennec-fox/fennec-fox.jpg",
     "alt": "fennec fox",
     "previewImages": {
-      "urlImg1": "/assets/images/pets/fennec-fox/fennec-fox1.jpg",
-      "urlImg2": "/assets/images/pets/fennec-fox/fennec-fox2.jpg",
-      "urlImg3": "/assets/images/pets/fennec-fox/fennec-fox3.jpg",
-      "urlImg4": "/assets/images/pets/fennec-fox/fennec-fox4.jpg",
-      "urlImg5": "/assets/images/pets/fennec-fox/fennec-fox5.jpg",
-      "urlImg6": "/assets/images/pets/fennec-fox/fennec-fox6.jpg"
+      "urlImg1": "assets/images/pets/fennec-fox/fennec-fox1.jpg",
+      "urlImg2": "assets/images/pets/fennec-fox/fennec-fox2.jpg",
+      "urlImg3": "assets/images/pets/fennec-fox/fennec-fox3.jpg",
+      "urlImg4": "assets/images/pets/fennec-fox/fennec-fox4.jpg",
+      "urlImg5": "assets/images/pets/fennec-fox/fennec-fox5.jpg",
+      "urlImg6": "assets/images/pets/fennec-fox/fennec-fox6.jpg"
     }
   },
   {
     "name": "Koda",
-    "src": "/assets/images/pets/grizzly-bear/grizzly-bear.jpg",
+    "src": "assets/images/pets/grizzly-bear/grizzly-bear.jpg",
     "alt": "grizzly bear",
     "previewImages": {
-      "urlImg1": "/assets/images/pets/grizzly-bear/grizzly-bear1.jpg",
-      "urlImg2": "/assets/images/pets/grizzly-bear/grizzly-bear2.jpg",
-      "urlImg3": "/assets/images/pets/grizzly-bear/grizzly-bear3.jpg",
-      "urlImg4": "/assets/images/pets/grizzly-bear/grizzly-bear4.jpg",
-      "urlImg5": "/assets/images/pets/grizzly-bear/grizzly-bear5.jpg",
-      "urlImg6": "/assets/images/pets/grizzly-bear/grizzly-bear6.jpg"
+      "urlImg1": "assets/images/pets/grizzly-bear/grizzly-bear1.jpg",
+      "urlImg2": "assets/images/pets/grizzly-bear/grizzly-bear2.jpg",
+      "urlImg3": "assets/images/pets/grizzly-bear/grizzly-bear3.jpg",
+      "urlImg4": "assets/images/pets/grizzly-bear/grizzly-bear4.jpg",
+      "urlImg5": "assets/images/pets/grizzly-bear/grizzly-bear5.jpg",
+      "urlImg6": "assets/images/pets/grizzly-bear/grizzly-bear6.jpg"
     }
   },
   {
     "name": "Marina",
-    "src": "/assets/images/pets/bottlenose-dolphin/bottlenose-dolphin.jpg",
+    "src": "assets/images/pets/bottlenose-dolphin/bottlenose-dolphin.jpg",
     "alt": "bottlenose dolphin",
     "previewImages": {
-      "urlImg1": "/assets/images/pets/bottlenose-dolphin/bottlenose-dolphin1.jpg",
-      "urlImg2": "/assets/images/pets/bottlenose-dolphin/bottlenose-dolphin2.jpg",
-      "urlImg3": "/assets/images/pets/bottlenose-dolphin/bottlenose-dolphin3.jpg",
-      "urlImg4": "/assets/images/pets/bottlenose-dolphin/bottlenose-dolphin4.jpg",
-      "urlImg5": "/assets/images/pets/bottlenose-dolphin/bottlenose-dolphin5.jpg",
-      "urlImg6": "/assets/images/pets/bottlenose-dolphin/bottlenose-dolphin6.jpg"
+      "urlImg1": "assets/images/pets/bottlenose-dolphin/bottlenose-dolphin1.jpg",
+      "urlImg2": "assets/images/pets/bottlenose-dolphin/bottlenose-dolphin2.jpg",
+      "urlImg3": "assets/images/pets/bottlenose-dolphin/bottlenose-dolphin3.jpg",
+      "urlImg4": "assets/images/pets/bottlenose-dolphin/bottlenose-dolphin4.jpg",
+      "urlImg5": "assets/images/pets/bottlenose-dolphin/bottlenose-dolphin5.jpg",
+      "urlImg6": "assets/images/pets/bottlenose-dolphin/bottlenose-dolphin6.jpg"
     }
   },
   {
     "name": "Oscar",
-    "src": "/assets/images/pets/snow-leopard/snow-leopard.jpg",
+    "src": "assets/images/pets/snow-leopard/snow-leopard.jpg",
     "alt": "snow leopard",
     "previewImages": {
-      "urlImg1": "/assets/images/pets/snow-leopard/snow-leopard1.jpg",
-      "urlImg2": "/assets/images/pets/snow-leopard/snow-leopard2.jpg",
-      "urlImg3": "/assets/images/pets/snow-leopard/snow-leopard3.jpg",
-      "urlImg4": "/assets/images/pets/snow-leopard/snow-leopard4.jpg",
-      "urlImg5": "/assets/images/pets/snow-leopard/snow-leopard5.jpg",
-      "urlImg6": "/assets/images/pets/snow-leopard/snow-leopard6.jpg"
+      "urlImg1": "assets/images/pets/snow-leopard/snow-leopard1.jpg",
+      "urlImg2": "assets/images/pets/snow-leopard/snow-leopard2.jpg",
+      "urlImg3": "assets/images/pets/snow-leopard/snow-leopard3.jpg",
+      "urlImg4": "assets/images/pets/snow-leopard/snow-leopard4.jpg",
+      "urlImg5": "assets/images/pets/snow-leopard/snow-leopard5.jpg",
+      "urlImg6": "assets/images/pets/snow-leopard/snow-leopard6.jpg"
     }
   },
   {
     "name": "Pearl",
-    "src": "/assets/images/pets/polar-bear/polar-bear.jpg",
+    "src": "assets/images/pets/polar-bear/polar-bear.jpg",
     "alt": "polar bear",
     "previewImages": {
-      "urlImg1": "/assets/images/pets/polar-bear/polar-bear1.jpg",
-      "urlImg2": "/assets/images/pets/polar-bear/polar-bear2.jpg",
-      "urlImg3": "/assets/images/pets/polar-bear/polar-bear3.jpg",
-      "urlImg4": "/assets/images/pets/polar-bear/polar-bear4.jpg",
-      "urlImg5": "/assets/images/pets/polar-bear/polar-bear5.jpg",
-      "urlImg6": "/assets/images/pets/polar-bear/polar-bear6.jpg"
+      "urlImg1": "assets/images/pets/polar-bear/polar-bear1.jpg",
+      "urlImg2": "assets/images/pets/polar-bear/polar-bear2.jpg",
+      "urlImg3": "assets/images/pets/polar-bear/polar-bear3.jpg",
+      "urlImg4": "assets/images/pets/polar-bear/polar-bear4.jpg",
+      "urlImg5": "assets/images/pets/polar-bear/polar-bear5.jpg",
+      "urlImg6": "assets/images/pets/polar-bear/polar-bear6.jpg"
     }
   },
   {
     "name": "Jasper",
-    "src": "/assets/images/pets/jaguar/jaguar.jpg",
+    "src": "assets/images/pets/jaguar/jaguar.jpg",
     "alt": "jaguar",
     "previewImages": {
-      "urlImg1": "/assets/images/pets/jaguar/jaguar1.jpg",
-      "urlImg2": "/assets/images/pets/jaguar/jaguar2.jpg",
-      "urlImg3": "/assets/images/pets/jaguar/jaguar3.jpg",
-      "urlImg4": "/assets/images/pets/jaguar/jaguar4.jpg",
-      "urlImg5": "/assets/images/pets/jaguar/jaguar5.jpg",
-      "urlImg6": "/assets/images/pets/jaguar/jaguar6.jpg"
+      "urlImg1": "assets/images/pets/jaguar/jaguar1.jpg",
+      "urlImg2": "assets/images/pets/jaguar/jaguar2.jpg",
+      "urlImg3": "assets/images/pets/jaguar/jaguar3.jpg",
+      "urlImg4": "assets/images/pets/jaguar/jaguar4.jpg",
+      "urlImg5": "assets/images/pets/jaguar/jaguar5.jpg",
+      "urlImg6": "assets/images/pets/jaguar/jaguar6.jpg"
     }
   },
   {
     "name": "Willow",
-    "src": "/assets/images/pets/ring-tailed-lemur/ring-tailed-lemur.jpg",
+    "src": "assets/images/pets/ring-tailed-lemur/ring-tailed-lemur.jpg",
     "alt": "ring-tailed lemur",
     "previewImages": {
-      "urlImg1": "/assets/images/pets/ring-tailed-lemur/ring-tailed-lemur1.jpg",
-      "urlImg2": "/assets/images/pets/ring-tailed-lemur/ring-tailed-lemur2.jpg",
-      "urlImg3": "/assets/images/pets/ring-tailed-lemur/ring-tailed-lemur3.jpg",
-      "urlImg4": "/assets/images/pets/ring-tailed-lemur/ring-tailed-lemur4.jpg",
-      "urlImg5": "/assets/images/pets/ring-tailed-lemur/ring-tailed-lemur5.jpg",
-      "urlImg6": "/assets/images/pets/ring-tailed-lemur/ring-tailed-lemur6.jpg"
+      "urlImg1": "assets/images/pets/ring-tailed-lemur/ring-tailed-lemur1.jpg",
+      "urlImg2": "assets/images/pets/ring-tailed-lemur/ring-tailed-lemur2.jpg",
+      "urlImg3": "assets/images/pets/ring-tailed-lemur/ring-tailed-lemur3.jpg",
+      "urlImg4": "assets/images/pets/ring-tailed-lemur/ring-tailed-lemur4.jpg",
+      "urlImg5": "assets/images/pets/ring-tailed-lemur/ring-tailed-lemur5.jpg",
+      "urlImg6": "assets/images/pets/ring-tailed-lemur/ring-tailed-lemur6.jpg"
     }
   },
   {
     "name": "Thunder",
-    "src": "/assets/images/pets/white-rhinoceros/white-rhinoceros.jpg",
+    "src": "assets/images/pets/white-rhinoceros/white-rhinoceros.jpg",
     "alt": "white rhinoceros",
     "previewImages": {
-      "urlImg1": "/assets/images/pets/white-rhinoceros/white-rhinoceros1.jpg",
-      "urlImg2": "/assets/images/pets/white-rhinoceros/white-rhinoceros2.jpg",
-      "urlImg3": "/assets/images/pets/white-rhinoceros/white-rhinoceros3.jpg",
-      "urlImg4": "/assets/images/pets/white-rhinoceros/white-rhinoceros4.jpg",
-      "urlImg5": "/assets/images/pets/white-rhinoceros/white-rhinoceros5.jpg",
-      "urlImg6": "/assets/images/pets/white-rhinoceros/white-rhinoceros6.jpg"
+      "urlImg1": "assets/images/pets/white-rhinoceros/white-rhinoceros1.jpg",
+      "urlImg2": "assets/images/pets/white-rhinoceros/white-rhinoceros2.jpg",
+      "urlImg3": "assets/images/pets/white-rhinoceros/white-rhinoceros3.jpg",
+      "urlImg4": "assets/images/pets/white-rhinoceros/white-rhinoceros4.jpg",
+      "urlImg5": "assets/images/pets/white-rhinoceros/white-rhinoceros5.jpg",
+      "urlImg6": "assets/images/pets/white-rhinoceros/white-rhinoceros6.jpg"
     }
   },
   {
     "name": "Luna",
-    "src": "/assets/images/pets/arctic-fox/arctic-fox.jpg",
+    "src": "assets/images/pets/arctic-fox/arctic-fox.jpg",
     "alt": "arctic fox",
     "previewImages": {
-      "urlImg1": "/assets/images/pets/arctic-fox/arctic-fox1.jpg",
-      "urlImg2": "/assets/images/pets/arctic-fox/arctic-fox2.jpg",
-      "urlImg3": "/assets/images/pets/arctic-fox/arctic-fox3.jpg",
-      "urlImg4": "/assets/images/pets/arctic-fox/arctic-fox4.jpg",
-      "urlImg5": "/assets/images/pets/arctic-fox/arctic-fox5.jpg",
-      "urlImg6": "/assets/images/pets/arctic-fox/arctic-fox6.jpg"
+      "urlImg1": "assets/images/pets/arctic-fox/arctic-fox1.jpg",
+      "urlImg2": "assets/images/pets/arctic-fox/arctic-fox2.jpg",
+      "urlImg3": "assets/images/pets/arctic-fox/arctic-fox3.jpg",
+      "urlImg4": "assets/images/pets/arctic-fox/arctic-fox4.jpg",
+      "urlImg5": "assets/images/pets/arctic-fox/arctic-fox5.jpg",
+      "urlImg6": "assets/images/pets/arctic-fox/arctic-fox6.jpg"
     }
   },
   {
     "name": "Atlas",
-    "src": "/assets/images/pets/saltwater-crocodile/saltwater-crocodile.jpg",
+    "src": "assets/images/pets/saltwater-crocodile/saltwater-crocodile.jpg",
     "alt": "saltwater crocodile",
     "previewImages": {
-      "urlImg1": "/assets/images/pets/saltwater-crocodile/saltwater-crocodile1.jpg",
-      "urlImg2": "/assets/images/pets/saltwater-crocodile/saltwater-crocodile2.jpg",
-      "urlImg3": "/assets/images/pets/saltwater-crocodile/saltwater-crocodile3.jpg",
-      "urlImg4": "/assets/images/pets/saltwater-crocodile/saltwater-crocodile4.jpg",
-      "urlImg5": "/assets/images/pets/saltwater-crocodile/saltwater-crocodile5.jpg",
-      "urlImg6": "/assets/images/pets/saltwater-crocodile/saltwater-crocodile6.jpg"
+      "urlImg1": "assets/images/pets/saltwater-crocodile/saltwater-crocodile1.jpg",
+      "urlImg2": "assets/images/pets/saltwater-crocodile/saltwater-crocodile2.jpg",
+      "urlImg3": "assets/images/pets/saltwater-crocodile/saltwater-crocodile3.jpg",
+      "urlImg4": "assets/images/pets/saltwater-crocodile/saltwater-crocodile4.jpg",
+      "urlImg5": "assets/images/pets/saltwater-crocodile/saltwater-crocodile5.jpg",
+      "urlImg6": "assets/images/pets/saltwater-crocodile/saltwater-crocodile6.jpg"
     }
   },
   {
     "name": "Ruby",
-    "src": "/assets/images/pets/scarlet-macaw/scarlet-macaw.jpg",
+    "src": "assets/images/pets/scarlet-macaw/scarlet-macaw.jpg",
     "alt": "scarlet macaw",
     "previewImages": {
-      "urlImg1": "/assets/images/pets/scarlet-macaw/scarlet-macaw1.jpg",
-      "urlImg2": "/assets/images/pets/scarlet-macaw/scarlet-macaw2.jpg",
-      "urlImg3": "/assets/images/pets/scarlet-macaw/scarlet-macaw3.jpg",
-      "urlImg4": "/assets/images/pets/scarlet-macaw/scarlet-macaw4.jpg",
-      "urlImg5": "/assets/images/pets/scarlet-macaw/scarlet-macaw5.jpg",
-      "urlImg6": "/assets/images/pets/scarlet-macaw/scarlet-macaw6.jpg"
+      "urlImg1": "assets/images/pets/scarlet-macaw/scarlet-macaw1.jpg",
+      "urlImg2": "assets/images/pets/scarlet-macaw/scarlet-macaw2.jpg",
+      "urlImg3": "assets/images/pets/scarlet-macaw/scarlet-macaw3.jpg",
+      "urlImg4": "assets/images/pets/scarlet-macaw/scarlet-macaw4.jpg",
+      "urlImg5": "assets/images/pets/scarlet-macaw/scarlet-macaw5.jpg",
+      "urlImg6": "assets/images/pets/scarlet-macaw/scarlet-macaw6.jpg"
     }
   },
   {
     "name": "Titan",
-    "src": "/assets/images/pets/komodo-dragon/komodo-dragon.jpg",
+    "src": "assets/images/pets/komodo-dragon/komodo-dragon.jpg",
     "alt": "Komodo dragon",
     "previewImages": {
-      "urlImg1": "/assets/images/pets/komodo-dragon/komodo-dragon1.jpg",
-      "urlImg2": "/assets/images/pets/komodo-dragon/komodo-dragon2.jpg",
-      "urlImg3": "/assets/images/pets/komodo-dragon/komodo-dragon3.jpg",
-      "urlImg4": "/assets/images/pets/komodo-dragon/komodo-dragon4.jpg",
-      "urlImg5": "/assets/images/pets/komodo-dragon/komodo-dragon5.jpg",
-      "urlImg6": "/assets/images/pets/komodo-dragon/komodo-dragon6.jpg"
+      "urlImg1": "assets/images/pets/komodo-dragon/komodo-dragon1.jpg",
+      "urlImg2": "assets/images/pets/komodo-dragon/komodo-dragon2.jpg",
+      "urlImg3": "assets/images/pets/komodo-dragon/komodo-dragon3.jpg",
+      "urlImg4": "assets/images/pets/komodo-dragon/komodo-dragon4.jpg",
+      "urlImg5": "assets/images/pets/komodo-dragon/komodo-dragon5.jpg",
+      "urlImg6": "assets/images/pets/komodo-dragon/komodo-dragon6.jpg"
     }
   },
   {
     "name": "Olive",
-    "src": "/assets/images/pets/sloth/sloth.jpg",
+    "src": "assets/images/pets/sloth/sloth.jpg",
     "alt": "sloth",
     "previewImages": {
-      "urlImg1": "/assets/images/pets/sloth/sloth1.jpg",
-      "urlImg2": "/assets/images/pets/sloth/sloth2.jpg",
-      "urlImg3": "/assets/images/pets/sloth/sloth3.jpg",
-      "urlImg4": "/assets/images/pets/sloth/sloth4.jpg",
-      "urlImg5": "/assets/images/pets/sloth/sloth5.jpg",
-      "urlImg6": "/assets/images/pets/sloth/sloth6.jpg"
+      "urlImg1": "assets/images/pets/sloth/sloth1.jpg",
+      "urlImg2": "assets/images/pets/sloth/sloth2.jpg",
+      "urlImg3": "assets/images/pets/sloth/sloth3.jpg",
+      "urlImg4": "assets/images/pets/sloth/sloth4.jpg",
+      "urlImg5": "assets/images/pets/sloth/sloth5.jpg",
+      "urlImg6": "assets/images/pets/sloth/sloth6.jpg"
     }
   },
   {
     "name": "Blaze",
-    "src": "/assets/images/pets/cheetah/cheetah.jpg",
+    "src": "assets/images/pets/cheetah/cheetah.jpg",
     "alt": "cheetah",
     "previewImages": {
-      "urlImg1": "/assets/images/pets/cheetah/cheetah1.jpg",
-      "urlImg2": "/assets/images/pets/cheetah/cheetah2.jpg",
-      "urlImg3": "/assets/images/pets/cheetah/cheetah3.jpg",
-      "urlImg4": "/assets/images/pets/cheetah/cheetah4.jpg",
-      "urlImg5": "/assets/images/pets/cheetah/cheetah5.jpg",
-      "urlImg6": "/assets/images/pets/cheetah/cheetah6.jpg"
+      "urlImg1": "assets/images/pets/cheetah/cheetah1.jpg",
+      "urlImg2": "assets/images/pets/cheetah/cheetah2.jpg",
+      "urlImg3": "assets/images/pets/cheetah/cheetah3.jpg",
+      "urlImg4": "assets/images/pets/cheetah/cheetah4.jpg",
+      "urlImg5": "assets/images/pets/cheetah/cheetah5.jpg",
+      "urlImg6": "assets/images/pets/cheetah/cheetah6.jpg"
     }
   }
 ]
