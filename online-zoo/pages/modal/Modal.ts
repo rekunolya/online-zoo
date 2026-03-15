@@ -1,13 +1,18 @@
 export class Modal {
-  constructor(classes) {
+  classes: string[];
+  modalWrapper: HTMLElement;
+  modal: HTMLElement;
+  modalContent: HTMLElement;
+
+  constructor(classes: string[]) {
     this.classes = classes;
-    this.modalWrapper = "";
-    this.modal = "";
-    this.modalContent = "";
+    this.modalWrapper = document.createElement("div");
+    this.modal = document.createElement("div");
+    this.modalContent = document.createElement("div");
   }
 
-  buildModal(content) {
-    console.log;("buildModal content");
+  buildModal(content: string | HTMLElement) {
+    //console.log("buildModal content");
     //Modal wrapper
     this.modalWrapper = this.createDomNode(
       this.modalWrapper,
@@ -41,13 +46,13 @@ export class Modal {
     this.openModal();
   }
 
-  createDomNode(node, element, ...classes) {
+  createDomNode(node: HTMLElement, element: string, ...classes: string[]): HTMLElement {
     node = document.createElement(element);
     node.classList.add(...classes);
     return node;
   }
 
-  setContent(content) {
+  setContent(content: string | HTMLElement) {
     //console.log('setContent content', content);
     if (typeof content === "string") {
       this.modalContent.innerHTML = content;

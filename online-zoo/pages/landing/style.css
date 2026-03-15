@@ -1,4 +1,4 @@
-.donation__amount, .slider__part-up, .slider__part-down, .footer-container__information__nav-list, .header__nav-list, .social-media, button, .button-arrow-background, .button-transparent:hover .button-arrow-background__primary {
+.donation__amount, .slider__container, .footer-container__information__nav-list, .header__nav-list, .social-media, button, .button-arrow-background, .button-transparent:hover .button-arrow-background__primary {
   transition: all 0.3s ease-out;
 }
 
@@ -676,9 +676,6 @@ footer {
 .slider-slider {
   position: relative;
   left: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
 }
 @media (max-width: 1200px) {
   .slider-slider {
@@ -686,13 +683,16 @@ footer {
   }
 }
 
-.slider__part-up, .slider__part-down {
-  display: flex;
-  flex-direction: row;
-  column-gap: 4rem;
+.slider__container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 4rem;
+  position: relative;
+  width: max-content;
 }
 @media (max-width: 1200px) {
-  .slider__part-up, .slider__part-down {
+  .slider__container {
     column-gap: 2rem;
   }
 }
@@ -1342,6 +1342,11 @@ footer {
   line-height: 150%;
   border-radius: 5px;
 }
+.donation__personal-information input:focus {
+  outline: none;
+  border: 2px solid rgba(0, 160, 146, 0.3);
+  box-shadow: 0 0 10px rgba(0, 160, 146, 0.3);
+}
 .donation__card {
   display: flex;
   justify-content: space-between;
@@ -1439,6 +1444,38 @@ footer {
   position: absolute;
   left: 0;
   top: 100%;
+}
+
+.donation-name-error input {
+  border: 2px solid #F58021;
+  box-shadow: 0 0 10px rgba(245, 128, 33, 0.2);
+  background-color: rgba(245, 128, 33, 0.2);
+}
+.donation-name-error input:focus {
+  outline: none;
+  border: 2px solid #F58021;
+  box-shadow: 0 0 10px rgba(245, 128, 33, 0.2);
+}
+.donation-name-error::after {
+  content: "Name should include only latin litters";
+  color: #F58021;
+  font-size: 10px;
+}
+
+.donation-email-error input {
+  border: 2px solid #F58021;
+  box-shadow: 0 0 10px rgba(245, 128, 33, 0.2);
+  background-color: rgba(245, 128, 33, 0.2);
+}
+.donation-email-error input:focus {
+  outline: none;
+  border: 2px solid #F58021;
+  box-shadow: 0 0 10px rgba(245, 128, 33, 0.2);
+}
+.donation-email-error::after {
+  content: "Email is not correct. Exp test@test.com";
+  color: #F58021;
+  font-size: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

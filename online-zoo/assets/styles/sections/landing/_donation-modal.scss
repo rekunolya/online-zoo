@@ -169,6 +169,12 @@
       font-size: 1.8rem;
       line-height: 150%;
       border-radius: 5px;
+
+      &:focus {
+        outline: none;
+        border: 2px solid constants.$color-form-input-focus;
+        box-shadow: 0 0 10px constants.$color-form-input-focus;
+      }
     }
   }
 
@@ -293,3 +299,42 @@
   }
 }
 
+.donation-name-error {
+  & input {
+    border: 2px solid constants.$color-primary;
+    box-shadow: 0 0 10px constants.$color-form-input-error;
+    background-color: constants.$color-form-input-error;
+
+    &:focus {
+      outline: none;
+      border: 2px solid constants.$color-primary;
+      box-shadow: 0 0 10px constants.$color-form-input-error;
+    }
+  }
+
+  &::after {
+    content: "Name should include only latin litters";
+    color: constants.$color-primary;
+    font-size: 10px;
+  }
+}
+
+.donation-email-error {
+  & input {
+    border: 2px solid constants.$color-primary;
+    box-shadow: 0 0 10px constants.$color-form-input-error;
+    background-color: constants.$color-form-input-error;
+
+    &:focus {
+      outline: none;
+      border: 2px solid constants.$color-primary;
+      box-shadow: 0 0 10px constants.$color-form-input-error;
+    }
+  }
+
+  &::after {
+    content: "Email is not correct. Exp test@test.com";
+    color: constants.$color-primary;
+    font-size: 10px;
+  }
+}
