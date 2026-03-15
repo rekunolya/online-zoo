@@ -1,5 +1,4 @@
 export function createAnimalCard(name: string, url: string, alt: string, commonName: string, description: string): HTMLAnchorElement {
-  console.log('createAnimalCard')
   const card: HTMLAnchorElement = document.createElement('a');
   card.classList.add('card');
   card.href = './pages/animal/animal.html';

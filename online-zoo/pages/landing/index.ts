@@ -4,98 +4,75 @@ import { createAnimalCard } from './cadr';
 import { AnimalImages } from 'pages/interface/animal-images';
 
 //Slider
-const PET_BUTTON_LEFT = document.getElementById('pet-button-left'); 
-const PET_BUTTON_RIGHT = document.getElementById('pet-button-right');
-let offset = 0; // initial left indent in the slider
-let start = 0;
-const SLIDER = document.getElementById('slider-carousel');
-let sliderWidth: number = SLIDER?.offsetWidth || 0; // slider width
-console.log('sliderWidth', sliderWidth)
-let swapSlider = 0; // the length to scroll the slider
-let visibleArea = 0; // width of the slider's visible area
+const PET_BUTTON_LEFT = document.getElementById('pet-button-left') as HTMLButtonElement; 
+const PET_BUTTON_RIGHT = document.getElementById('pet-button-right') as HTMLButtonElement;
+const track = document.getElementById('slider__container') as HTMLElement;
+const viewport = document.getElementById('pets__container') as HTMLElement;
+let sliderContainer = document.querySelector('#slider__container')
 
-function disableButton(btn: HTMLElement, func: () => void) {
-  btn.removeEventListener('click', func);
-  btn.classList.add('button-arrow_nonactive');
+let position = 0;
+let cardWidth = 480;
+let cardsPetSlide = 2;
+let step = cardWidth * cardsPetSlide;
+
+function clooneCards() {
+  const cards = Array.from(track?.children);
+
+  cards.slice(-4).forEach((card) => {
+    const clone = card.cloneNode(true) as HTMLElement;
+    clone.classList.add('clone');
+    track?.append(clone);
+  });
+
+  cards.slice(0, 4).forEach((card) => {
+    const clone = card.cloneNode(true) as HTMLElement;
+    clone.classList.add('clone');
+    track?.append(clone);
+  });
+
+  position = -step;
+  track.style.transform = `translateX(${position}px)`;
 }
 
-function enableButton(btn: HTMLElement, func: () => void) {
-  btn.addEventListener('click', func);
-  btn.classList.remove('button-arrow_nonactive');
-}
-const moveRight = () => {
-  offset -= swapSlider;
-  if (SLIDER) {
-    SLIDER.style.left = offset + 'px';
-  }
-  if (offset < start && PET_BUTTON_LEFT) {
-    enableButton(PET_BUTTON_LEFT, moveLeft);
-  }
-  if (offset <= -visibleArea - swapSlider && PET_BUTTON_RIGHT) {
-    disableButton(PET_BUTTON_RIGHT, moveRight);
-  }
-}
-
-const moveLeft = () => {
-  offset += swapSlider;
-  if (SLIDER) {
-    SLIDER.style.left = offset + 'px';
-  }
-  if (offset >= start && PET_BUTTON_LEFT) {
-    disableButton(PET_BUTTON_LEFT, moveLeft);
+function move(direction: 'left' | 'right') {
+  if (direction === 'right') {
+    position -= step;
+  } else {
+    position += step;
   }
 
-  if (offset > -visibleArea && PET_BUTTON_RIGHT) {
-    enableButton(PET_BUTTON_RIGHT, moveRight);
-  }
-}
+  track.style.transition = 'transform 0.4s ease';
+  track.style.transform = `translateX(${position}px)`;
 
-function setSwapSlider() {
-  let windowWidth = window.screen.width; // screen width
-  swapSlider = 0;
-  offset = 0;
+  track.addEventListener('transitionend', () => {
+    const totalWidth = track.scrollWidth;
+    const viewportWidth = viewport.offsetWidth;
 
-  // screen width > 1920px
-  if (windowWidth > 1920) {
-    windowWidth = 1920;
-  }
-  if (windowWidth >= 1200) {
-    start = 0; // according to the layout, with a width > 1200px, the slider's left margin = 0
-    swapSlider = 480; // 480 - width of one card + space between cards
+    // End of container -> return to the start
+    if (position <= -(totalWidth - viewportWidth - step)) {
+      track.style.transition = 'none';
+      position = -step;
+      console.log('position right', position);
+      track.style.transform = `translateX(${position}px)`;
+    }
 
-    visibleArea = windowWidth - start; // Slider's visible area = screen width - left margin
-
-  } /*else if (windowWidth < 769 && windowWidth >= 380) {
-    start = 10;
-    swapSlider = (sliderWidth - (windowWidth - start)) / 6;
-  } */
-  offset = start;
-
-  if (SLIDER) {
-    SLIDER.style.left = offset + 'px';
-  }
-  visibleArea = sliderWidth - (windowWidth - offset);
-
-  swapSlider = Math.round(swapSlider);
-  disableButton(PET_BUTTON_LEFT as HTMLButtonElement, moveLeft);
-  enableButton(PET_BUTTON_RIGHT as HTMLButtonElement, moveRight);
-} 
-
-setSwapSlider();
-window.addEventListener('resize', setSwapSlider);
-
-if (PET_BUTTON_RIGHT) {
-  PET_BUTTON_RIGHT.addEventListener('click', moveRight);
-}
-if (PET_BUTTON_LEFT) {
-  PET_BUTTON_LEFT.addEventListener('click', moveLeft);
+    // Slide to left, if start -> return to the end
+    if (position >= 0) {
+      track.style.transition = 'none';
+      position = -(totalWidth - viewportWidth - step * 2);
+      console.log('position left', position);
+      track.style.transform = `translateX(${position}px)`;
+    }
+  }, { once: true });
 }
 
-//Donation button
+PET_BUTTON_RIGHT.addEventListener('click', () => move('right'));
+PET_BUTTON_LEFT.addEventListener('click', () => move('left'));
+
 const DONATION_BUTTON = document.getElementById('donation-button');
 if (DONATION_BUTTON) {
   DONATION_BUTTON.addEventListener('click', () => {
-    console.log('Donation button clicked');
+    //console.log('Donation button clicked');
     const donationModal = new DonationModal(['donation-modal']);
     donationModal.renderModal();
   });
@@ -111,7 +88,6 @@ const animalImagesURL:string = '/pages/json/animal-images.json';
 async function getAnimal(): Promise<Animal[]> {
   const response = await fetch(`${URL}/pets`);
   const animals = await response.json();
-  console.log('animals', animals);
   for (let animal of animals.data) {
     animalArray.push(animal);
   }
@@ -119,18 +95,14 @@ async function getAnimal(): Promise<Animal[]> {
 }
 
 async function getAnimalImages(): Promise<AnimalImages[]> {
-  console.log('getAnimalImages')
   const response = await fetch(animalImagesURL);
   const imageURLs = await response.json();
-  console.log('imageURLs', imageURLs)
   for (let url of imageURLs) {
     animalImages.push(url)
   }
 
   return animalImages;
 }
-
-let sliderContainer = document.querySelector('#slider__container')
 
 function setAnimalCards() {
   if (!sliderContainer) return;
@@ -153,6 +125,7 @@ async function init() {
   await getAnimal();   // wait for loading animal
   await getAnimalImages(); // wait for loading images
   setAnimalCards();   
+  clooneCards();
 }
 
 init();

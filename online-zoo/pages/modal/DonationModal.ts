@@ -180,7 +180,7 @@ export class DonationModal extends Modal {
 
     nextButton.addEventListener('click', (e) => {
       e.preventDefault();
-      console.log('next button clicked')
+      //console.log('next button clicked')
 
       steps[currentStep].classList.add('invisible');
       currentStep++;
@@ -277,7 +277,7 @@ export class DonationModal extends Modal {
   }
 
   validateStep1(): void {
-    console.log('validate step1');
+    //console.log('validate step1');
     const nextButton = document.querySelector('#next-button') as HTMLButtonElement;
     const selectedAmount = document.querySelector('.donation__amount__selected');
     const otherInput = document.querySelector('#other-amount') as HTMLInputElement;
@@ -303,7 +303,7 @@ export class DonationModal extends Modal {
   }
 
   validateStep2(): void {
-    console.log('validate step2')
+    //console.log('validate step2')
     let donationInputName = document.querySelector('#donation-name') as HTMLInputElement;
     let donationInputEmail = document.querySelector('#donation-email') as HTMLInputElement;
     let nextButton = document.querySelector('#next-button') as HTMLButtonElement;

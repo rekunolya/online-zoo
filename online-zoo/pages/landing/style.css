@@ -1,4 +1,4 @@
-.donation__amount, .slider__container, .slider__part-down, .footer-container__information__nav-list, .header__nav-list, .social-media, button, .button-arrow-background, .button-transparent:hover .button-arrow-background__primary {
+.donation__amount, .slider__container, .footer-container__information__nav-list, .header__nav-list, .social-media, button, .button-arrow-background, .button-transparent:hover .button-arrow-background__primary {
   transition: all 0.3s ease-out;
 }
 
@@ -683,14 +683,16 @@ footer {
   }
 }
 
-.slider__container, .slider__part-down {
+.slider__container {
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: repeat(2, 1fr);
   gap: 4rem;
+  position: relative;
+  width: max-content;
 }
 @media (max-width: 1200px) {
-  .slider__container, .slider__part-down {
+  .slider__container {
     column-gap: 2rem;
   }
 }

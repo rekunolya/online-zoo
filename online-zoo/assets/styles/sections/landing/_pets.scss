@@ -83,9 +83,6 @@
 .slider-slider{
   position: relative;
   left: 0;
-  //display: flex;
-  //flex-direction: column;
-  //gap: 4rem;
   @include mixins.media-laptop {
     gap: 2rem;
   }
@@ -95,12 +92,11 @@
   &__container {
     display: grid;
     grid-auto-flow: column;
-    //grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    //flex-shrink: 0;
-    //flex-direction: row;
     gap: 4rem;
+    position: relative;
     @extend %transition;
+    width: max-content;
     @include mixins.media-laptop {
       column-gap: 2rem;
     }
