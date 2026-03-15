@@ -83,7 +83,7 @@ let animalArray: Animal[] = [];
 const URL: string = 'https://vsqsnqnxkh.execute-api.eu-central-1.amazonaws.com/prod/';
 
 let animalImages: AnimalImages[] = [];
-const animalImagesURL:string = 'pages/json/animal-images.json';
+const animalImagesURL:string = '/online-zoo/pages/json/animal-images.json';
 
 async function getAnimal(): Promise<Animal[]> {
   const response = await fetch(`${URL}/pets`);
