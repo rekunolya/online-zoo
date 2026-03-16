@@ -1,0 +1,340 @@
+@use '../../abstract/constants.scss';
+@use '../../abstract/placeholders.scss';
+
+.donation{
+  &__modal {
+    width: constants.$content-modal-width;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: constants.$color-background-light;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+      font-family: constants.$font-family-semi-bold;
+  font-size: 1.8rem;
+  }
+
+  &__wrapper {
+    padding: 0 120px;
+  }
+  
+  &__header {
+    color: constants.$color-background-light; 
+    background-color: constants.$color-primary;
+    text-align: center;
+    padding: 42px 0;
+    border-radius: 5px 5px 0 0;
+
+    & > h3 {
+      font-family: constants.$font-family-medium;
+      font-size: 4.2rem;
+      line-height: auto;
+    }
+  }
+
+  &__title {
+    line-height: 150%;
+    padding-top: 52px;
+    letter-spacing: 0.9px;
+    align-self: flex-start;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  &__devider {
+    border-top: 2px solid constants.$color-devider;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  &__form {
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 50px;
+
+    & > form {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+
+  &__form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__donation-amounts {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  &__text {
+    letter-spacing: 1px;
+  }
+
+  &__amounts {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__amount {
+    background-color: constants.$color-button-donation;
+    padding: 22px 25px;
+    @extend %transition;
+    border-radius: 5px;
+    color: constants.$color-background-light;
+    
+    &:hover {
+      cursor: pointer;
+      background-color: constants.$color-caption-hover;
+    }
+    
+    &__selected {
+      background-color: constants.$color-caption-hover;
+    }
+  }
+
+  &__other-amount {
+    display: flex;
+    gap: 45px;
+
+    & input {
+      width: 147px;
+      height: stretch;
+      padding: 10px 25px;
+      border-radius: 5px;
+
+      &:focus {
+        outline: none;
+        border: 2px solid constants.$color-form-input-focus;
+        box-shadow: 0 0 10px constants.$color-form-input-focus;
+      }
+    }
+  }
+
+  &__for-apecial-pet {
+    display: flex;
+    gap: 30px;
+
+    & select {
+      width: 64%;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-family: constants.$font-family-regular;
+      font-size: 1.8rem;
+      line-height: 150%;
+      text-align: center;
+    }
+  }
+
+  &__regular {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    letter-spacing: 1.2px;
+
+    & input {
+      width: 30px;
+      height: 33px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__progress{
+    display: flex;
+    gap: 10px;
+  }
+
+  &__progress-fill {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  &__personal-information {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+    & input {
+      padding: 15px 25px;
+      font-family: constants.$font-family-regular;
+      font-size: 1.8rem;
+      line-height: 150%;
+      border-radius: 5px;
+
+      &:focus {
+        outline: none;
+        border: 2px solid constants.$color-form-input-focus;
+        box-shadow: 0 0 10px constants.$color-form-input-focus;
+      }
+    }
+  }
+
+  &__card {
+    display: flex;
+    justify-content: space-between;
+
+    & input {
+      padding: 23px 25px;
+      border-radius: 5px;
+    }
+  }
+
+  &__card-number {
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+    width: 65%;
+  }
+
+  &__card-cvv {
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+    width: 29%;
+  }
+
+  &__card-expiration {
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+  }
+
+  &__card-expiration-date {
+    display: flex;
+    gap: 40px;
+
+    & select {
+      padding: 20px 59px;
+      border-radius: 5px;
+      font-family: constants.$font-family-regular;
+      font-size: 1.8rem;
+      line-height: 150%;
+      text-align: center;
+    }
+     
+  }
+
+  &__next {
+    background-color: constants.$color-caption;
+    padding: 26px 58px;
+
+    &:hover {
+      background-color: constants.$color-caption-hover;
+    }
+  }
+
+  &__next-not-active {
+    padding: 26px 58px;
+    background-color: constants.$color-caption-not-active;
+
+    &:hover {
+      cursor: default;
+      pointer-events: none;
+    }
+  }
+
+  &__complete {
+    background-color: constants.$color-primary;
+    padding: 26px 56px;
+
+    &:hover {
+      background-color: constants.$color-primary-hover;
+    }
+  }
+}
+
+.fill {
+  background-color: constants.$color-caption;
+}
+
+.none {
+  background-color: none;
+  border: 1px solid constants.$color-caption;
+}
+
+.invisible {
+  display: none;
+}
+
+.other-amount-input-wrapper{
+  position:relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.other-amount-error {
+  & input {
+    border: 2px solid constants.$color-primary;
+    box-shadow: 0 0 10px constants.$color-form-input-error;
+    background-color: constants.$color-form-input-error;
+
+    &:focus {
+      outline: none;
+      border: 2px solid constants.$color-primary;
+      box-shadow: 0 0 10px constants.$color-form-input-error;
+    }
+  }
+
+  &::after {
+    content: "Amount should be greater 0";
+    //outline: none;
+    
+    margin-top: 6px;
+    //padding: 5px 10px;
+    color: constants.$color-primary;
+    font-size: 10px;
+
+    position: absolute;
+    left: 0;
+    top: 100%
+  }
+}
+
+.donation-name-error {
+  & input {
+    border: 2px solid constants.$color-primary;
+    box-shadow: 0 0 10px constants.$color-form-input-error;
+    background-color: constants.$color-form-input-error;
+
+    &:focus {
+      outline: none;
+      border: 2px solid constants.$color-primary;
+      box-shadow: 0 0 10px constants.$color-form-input-error;
+    }
+  }
+
+  &::after {
+    content: "Name should include only latin litters";
+    color: constants.$color-primary;
+    font-size: 10px;
+  }
+}
+
+.donation-email-error {
+  & input {
+    border: 2px solid constants.$color-primary;
+    box-shadow: 0 0 10px constants.$color-form-input-error;
+    background-color: constants.$color-form-input-error;
+
+    &:focus {
+      outline: none;
+      border: 2px solid constants.$color-primary;
+      box-shadow: 0 0 10px constants.$color-form-input-error;
+    }
+  }
+
+  &::after {
+    content: "Email is not correct. Exp test@test.com";
+    color: constants.$color-primary;
+    font-size: 10px;
+  }
+}
