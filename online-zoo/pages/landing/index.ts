@@ -2,13 +2,16 @@ import { AnimalImages } from '../interface/animal-images';
 import { Animal } from '../interface/animal';
 import { DonationModal } from '../modal/DonationModal';
 import { createAnimalCard } from './cadr';
+import { Feedback } from 'pages/interface/feedback';
+import { createFeedbackCard } from './feedback';
 
 //Slider
 const PET_BUTTON_LEFT = document.getElementById('pet-button-left') as HTMLButtonElement; 
 const PET_BUTTON_RIGHT = document.getElementById('pet-button-right') as HTMLButtonElement;
 const track = document.getElementById('slider__container') as HTMLElement;
 const viewport = document.getElementById('pets__container') as HTMLElement;
-let sliderContainer = document.querySelector('#slider__container')
+let sliderContainer = document.querySelector('#slider__container') as HTMLElement;
+let feedbackContainer = document.querySelector('.what-our-users-think__cards-container') as HTMLElement;
 
 let position = 0;
 let cardWidth = 480;
@@ -107,17 +110,24 @@ async function getAnimal(): Promise<Animal[]> {
 }
 
 function showLoader() {
+  const loader = `<div class="loader">Loading...</div>`
   if (!sliderContainer) return;
-  sliderContainer.innerHTML = `<div class="loader">Loading...</div>`;
+  sliderContainer.innerHTML = loader;
+
+  if(!feedbackContainer) return;
+  feedbackContainer.innerHTML = loader;
 }
 
 function showError() {
-  if (!sliderContainer) return;
-  sliderContainer.innerHTML = `
-    <div class="error-message">
+  const errorMessage = `<div class="error-message">
       Something went wrong. Please, refresh the page
-    </div>
-  `;
+    </div>`
+
+  if (!sliderContainer) return;
+  sliderContainer.innerHTML = errorMessage;
+
+   if (!feedbackContainer) return;
+  feedbackContainer.innerHTML = errorMessage;
 }
 
 
@@ -148,13 +158,56 @@ function setAnimalCards() {
   })
 }
 
+//Feedbacks
+let feedbackArr: Feedback[] =[];
+const FEEDBACK_URL = 'https://vsqsnqnxkh.execute-api.eu-central-1.amazonaws.com/prod/feedback';
+
+async function getFeedbacks() {
+  try {
+    const response = await fetch(FEEDBACK_URL);
+
+    if (!response.ok) {
+      throw new Error(`Server error: ${response.status}`);
+    }
+
+    const feedbacks = await response.json();
+    for (let feedback of feedbacks.data) {
+      feedbackArr.push(feedback);
+    }
+
+    return feedbackArr;
+  } catch(error) {
+    showError();
+    throw error;
+  }
+
+}
+
+function setFeedbackCards() {
+  if (!feedbackContainer) return;
+  feedbackContainer.innerHTML = "";
+
+  feedbackArr.forEach((feedback) => {
+    const feedbackCard = createFeedbackCard(
+      feedback.city,
+      feedback.month,
+      feedback.year,
+      feedback.text,
+      feedback.name
+    );
+    feedbackContainer.append(feedbackCard);
+  })
+}
+
 async function init() {
   showLoader();
 
   try {
     await getAnimal();   // wait for loading animal
     await getAnimalImages(); // wait for loading images
-    setAnimalCards();   
+    await getFeedbacks();
+    setAnimalCards();
+    setFeedbackCards();   
     clooneCards();
   } catch(err) {
     console.log(err);

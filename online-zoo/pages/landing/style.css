@@ -972,8 +972,8 @@ footer {
 .what-our-users-think__content-information {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  width: 67%;
+  gap: 3.6rem;
+  width: 34%;
 }
 @media (max-width: 1200px) {
   .what-our-users-think__content-information {
@@ -999,11 +999,13 @@ footer {
   }
 }
 .what-our-users-think__cards-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  column-gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 30px;
   row-gap: 33px;
+  overflow: hidden;
+  max-height: 958px;
 }
 @media (max-width: 1200px) {
   .what-our-users-think__cards-container {
