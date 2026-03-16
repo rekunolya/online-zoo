@@ -1,7 +1,7 @@
 [
   {
     "name": "Lucas",
-    "src": "/assets/images/pets/panda/panda-lucas.png",
+    "src": "assets/images/pets/panda/panda-lucas.png",
     "alt": "panda",
     "previewImages": {
       "urlImg1": "",
@@ -66,7 +66,7 @@
   },
   {
     "name": "Liz",
-    "src": "./assets/images/pets/koala/koala-liz.png",
+    "src": "assets/images/pets/koala/koala-liz.png",
     "alt": "koala",
     "previewImages": {
       "urlImg1": "",
@@ -79,7 +79,7 @@
   },
   {
     "name": "Shake",
-    "src": "../assets/images/pets/lion/lion-shake.png",
+    "src": "assets/images/pets/lion/lion-shake.png",
     "alt": "lion",
     "previewImages": {
       "urlImg1": "",
