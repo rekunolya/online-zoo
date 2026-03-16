@@ -755,6 +755,20 @@ footer {
   background-color: #F58021;
 }
 
+.loader {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 20px;
+  color: #20113D;
+}
+
+.error-message {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 20px;
+  color: #bb2517;
+}
+
 .pay-and-feed {
   background-color: #20113D;
   color: #FFFFFF;

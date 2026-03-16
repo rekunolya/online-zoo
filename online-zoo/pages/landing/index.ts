@@ -86,13 +86,40 @@ let animalImages: AnimalImages[] = [];
 const animalImagesURL:string = 'json/animal-images.json';
 
 async function getAnimal(): Promise<Animal[]> {
-  const response = await fetch(`${URL}/pets`);
-  const animals = await response.json();
-  for (let animal of animals.data) {
-    animalArray.push(animal);
+  try {
+    const response = await fetch(`${URL}/pets`);
+
+    if (!response.ok) {
+      throw new Error(`Server error: ${response.status}`);
+    }
+
+    const animals = await response.json();
+    for (let animal of animals.data) {
+      animalArray.push(animal);
+    }
+
+    return animalArray;
+
+  } catch(error) {
+    showError ();
+    throw error;
   }
-  return animalArray;
 }
+
+function showLoader() {
+  if (!sliderContainer) return;
+  sliderContainer.innerHTML = `<div class="loader">Loading...</div>`;
+}
+
+function showError() {
+  if (!sliderContainer) return;
+  sliderContainer.innerHTML = `
+    <div class="error-message">
+      Something went wrong. Please, refresh the page
+    </div>
+  `;
+}
+
 
 async function getAnimalImages(): Promise<AnimalImages[]> {
   const response = await fetch(animalImagesURL);
@@ -122,10 +149,17 @@ function setAnimalCards() {
 }
 
 async function init() {
-  await getAnimal();   // wait for loading animal
-  await getAnimalImages(); // wait for loading images
-  setAnimalCards();   
-  clooneCards();
+  showLoader();
+
+  try {
+    await getAnimal();   // wait for loading animal
+    await getAnimalImages(); // wait for loading images
+    setAnimalCards();   
+    clooneCards();
+  } catch(err) {
+    console.log(err);
+  }
+
 }
 
 init();
