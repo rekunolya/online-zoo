@@ -50,6 +50,7 @@
 
 .welcome {
   background-image: url('../../assets/images/welcome.svg');
+ // background-image: url('../../../images/welcome.svg');
   @include mixins.media-laptop {
     background-size: contain;
   }
