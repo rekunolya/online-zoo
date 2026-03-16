@@ -3,7 +3,7 @@
 
 .what-our-users-think {
   width: 100%;
-  background-image: url('../../assets/images/panda-background.png');
+  background-image: url('../../public/assets/images/panda-background.png');
   background-repeat: round;
   color: constants.$color-background-light;
   text-align: left;
@@ -97,7 +97,7 @@
     display: block;
     width: 60px;
     height: 50px;
-    background: url('../../assets/icons/quates.svg') no-repeat center;
+    background: url('../../public/assets/icons/quates.svg') no-repeat center;
   }
 
   &__arrows-container {

@@ -58,28 +58,28 @@ button {
   height: 20px;
 }
 .button-arrow__right {
-  background: url("../../assets/icons/arrow-right.svg") no-repeat center;
+  background: url("assets/icons/arrow-right.svg") no-repeat center;
 }
 .button-arrow__color {
-  background: url("../../assets/icons/arrow-right-color.svg") no-repeat center;
+  background: url("assets/icons/arrow-right-color.svg") no-repeat center;
 }
 .button-arrow__dark {
-  background: url("../../assets/icons/arrow-right-dark.svg") no-repeat center;
+  background: url("assets/icons/arrow-right-dark.svg") no-repeat center;
 }
 .button-arrow__light {
-  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("assets/icons/arrow-right-white.svg") no-repeat center;
 }
 
 .button-transparent:hover .button-arrow__color {
-  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("assets/icons/arrow-right-white.svg") no-repeat center;
 }
 
 .button-transparent:hover .button-arrow__light {
-  background: url("../../assets/icons/arrow-right-dark.svg") no-repeat center;
+  background: url("assets/icons/arrow-right-dark.svg") no-repeat center;
 }
 
 .button-transparent:hover .button-arrow__dark {
-  background: url("../../assets/icons/arrow-right-light.svg") no-repeat center;
+  background: url("assets/icons/arrow-right-light.svg") no-repeat center;
 }
 
 .button-arrow-background__primary {
@@ -124,10 +124,10 @@ button {
   background: url("../../assets/icons/arrow-left-white.svg") no-repeat center;
 }
 .arrow__right-dark {
-  background: url("../../assets/icons/arrow-right-dark.svg") no-repeat center;
+  background: url("/assets/icons/arrow-right-dark.svg") no-repeat center;
 }
 .arrow__right-dark:hover {
-  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("assets/icons/arrow-right-white.svg") no-repeat center;
 }
 .arrow__left-white {
   background: url("../../assets/icons/arrow-left-white.svg") no-repeat center;
@@ -136,10 +136,10 @@ button {
   background: url("../../assets/icons/arrow-left-dark.svg") no-repeat center;
 }
 .arrow__right-white {
-  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("assets/icons/arrow-right-white.svg") no-repeat center;
 }
 .arrow__right-white:hover {
-  background: url("../../assets/icons/arrow-right-dark.svg") no-repeat center;
+  background: url("assets/icons/arrow-right-dark.svg") no-repeat center;
 }
 
 .button-caption {

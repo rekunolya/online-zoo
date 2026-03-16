@@ -14,11 +14,11 @@
   height: 144px;
   position: absolute;
   background: 
-  url('../../../../online-zoo/assets/icons/#{$name}.svg') center no-repeat;
+  url('../../public/assets/icons/#{$name}.svg') center no-repeat;
   
   &:hover {
     z-index: 2;
     background: 
-    url('../../../../online-zoo/assets/icons/#{$name}-hover.svg') center no-repeat,
+    url('../../public/assets/icons/#{$name}-hover.svg') center no-repeat,
   }
 }

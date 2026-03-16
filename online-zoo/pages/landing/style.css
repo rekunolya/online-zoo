@@ -58,28 +58,28 @@ button {
   height: 20px;
 }
 .button-arrow__right {
-  background: url("../../assets/icons/arrow-right.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right.svg") no-repeat center;
 }
 .button-arrow__color {
-  background: url("../../assets/icons/arrow-right-color.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-color.svg") no-repeat center;
 }
 .button-arrow__dark {
-  background: url("../../assets/icons/arrow-right-dark.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-dark.svg") no-repeat center;
 }
 .button-arrow__light {
-  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-white.svg") no-repeat center;
 }
 
 .button-transparent:hover .button-arrow__color {
-  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-white.svg") no-repeat center;
 }
 
 .button-transparent:hover .button-arrow__light {
-  background: url("../../assets/icons/arrow-right-dark.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-dark.svg") no-repeat center;
 }
 
 .button-transparent:hover .button-arrow__dark {
-  background: url("../../assets/icons/arrow-right-light.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-light.svg") no-repeat center;
 }
 
 .button-arrow-background__primary {
@@ -118,28 +118,28 @@ button {
   padding: 15px 15px 14px 15px;
 }
 .arrow__left-dark {
-  background: url("../../assets/icons/arrow-left-dark.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-left-dark.svg") no-repeat center;
 }
 .arrow__left-dark:hover {
-  background: url("../../assets/icons/arrow-left-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-left-white.svg") no-repeat center;
 }
 .arrow__right-dark {
-  background: url("../../assets/icons/arrow-right-dark.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-dark.svg") no-repeat center;
 }
 .arrow__right-dark:hover {
-  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-white.svg") no-repeat center;
 }
 .arrow__left-white {
-  background: url("../../assets/icons/arrow-left-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-left-white.svg") no-repeat center;
 }
 .arrow__left-white:hover {
-  background: url("../../assets/icons/arrow-left-dark.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-left-dark.svg") no-repeat center;
 }
 .arrow__right-white {
-  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-white.svg") no-repeat center;
 }
 .arrow__right-white:hover {
-  background: url("../../assets/icons/arrow-right-dark.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-dark.svg") no-repeat center;
 }
 
 .button-caption {
@@ -321,17 +321,17 @@ li {
 }
 
 .youtube {
-  background: url("../../../../../online-zoo/public/assets/icons/YouTube.svg") no-repeat center;
+  background: url("../../public/assets/icons/YouTube.svg") no-repeat center;
   background-size: contain;
 }
 
 .instagram {
-  background: url("../../../../../online-zoo/public/assets/icons/Instagram.svg") no-repeat center;
+  background: url("../../public/assets/icons/Instagram.svg") no-repeat center;
   background-size: contain;
 }
 
 .facebook {
-  background: url("../../../../../online-zoo/public/assets/icons/Facebook.svg") no-repeat center;
+  background: url("../../public/assets/icons/Facebook.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -437,7 +437,7 @@ footer {
 .main {
   width: 100%;
   padding: 13rem 0;
-  background-image: url("../../assets/images/main-background.png");
+  background-image: url("../../public/assets/images/main-background.png");
   background-position: left bottom;
 }
 @media (max-width: 1200px) {
@@ -529,7 +529,7 @@ footer {
 }
 
 .welcome {
-  background-image: url("../../assets/images/welcome.svg");
+  background-image: url("../../public/assets/images/welcome.svg");
 }
 @media (max-width: 1200px) {
   .welcome {
@@ -538,7 +538,7 @@ footer {
 }
 
 .eagles {
-  background-image: url("../../assets/images/eagles.svg");
+  background-image: url("../../public/assets/images/eagles.svg");
 }
 @media (max-width: 1200px) {
   .eagles {
@@ -883,15 +883,15 @@ footer {
 }
 
 .heart {
-  background: url("../../assets/icons/heart.svg") no-repeat center;
+  background: url("/assets/icons/heart.svg") no-repeat center;
 }
 
 .donation-icon {
-  background: url("../../assets/icons/donation-icon.svg") no-repeat center;
+  background: url("/assets/icons/donation-icon.svg") no-repeat center;
 }
 
 .cart-with-food {
-  background: url("../../assets/icons/cart-with-food.svg") no-repeat center;
+  background: url("../../public/assets/icons/cart-with-food.svg") no-repeat center;
 }
 
 @media (max-width: 1200px) {
@@ -928,7 +928,7 @@ footer {
 
 .what-our-users-think {
   width: 100%;
-  background-image: url("../../assets/images/panda-background.png");
+  background-image: url("../../public/assets/images/panda-background.png");
   background-repeat: round;
   color: #FFFFFF;
   text-align: left;
@@ -1021,7 +1021,7 @@ footer {
   display: block;
   width: 60px;
   height: 50px;
-  background: url("../../assets/icons/quates.svg") no-repeat center;
+  background: url("../../public/assets/icons/quates.svg") no-repeat center;
 }
 .what-our-users-think__arrows-container {
   display: flex;

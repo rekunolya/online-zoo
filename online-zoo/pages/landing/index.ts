@@ -1,7 +1,7 @@
-import { DonationModal } from '../modal/DonationModal'; 
-import { createAnimalCard } from './cadr';
 import { AnimalImages } from '../interface/animal-images';
 import { Animal } from '../interface/animal';
+import { DonationModal } from '../modal/DonationModal';
+import { createAnimalCard } from './cadr';
 
 //Slider
 const PET_BUTTON_LEFT = document.getElementById('pet-button-left') as HTMLButtonElement; 
