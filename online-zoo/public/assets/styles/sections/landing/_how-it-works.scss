@@ -49,15 +49,14 @@
 }
 
 .welcome {
-  background-image: url('../../public/assets/images/welcome.svg');
- // background-image: url('../../../images/welcome.svg');
+  background-image: url('/assets/images/welcome.svg');
   @include mixins.media-laptop {
     background-size: contain;
   }
 
 }
 .eagles {
-  background-image: url('../../public/assets/images/eagles.svg');
+  background-image: url('/assets/images/eagles.svg');
   @include mixins.media-laptop {
     background-size: contain;
   }

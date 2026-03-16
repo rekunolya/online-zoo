@@ -61,7 +61,7 @@ footer {
           background-color: constants.$color-caption;
 
           > .button-arrow__light {
-            background: url('../../assets/icons/arrow-right-white.svg') no-repeat center;
+            background: url('../../public/assets/icons/arrow-right-white.svg') no-repeat center;
           }
         }
       }
@@ -101,15 +101,15 @@ footer {
 
 .logo {
   width: 96px;
-  background: url('../../assets/icons/logo-light.svg') no-repeat center;
+  background: url('/assets/icons/logo-light.svg') no-repeat center;
 }
 
 .yem-digital {
   width: 50px;
-  background: url('../../assets/icons/yem-digital.svg') no-repeat center;
+  background: url('../../public/assets/icons/yem-digital.svg') no-repeat center;
 }
 
 .rsschool {
   width: 138px;
-  background: url('../../assets/icons/rsschool.svg') no-repeat center;
+  background: url('../../public/assets/icons/rsschool.svg') no-repeat center;
 }

@@ -58,28 +58,28 @@ button {
   height: 20px;
 }
 .button-arrow__right {
-  background: url("assets/icons/arrow-right.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right.svg") no-repeat center;
 }
 .button-arrow__color {
-  background: url("assets/icons/arrow-right-color.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-color.svg") no-repeat center;
 }
 .button-arrow__dark {
-  background: url("assets/icons/arrow-right-dark.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-dark.svg") no-repeat center;
 }
 .button-arrow__light {
-  background: url("assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-white.svg") no-repeat center;
 }
 
 .button-transparent:hover .button-arrow__color {
-  background: url("assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-white.svg") no-repeat center;
 }
 
 .button-transparent:hover .button-arrow__light {
-  background: url("assets/icons/arrow-right-dark.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-dark.svg") no-repeat center;
 }
 
 .button-transparent:hover .button-arrow__dark {
-  background: url("assets/icons/arrow-right-light.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-light.svg") no-repeat center;
 }
 
 .button-arrow-background__primary {
@@ -118,28 +118,28 @@ button {
   padding: 15px 15px 14px 15px;
 }
 .arrow__left-dark {
-  background: url("../../assets/icons/arrow-left-dark.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-left-dark.svg") no-repeat center;
 }
 .arrow__left-dark:hover {
-  background: url("../../assets/icons/arrow-left-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-left-white.svg") no-repeat center;
 }
 .arrow__right-dark {
-  background: url("/assets/icons/arrow-right-dark.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-dark.svg") no-repeat center;
 }
 .arrow__right-dark:hover {
-  background: url("assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-white.svg") no-repeat center;
 }
 .arrow__left-white {
-  background: url("../../assets/icons/arrow-left-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-left-white.svg") no-repeat center;
 }
 .arrow__left-white:hover {
-  background: url("../../assets/icons/arrow-left-dark.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-left-dark.svg") no-repeat center;
 }
 .arrow__right-white {
-  background: url("assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-white.svg") no-repeat center;
 }
 .arrow__right-white:hover {
-  background: url("assets/icons/arrow-right-dark.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-dark.svg") no-repeat center;
 }
 
 .button-caption {
@@ -321,17 +321,17 @@ li {
 }
 
 .youtube {
-  background: url("../../assets/icons/YouTube.svg") no-repeat center;
+  background: url("../../public/assets/icons/YouTube.svg") no-repeat center;
   background-size: contain;
 }
 
 .instagram {
-  background: url("../../assets/icons/Instagram.svg") no-repeat center;
+  background: url("../../public/assets/icons/Instagram.svg") no-repeat center;
   background-size: contain;
 }
 
 .facebook {
-  background: url("../../assets/icons/Facebook.svg") no-repeat center;
+  background: url("../../public/assets/icons/Facebook.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -391,7 +391,7 @@ footer {
   background-color: #00A092;
 }
 .footer-container__information__donation > button:hover > .button-arrow__light {
-  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-white.svg") no-repeat center;
 }
 .footer-container__devider {
   border-top: 2px solid #FFFFFF;
@@ -421,17 +421,17 @@ footer {
 
 .logo {
   width: 96px;
-  background: url("../../assets/icons/logo-light.svg") no-repeat center;
+  background: url("/assets/icons/logo-light.svg") no-repeat center;
 }
 
 .yem-digital {
   width: 50px;
-  background: url("../../assets/icons/yem-digital.svg") no-repeat center;
+  background: url("../../public/assets/icons/yem-digital.svg") no-repeat center;
 }
 
 .rsschool {
   width: 138px;
-  background: url("../../assets/icons/rsschool.svg") no-repeat center;
+  background: url("../../public/assets/icons/rsschool.svg") no-repeat center;
 }
 
 /*# sourceMappingURL=animal.css.map */

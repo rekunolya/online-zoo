@@ -391,7 +391,7 @@ footer {
   background-color: #00A092;
 }
 .footer-container__information__donation > button:hover > .button-arrow__light {
-  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-white.svg") no-repeat center;
 }
 .footer-container__devider {
   border-top: 2px solid #FFFFFF;
@@ -421,23 +421,23 @@ footer {
 
 .logo {
   width: 96px;
-  background: url("../../assets/icons/logo-light.svg") no-repeat center;
+  background: url("/assets/icons/logo-light.svg") no-repeat center;
 }
 
 .yem-digital {
   width: 50px;
-  background: url("../../assets/icons/yem-digital.svg") no-repeat center;
+  background: url("../../public/assets/icons/yem-digital.svg") no-repeat center;
 }
 
 .rsschool {
   width: 138px;
-  background: url("../../assets/icons/rsschool.svg") no-repeat center;
+  background: url("../../public/assets/icons/rsschool.svg") no-repeat center;
 }
 
 .main {
   width: 100%;
   padding: 13rem 0;
-  background-image: url("../../public/assets/images/main-background.png");
+  background-image: url("/assets/images/main-background.png");
   background-position: left bottom;
 }
 @media (max-width: 1200px) {
@@ -529,7 +529,7 @@ footer {
 }
 
 .welcome {
-  background-image: url("../../public/assets/images/welcome.svg");
+  background-image: url("/assets/images/welcome.svg");
 }
 @media (max-width: 1200px) {
   .welcome {
@@ -538,7 +538,7 @@ footer {
 }
 
 .eagles {
-  background-image: url("../../public/assets/images/eagles.svg");
+  background-image: url("/assets/images/eagles.svg");
 }
 @media (max-width: 1200px) {
   .eagles {
@@ -891,7 +891,7 @@ footer {
 }
 
 .cart-with-food {
-  background: url("../../public/assets/icons/cart-with-food.svg") no-repeat center;
+  background: url("/assets/icons/cart-with-food.svg") no-repeat center;
 }
 
 @media (max-width: 1200px) {
@@ -1042,7 +1042,7 @@ footer {
 }
 
 .what-our-users-think__button:hover .button-arrow__light {
-  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-white.svg") no-repeat center;
 }
 
 .favorit-animals {
@@ -1170,7 +1170,7 @@ footer {
 }
 
 .favorit-animals button:hover .button-arrow__dark {
-  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-white.svg") no-repeat center;
 }
 
 .scroll-hidden {

@@ -58,28 +58,28 @@ button {
   height: 20px;
 }
 .button-arrow__right {
-  background: url("../../assets/icons/arrow-right.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right.svg") no-repeat center;
 }
 .button-arrow__color {
-  background: url("../../assets/icons/arrow-right-color.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-color.svg") no-repeat center;
 }
 .button-arrow__dark {
-  background: url("../../assets/icons/arrow-right-dark.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-dark.svg") no-repeat center;
 }
 .button-arrow__light {
-  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-white.svg") no-repeat center;
 }
 
 .button-transparent:hover .button-arrow__color {
-  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-white.svg") no-repeat center;
 }
 
 .button-transparent:hover .button-arrow__light {
-  background: url("../../assets/icons/arrow-right-dark.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-dark.svg") no-repeat center;
 }
 
 .button-transparent:hover .button-arrow__dark {
-  background: url("../../assets/icons/arrow-right-light.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-light.svg") no-repeat center;
 }
 
 .button-arrow-background__primary {
@@ -118,28 +118,28 @@ button {
   padding: 15px 15px 14px 15px;
 }
 .arrow__left-dark {
-  background: url("../../assets/icons/arrow-left-dark.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-left-dark.svg") no-repeat center;
 }
 .arrow__left-dark:hover {
-  background: url("../../assets/icons/arrow-left-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-left-white.svg") no-repeat center;
 }
 .arrow__right-dark {
-  background: url("../../assets/icons/arrow-right-dark.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-dark.svg") no-repeat center;
 }
 .arrow__right-dark:hover {
-  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-white.svg") no-repeat center;
 }
 .arrow__left-white {
-  background: url("../../assets/icons/arrow-left-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-left-white.svg") no-repeat center;
 }
 .arrow__left-white:hover {
-  background: url("../../assets/icons/arrow-left-dark.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-left-dark.svg") no-repeat center;
 }
 .arrow__right-white {
-  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-white.svg") no-repeat center;
 }
 .arrow__right-white:hover {
-  background: url("../../assets/icons/arrow-right-dark.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-dark.svg") no-repeat center;
 }
 
 .button-caption {
@@ -321,17 +321,17 @@ li {
 }
 
 .youtube {
-  background: url("../../assets/icons/YouTube.svg") no-repeat center;
+  background: url("../../public/assets/icons/YouTube.svg") no-repeat center;
   background-size: contain;
 }
 
 .instagram {
-  background: url("../../assets/icons/Instagram.svg") no-repeat center;
+  background: url("../../public/assets/icons/Instagram.svg") no-repeat center;
   background-size: contain;
 }
 
 .facebook {
-  background: url("../../assets/icons/Facebook.svg") no-repeat center;
+  background: url("../../public/assets/icons/Facebook.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -391,7 +391,7 @@ footer {
   background-color: #00A092;
 }
 .footer-container__information__donation > button:hover > .button-arrow__light {
-  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-white.svg") no-repeat center;
 }
 .footer-container__devider {
   border-top: 2px solid #FFFFFF;
@@ -421,17 +421,17 @@ footer {
 
 .logo {
   width: 96px;
-  background: url("../../assets/icons/logo-light.svg") no-repeat center;
+  background: url("/assets/icons/logo-light.svg") no-repeat center;
 }
 
 .yem-digital {
   width: 50px;
-  background: url("../../assets/icons/yem-digital.svg") no-repeat center;
+  background: url("../../public/assets/icons/yem-digital.svg") no-repeat center;
 }
 
 .rsschool {
   width: 138px;
-  background: url("../../assets/icons/rsschool.svg") no-repeat center;
+  background: url("../../public/assets/icons/rsschool.svg") no-repeat center;
 }
 
 .map {
@@ -455,7 +455,7 @@ footer {
   width: 100%;
   position: absolute;
   inset: 0;
-  background: url("../../../../../online-zoo/assets/images/Map.png") center/contain no-repeat;
+  background: url("../../public/assets/images/Map.png") center/contain no-repeat;
 }
 
 .location {
@@ -466,11 +466,11 @@ footer {
   width: 100px;
   height: 144px;
   position: absolute;
-  background: url("../../../../online-zoo/assets/icons/eagle.svg") center no-repeat;
+  background: url("../../public/assets/icons/eagle.svg") center no-repeat;
 }
 .location.eagle:hover {
   z-index: 2;
-  background: url("../../../../online-zoo/assets/icons/eagle-hover.svg") center no-repeat;
+  background: url("../../public/assets/icons/eagle-hover.svg") center no-repeat;
 }
 .location.eagle {
   left: 11.5%;
@@ -481,11 +481,11 @@ footer {
   width: 100px;
   height: 144px;
   position: absolute;
-  background: url("../../../../online-zoo/assets/icons/alligator.svg") center no-repeat;
+  background: url("../../public/assets/icons/alligator.svg") center no-repeat;
 }
 .location.alligator:hover {
   z-index: 2;
-  background: url("../../../../online-zoo/assets/icons/alligator-hover.svg") center no-repeat;
+  background: url("../../public/assets/icons/alligator-hover.svg") center no-repeat;
 }
 .location.alligator {
   left: 20.5%;
@@ -496,11 +496,11 @@ footer {
   width: 100px;
   height: 144px;
   position: absolute;
-  background: url("../../../../online-zoo/assets/icons/lion.svg") center no-repeat;
+  background: url("../../public/assets/icons/lion.svg") center no-repeat;
 }
 .location.lion:hover {
   z-index: 2;
-  background: url("../../../../online-zoo/assets/icons/lion-hover.svg") center no-repeat;
+  background: url("../../public/assets/icons/lion-hover.svg") center no-repeat;
 }
 .location.lion {
   left: 40.5%;
@@ -511,11 +511,11 @@ footer {
   width: 100px;
   height: 144px;
   position: absolute;
-  background: url("../../../../online-zoo/assets/icons/gorilla.svg") center no-repeat;
+  background: url("../../public/assets/icons/gorilla.svg") center no-repeat;
 }
 .location.gorilla:hover {
   z-index: 2;
-  background: url("../../../../online-zoo/assets/icons/gorilla-hover.svg") center no-repeat;
+  background: url("../../public/assets/icons/gorilla-hover.svg") center no-repeat;
 }
 .location.gorilla {
   top: 52%;
@@ -526,11 +526,11 @@ footer {
   width: 100px;
   height: 144px;
   position: absolute;
-  background: url("../../../../online-zoo/assets/icons/lemur.svg") center no-repeat;
+  background: url("../../public/assets/icons/lemur.svg") center no-repeat;
 }
 .location.lemur:hover {
   z-index: 2;
-  background: url("../../../../online-zoo/assets/icons/lemur-hover.svg") center no-repeat;
+  background: url("../../public/assets/icons/lemur-hover.svg") center no-repeat;
 }
 .location.lemur {
   top: 65%;
@@ -541,11 +541,11 @@ footer {
   width: 100px;
   height: 144px;
   position: absolute;
-  background: url("../../../../online-zoo/assets/icons/panda.svg") center no-repeat;
+  background: url("../../public/assets/icons/panda.svg") center no-repeat;
 }
 .location.panda:hover {
   z-index: 2;
-  background: url("../../../../online-zoo/assets/icons/panda-hover.svg") center no-repeat;
+  background: url("../../public/assets/icons/panda-hover.svg") center no-repeat;
 }
 .location.panda {
   top: 38.5%;
@@ -556,11 +556,11 @@ footer {
   width: 100px;
   height: 144px;
   position: absolute;
-  background: url("../../../../online-zoo/assets/icons/tiger.svg") center no-repeat;
+  background: url("../../public/assets/icons/tiger.svg") center no-repeat;
 }
 .location.tiger:hover {
   z-index: 2;
-  background: url("../../../../online-zoo/assets/icons/tiger-hover.svg") center no-repeat;
+  background: url("../../public/assets/icons/tiger-hover.svg") center no-repeat;
 }
 .location.tiger {
   left: 72%;
@@ -571,11 +571,11 @@ footer {
   width: 100px;
   height: 144px;
   position: absolute;
-  background: url("../../../../online-zoo/assets/icons/coala.svg") center no-repeat;
+  background: url("../../public/assets/icons/coala.svg") center no-repeat;
 }
 .location.coala:hover {
   z-index: 2;
-  background: url("../../../../online-zoo/assets/icons/coala-hover.svg") center no-repeat;
+  background: url("../../public/assets/icons/coala-hover.svg") center no-repeat;
 }
 .location.coala {
   left: 81%;
