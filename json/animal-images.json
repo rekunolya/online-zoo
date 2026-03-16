@@ -1,7 +1,7 @@
 [
   {
     "name": "Lucas",
-    "src": "online-zoo/assets/images/pets/panda/panda-lucas.png",
+    "src": "/online-zoo/assets/images/pets/panda/panda-lucas.png",
     "alt": "panda",
     "previewImages": {
       "urlImg1": "",
@@ -53,7 +53,7 @@
   },
   {
     "name": "Sam & Lora",
-    "src": "online-zoo/assets/images/pets/eagles/eagles-sam-lora.png",
+    "src": "/online-zoo/assets/images/pets/eagles/eagles-sam-lora.png",
     "alt": "eagles",
     "previewImages": {
       "urlImg1": "",
