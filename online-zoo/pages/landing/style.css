@@ -431,7 +431,7 @@ footer {
 
 .rsschool {
   width: 138px;
-  background: url("../../public/assets/icons/rsschool.svg") no-repeat center;
+  background: url("/assets/icons/rsschool.svg") no-repeat center;
 }
 
 .main {
@@ -670,7 +670,7 @@ footer {
 }
 
 .pets__button:hover .button-arrow__dark {
-  background: url("../../assets/icons/arrow-right-white.svg") no-repeat center;
+  background: url("../../public/assets/icons/arrow-right-white.svg") no-repeat center;
 }
 
 .slider-slider {
@@ -928,7 +928,7 @@ footer {
 
 .what-our-users-think {
   width: 100%;
-  background-image: url("../../public/assets/images/panda-background.png");
+  background-image: url("/assets/images/panda-background.png");
   background-repeat: round;
   color: #FFFFFF;
   text-align: left;
