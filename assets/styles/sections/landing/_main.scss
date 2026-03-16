@@ -3,7 +3,7 @@
 .main {
   width: 100%;
   padding: 13rem 0;
-  background-image: url('../../assets/images/main-background.png');
+  background-image: url('../../public/assets/images/main-background.png');
   background-position: left bottom;
   @include mixins.media-laptop {
     padding: 10rem 0;
