@@ -1,0 +1,194 @@
+@use '../abstract/constants.scss';
+@use '../abstract/placeholders.scss';
+
+button {
+  border: none;
+  cursor: pointer;
+  color: constants.$color-background-light;
+  font-family: constants.$font-family-semi-bold;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: fit-content;
+  @extend %transition;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.button-primary {
+  background-color: constants.$color-primary;
+  padding: 26px 30px;
+
+  &:hover {
+    background-color: constants.$color-primary-hover;
+  }
+}
+
+
+.button-transparent {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+
+  &__light {
+    border: 2px solid constants.$color-background-light;
+
+    &:hover {
+      background-color: constants.$color-caption;
+      color: constants.$color-background-light;
+    }
+  }
+
+  &__dark {
+    border: 2px solid constants.$color-background-dark;
+    color: constants.$color-background-dark;
+    padding: 2.5rem 4rem;
+
+    & :hover {
+      background-color: constants.$color-background-dark;
+      color: constants.$color-background-light;
+    }
+  }
+
+  &__text {
+    padding: 0 10px;
+  }
+}
+
+.button-arrow {
+  display: block;
+  width: 30px;
+  height: 20px;
+
+  &__right {
+    background: url('../../public/assets/icons/arrow-right.svg') no-repeat center;
+  }
+
+  &__color {
+    background: url('../../public/assets/icons/arrow-right-color.svg') no-repeat center;
+  }
+
+  &__dark {
+    background: url('../../public/assets/icons/arrow-right-dark.svg') no-repeat center;
+  }
+
+  &__light {
+    background: url('../../public/assets/icons/arrow-right-white.svg') no-repeat center;
+  }
+}
+
+.button-transparent:hover .button-arrow__color {
+  background: url('../../public/assets/icons/arrow-right-white.svg') no-repeat center;
+}
+
+.button-transparent:hover .button-arrow__light {
+  background: url('../../public/assets/icons/arrow-right-dark.svg') no-repeat center;
+}
+
+.button-transparent:hover .button-arrow__dark {
+  background: url('../../public/assets/icons/arrow-right-light.svg') no-repeat center;
+}
+
+
+
+.button-arrow-background {
+  @extend %transition;
+  
+  &__primary {
+    background-color: constants.$color-primary;
+    padding: 2.6rem;
+  }
+}
+
+.button-transparent:hover .button-arrow-background__primary {
+  @extend %transition;
+  background-color: constants.$color-primary-hover;
+}
+
+.arrow-navigation {
+  border-radius: 5px; 
+
+  &__dark {
+    background: transparent;
+    border: 2px solid constants.$color-background-dark;
+
+    &:hover {
+      background-color: constants.$color-background-dark;
+      color: constants.$color-background-light;
+    }
+  }
+
+  &__light {
+    background: transparent;
+    border: 2px solid constants.$color-background-light;
+
+    &:hover {
+      background-color: constants.$color-background-light;
+      color: constants.$color-background-dark;
+    }
+  }
+}
+
+.arrow {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 15px 15px 14px 15px;
+
+  &__left-dark {
+    background: url('../../public/assets/icons/arrow-left-dark.svg') no-repeat center;
+
+    &:hover {
+      background: url('../../public/assets/icons/arrow-left-white.svg') no-repeat center;
+    }
+  }
+
+  &__right-dark {
+    background: url('../../public/assets/icons/arrow-right-dark.svg') no-repeat center;
+
+    &:hover {
+      background: url('../../public/assets/icons/arrow-right-white.svg') no-repeat center;
+    }
+  }
+
+  &__left-white {
+    background: url('../../public/assets/icons/arrow-left-white.svg') no-repeat center;
+
+    &:hover {
+      background: url('../../public/assets/icons/arrow-left-dark.svg') no-repeat center;
+    }
+  }
+
+  &__right-white {
+    background: url('../../public/assets/icons/arrow-right-white.svg') no-repeat center;
+
+    &:hover {
+      background: url('../../public/assets/icons/arrow-right-dark.svg') no-repeat center;
+    }
+  }
+}
+
+
+.button-caption {
+  background-color: constants.$color-caption;
+  color: constants.$color-background-light;
+  padding: 2.5rem 8.6rem;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: constants.$color-caption-hover;
+
+    > .button-arrow__light {
+      background: url('../../assets/icons/arrow-right-white.svg') no-repeat center;
+    }
+  }
+}
+
+.button-arrow_nonactive {
+  cursor: default;
+  pointer-events: none;
+}

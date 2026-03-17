@@ -1,0 +1,11 @@
+@use '../abstract/constants';
+@use '../abstract/mixins';
+
+.wrapper{
+  max-width: constants.$content-big-width;
+  margin: 0 auto;
+  padding: 0 26rem;
+  @include mixins.media-laptop {
+    padding: 0 4rem;
+  }
+}

@@ -1,0 +1,74 @@
+@use '../../abstract/constants.scss';
+@use '../../abstract/placeholders.scss';
+
+.contact {
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+    padding-bottom: 15rem;
+  }
+
+  &__information {
+    display: flex;
+    column-gap: 190px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    row-gap: 50px;
+    width: 39%;
+  }
+
+  &__form {
+    width: 50%;
+  }
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+  
+
+  &>input {
+    padding: 18px;
+    background-color: constants.$color-background-light;
+    font-family: constants.$font-family-regular;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    margin-bottom: 19px;
+    @extend %transition;
+
+    &:focus {
+      outline: none;
+      border: 2px solid constants.$color-caption;
+      box-shadow: 0 0 10px constants.$color-form-input-focus;
+    }
+  } 
+
+  &>textarea {
+    padding: 23px 18px;
+    font-size: 1.8rem;
+    font-family: constants.$font-family-regular;
+    height: 154px;
+    border-radius: 5px;
+    @extend %transition;
+    margin-bottom: 56px;
+
+    &:focus {
+      outline: none;
+      border-color: constants.$color-caption;
+      box-shadow: 0 0 5px constants.$color-form-input-focus;
+    }
+  }
+}
+
+.required {
+  color: constants.$color-caption;
+}

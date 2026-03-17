@@ -1,0 +1,83 @@
+@use '../abstract/constants';
+@use '../abstract/placeholders';
+@use '../abstract/mixins';
+
+.header {
+  background-color: constants.$color-primary;
+  padding: 2.8rem 0;
+  font-family: constants.$font-family-semi-bold;
+  font-size: 1.8rem;
+
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mixins.media-laptop {
+      padding: 0rem 6rem;
+    }
+  }
+
+  &__navigation > nav {
+    display: flex;
+    gap: 6.8rem;
+    @include mixins.media-laptop {
+      gap: 8rem;
+    }
+  }
+
+  &__nav-list {
+    text-transform: uppercase;
+    display: flex;
+    gap: 4.9rem;
+    align-items: center;
+    @extend %transition;
+
+    @include mixins.media-laptop {
+      gap: 3.1rem;
+    }
+
+    & > li:hover {
+      text-decoration: 2px underline constants.$color-caption;
+    }
+
+    & > li.active {
+      pointer-events: none;
+    }
+  }
+
+  &__social-media {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+}
+
+.active {
+  color: constants.$color-caption;
+}
+
+.social-media {
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  @extend %transition;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
+
+.youtube {
+  background: url('../../public/assets/icons/YouTube.svg') no-repeat center;
+  background-size: contain;
+}
+.instagram {
+  background: url('../../public/assets/icons/Instagram.svg') no-repeat center;
+  background-size: contain;
+}
+.facebook {
+  background: url('../../public/assets/icons/Facebook.svg') no-repeat center;
+  background-size: contain;
+}

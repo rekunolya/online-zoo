@@ -1,0 +1,24 @@
+@use '../abstract/constants';
+@use '../abstract/placeholders';
+
+@mixin media-laptop{
+  @media (max-width: constants.$content-small-width) {@content;}
+}
+
+
+
+//animal for map
+@mixin animal($name) { 
+ // @extend %transition;
+  width: 100px;
+  height: 144px;
+  position: absolute;
+  background: 
+  url('../../public/assets/icons/#{$name}.svg') center no-repeat;
+  
+  &:hover {
+    z-index: 2;
+    background: 
+    url('../../public/assets/icons/#{$name}-hover.svg') center no-repeat,
+  }
+}
